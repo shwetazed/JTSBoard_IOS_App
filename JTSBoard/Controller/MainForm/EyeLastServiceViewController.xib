@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EyeLastServiceViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAgree" destination="IOp-DX-p79" id="ZNJ-xB-vo3"/>
+                <outlet property="btnAlagyAdhesive" destination="jTb-TG-zLF" id="Qdh-Bu-WA4"/>
+                <outlet property="btnAlagyAlcohal" destination="LRd-6Z-HgK" id="taY-1C-bkm"/>
+                <outlet property="btnAlagyAsthama" destination="sat-Gp-6Gj" id="qUR-fb-HDp"/>
+                <outlet property="btnAlagyAtopy" destination="iaq-Vm-lLf" id="rvk-zs-4O4"/>
+                <outlet property="btnAlagyCosmetic" destination="wqc-P9-Eqz" id="AgY-Z6-bby"/>
+                <outlet property="btnAlagyFood" destination="SSA-Yc-JAu" id="paZ-Op-orV"/>
+                <outlet property="btnAlagyHayFever" destination="8de-6k-DIf" id="Vye-rF-DoB"/>
+                <outlet property="btnAlagyMedicine" destination="cRs-X4-qvy" id="CxV-9e-Vn4"/>
+                <outlet property="btnAlagyMetal" destination="yR3-gL-ncr" id="I2k-O8-Isz"/>
+                <outlet property="btnAlagyOthers" destination="Pqg-R5-l2A" id="muC-AJ-se8"/>
+                <outlet property="btnAlagyRhinitis" destination="w3F-xD-fxd" id="vVN-Rf-kKh"/>
+                <outlet property="btnAlagyTap" destination="Lrr-L3-MzT" id="6fi-lG-P2b"/>
+                <outlet property="btnCleansingCream" destination="rb3-fH-J11" id="G8a-cZ-dkU"/>
+                <outlet property="btnCleansingGel" destination="nQw-wy-GtL" id="gBZ-Jy-ptx"/>
+                <outlet property="btnCleansingLotion" destination="ExM-X5-8hp" id="0I9-Ym-kMi"/>
+                <outlet property="btnCleansingOil" destination="7uT-61-hPY" id="lDU-jt-kqk"/>
+                <outlet property="btnCleansingWipe" destination="5TX-ln-Ax4" id="pFw-Fv-Byj"/>
+                <outlet property="btnCongesionNo" destination="jZc-61-Dpe" id="v1R-tk-Nvm"/>
+                <outlet property="btnCongesionYes" destination="a2Z-l0-SRc" id="yvc-zl-OJq"/>
+                <outlet property="btnContactLense1Day" destination="GRb-2R-xb0" id="zXe-YL-QiA"/>
+                <outlet property="btnContactLenseHard" destination="NGs-QJ-CwM" id="QHp-zU-D4a"/>
+                <outlet property="btnContactLenseNo" destination="7EN-cI-zC3" id="wgZ-a3-M6E"/>
+                <outlet property="btnContactLenseSoft" destination="w91-SX-Eex" id="9mm-4Q-gZa"/>
+                <outlet property="btnDryNessNo" destination="Lhi-rW-4tD" id="qcU-72-UoP"/>
+                <outlet property="btnDryNessYes" destination="NSZ-36-ytP" id="mZx-XN-6eg"/>
+                <outlet property="btnEyeSicknessNo" destination="RQ0-LM-zZk" id="IdK-7C-ySo"/>
+                <outlet property="btnEyeSicknessYes" destination="Tq5-6F-Qvu" id="PRc-MK-ccF"/>
+                <outlet property="btnEyeSurgeryNo" destination="WeG-9Q-RKO" id="F4B-kc-e35"/>
+                <outlet property="btnEyeSurgeryYes" destination="8C0-fU-jXU" id="3Rh-2M-SIK"/>
+                <outlet property="btnEyslushPermsNo" destination="Nax-i6-g2n" id="kRp-F6-Seh"/>
+                <outlet property="btnEyslushPermsYes" destination="qfh-tC-QVx" id="g6q-As-KBY"/>
+                <outlet property="btnLasikNo" destination="oQE-jd-b3N" id="i0v-zh-P58"/>
+                <outlet property="btnLasikYes" destination="WjT-8D-PAm" id="Jyu-c5-1J9"/>
+                <outlet property="btnPregnancyNo" destination="78Q-FR-pG8" id="2So-g7-lyv"/>
+                <outlet property="btnPregnancyYes" destination="9J8-wf-smg" id="PRZ-Ff-E17"/>
+                <outlet property="btnSubmit" destination="06v-qn-cD2" id="WeL-z5-fAN"/>
+                <outlet property="btnTermsCondition" destination="4hv-Hm-7Sv" id="31T-Qi-GcJ"/>
+                <outlet property="scrollView" destination="v7O-Cn-Gbp" id="wh3-1O-ya4"/>
+                <outlet property="txtCongestionDesc" destination="V6k-BL-Yeg" id="vGh-vB-QDO"/>
+                <outlet property="txtDryNessDesc" destination="UGG-W5-RKg" id="LPR-Ot-kRx"/>
+                <outlet property="txtEyeSurgeryDesc" destination="mQ6-bn-CgI" id="FEA-zb-T2U"/>
+                <outlet property="txtLasikDesc" destination="DfW-dX-uNH" id="5of-wP-9C4"/>
+                <outlet property="txtSickEyeDesc" destination="2fU-5w-Lhj" id="RvT-2k-WBi"/>
+                <outlet property="view" destination="9H9-lD-EKF" id="Qe6-VJ-NzN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9H9-lD-EKF">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1610"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7O-Cn-Gbp">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1610"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ref-4W-FS7">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1610"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コンタクトレンズを使用していますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xe-wG-4OE">
+                                    <rect key="frame" x="25" y="72" width="713" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="7QC-4U-IpS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-Y4-Lmr">
+                                    <rect key="frame" x="25" y="111" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="REf-GO-1Mn"/>
+                                        <constraint firstAttribute="width" constant="56" id="SuZ-gv-Il9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EN-cI-zC3">
+                                    <rect key="frame" x="43" y="140" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="9ij-t8-fJK"/>
+                                        <constraint firstAttribute="height" constant="22" id="FDZ-2X-sd0"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnContactLenseNoAction:" destination="-1" eventType="touchUpInside" id="6ex-Aw-7hE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1DAYタイプ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDJ-58-SzJ">
+                                    <rect key="frame" x="134" y="111" width="107" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="4P8-M7-qm0"/>
+                                        <constraint firstAttribute="width" constant="107" id="Tb8-sg-7Mc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRb-2R-xb0">
+                                    <rect key="frame" x="163" y="140" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Cdn-G5-YOQ"/>
+                                        <constraint firstAttribute="width" constant="20" id="Hlz-zB-wtQ"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnContactLenseDayAction:" destination="-1" eventType="touchUpInside" id="pC4-aw-z2y"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmI-6d-nR4">
+                                    <rect key="frame" x="266" y="110" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="5Kh-oN-kZ3"/>
+                                        <constraint firstAttribute="width" constant="78" id="js3-u9-v5T"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGs-QJ-CwM">
+                                    <rect key="frame" x="295" y="139" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="1an-Dq-SY9"/>
+                                        <constraint firstAttribute="width" constant="20" id="lUX-Kr-9iC"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnContactLenseHardAction:" destination="-1" eventType="touchUpInside" id="AbW-lu-CYK"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ソフト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzn-ej-Ds1">
+                                    <rect key="frame" x="382" y="111" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="iII-aw-i3j"/>
+                                        <constraint firstAttribute="width" constant="78" id="jcu-dC-evw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w91-SX-Eex">
+                                    <rect key="frame" x="411" y="140" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="G6c-rU-m9L"/>
+                                        <constraint firstAttribute="width" constant="20" id="sDe-N0-Qd1"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnContactLenseSoftAction:" destination="-1" eventType="touchUpInside" id="l4q-rY-24o"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-aG-mJz">
+                                    <rect key="frame" x="25" y="178" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="7iM-tJ-Tle"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日常生活で、目の乾燥・かすみを感じることはありますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiC-LK-QF9">
+                                    <rect key="frame" x="25" y="195" width="713" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="LsY-4c-BJF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXp-tD-OHG">
+                                    <rect key="frame" x="24" y="234" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="h1I-ot-o5y"/>
+                                        <constraint firstAttribute="width" constant="56" id="lY3-3F-86M"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-36-ytP">
+                                    <rect key="frame" x="42" y="263" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="0Bc-Eb-1KW"/>
+                                        <constraint firstAttribute="height" constant="22" id="kBC-uc-64F"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnDrynessYesAction:" destination="-1" eventType="touchUpInside" id="WCi-9q-hMi"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-cf-XyM">
+                                    <rect key="frame" x="133" y="234" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="5zR-dH-xOE"/>
+                                        <constraint firstAttribute="width" constant="78" id="wTI-26-kuC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhi-rW-4tD">
+                                    <rect key="frame" x="162" y="263" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Nba-iJ-ks7"/>
+                                        <constraint firstAttribute="height" constant="22" id="zKz-5U-Zql"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnDrynessNoAction:" destination="-1" eventType="touchUpInside" id="mrf-id-u9g"/>
+                                    </connections>
+                                </button>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="症状をご記入下さい。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-W5-RKg" customClass="FloatLabelTextField" customModule="JTSBoard" customModuleProvider="target">
+                                    <rect key="frame" x="238" y="235" width="503" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0cp-aJ-Uyq"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="LLj-nj-V49"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZKI-rz-TWv">
+                                    <rect key="frame" x="25" y="301" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ikJ-Ux-uKw"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目や目元周りの病気にかかったことがありますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY1-eu-F77">
+                                    <rect key="frame" x="25" y="315" width="716" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="XHx-xR-YHS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-5h-Knw">
+                                    <rect key="frame" x="28" y="354" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="2ig-8f-3Ly"/>
+                                        <constraint firstAttribute="height" constant="21" id="sR0-gv-oFa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-6F-Qvu">
+                                    <rect key="frame" x="49" y="382" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="F0S-aQ-1lv"/>
+                                        <constraint firstAttribute="width" constant="20" id="JqG-se-Jym"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnSicknessYesAction:" destination="-1" eventType="touchUpInside" id="1es-El-cdl"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-DT-eQr">
+                                    <rect key="frame" x="137" y="354" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="78" id="30g-S2-8mG"/>
+                                        <constraint firstAttribute="height" constant="21" id="MuP-1x-AVC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-LM-zZk">
+                                    <rect key="frame" x="166" y="383" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="D42-NA-aIZ"/>
+                                        <constraint firstAttribute="height" constant="22" id="WH6-hC-ecZ"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnSicknessNoAction:" destination="-1" eventType="touchUpInside" id="WWh-2I-bnU"/>
+                                    </connections>
+                                </button>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="症状をご記入下さい。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fU-5w-Lhj" customClass="FloatLabelTextField" customModule="JTSBoard" customModuleProvider="target">
+                                    <rect key="frame" x="243" y="352" width="489" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0kn-VL-d3e"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="gmd-jK-Chq"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-aN-JzM">
+                                    <rect key="frame" x="25" y="421" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="vkv-QS-w32"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日常生活において、充血、ものもらい等になりやすいですか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-VK-ff9">
+                                    <rect key="frame" x="25" y="435" width="713" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19.5" id="5lm-GV-2pu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpU-m6-ryI">
+                                    <rect key="frame" x="28" y="474" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="TIz-Bu-aqu"/>
+                                        <constraint firstAttribute="height" constant="21" id="YxN-be-eEw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2Z-l0-SRc">
+                                    <rect key="frame" x="49" y="502" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="08q-9J-Jxg"/>
+                                        <constraint firstAttribute="height" constant="22" id="dVh-3B-dJs"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCongesionYesAction:" destination="-1" eventType="touchUpInside" id="ENm-BJ-RzW"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0X-X8-aFh">
+                                    <rect key="frame" x="137" y="474" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="78" id="X3T-sF-yxu"/>
+                                        <constraint firstAttribute="height" constant="21" id="inm-lr-GDp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZc-61-Dpe">
+                                    <rect key="frame" x="166" y="503" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="1PQ-OE-ChM"/>
+                                        <constraint firstAttribute="width" constant="20" id="SOZ-Yk-A7A"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCongesionNoAction:" destination="-1" eventType="touchUpInside" id="nK7-ci-Gnj"/>
+                                    </connections>
+                                </button>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="症状をご記入下さい。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6k-BL-Yeg" customClass="FloatLabelTextField" customModule="JTSBoard" customModuleProvider="target">
+                                    <rect key="frame" x="241" y="475" width="497" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="vD0-br-ncr"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="S0C-ES-KCR"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-nu-xRi">
+                                    <rect key="frame" x="25" y="541" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="X9A-ri-leH"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クリニック・病院において目に関する手術を受けたことがありますか？（美容整形を含む）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weB-MP-oOH">
+                                    <rect key="frame" x="25" y="554" width="710" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="JrP-ZZ-6AW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ev-3c-hqP">
+                                    <rect key="frame" x="30" y="593" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="6Pp-as-QWZ"/>
+                                        <constraint firstAttribute="width" constant="56" id="KDp-E4-GOG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-fU-jXU">
+                                    <rect key="frame" x="51" y="621" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="K6P-Rw-M4R"/>
+                                        <constraint firstAttribute="width" constant="20" id="eIg-ZW-dm5"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnSurgeryYesAction:" destination="-1" eventType="touchUpInside" id="8yv-J6-dbn"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CM-ly-d8f">
+                                    <rect key="frame" x="139" y="593" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="9pf-tH-PyX"/>
+                                        <constraint firstAttribute="width" constant="78" id="EVr-9C-iI6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-9Q-RKO">
+                                    <rect key="frame" x="168" y="622" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="eeM-fP-MxT"/>
+                                        <constraint firstAttribute="width" constant="20" id="qes-J7-i8W"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnSurgeryNoAction:" destination="-1" eventType="touchUpInside" id="ajo-l8-4gx"/>
+                                    </connections>
+                                </button>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="時期や症状・手術内容をご記入下さい。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mQ6-bn-CgI" customClass="FloatLabelTextField" customModule="JTSBoard" customModuleProvider="target">
+                                    <rect key="frame" x="244" y="594" width="491" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="QHF-LL-KJR"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="SD5-dM-lYR"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7VA-l2-Bx3">
+                                    <rect key="frame" x="25" y="660" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="cjh-pk-dJa"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レーシック（近視手術等）受けたことがありますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIw-oy-fP0">
+                                    <rect key="frame" x="25" y="673" width="707" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="xOR-HJ-Sje"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQb-sQ-gi4">
+                                    <rect key="frame" x="32" y="712" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="Gyf-9i-o75"/>
+                                        <constraint firstAttribute="height" constant="21" id="qjb-YI-3aI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjT-8D-PAm">
+                                    <rect key="frame" x="53" y="740" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="OOk-Ud-Xk1"/>
+                                        <constraint firstAttribute="height" constant="22" id="V2d-jl-Bfz"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnLasikYesAction:" destination="-1" eventType="touchUpInside" id="vHp-BP-1vX"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pN-wb-cuP">
+                                    <rect key="frame" x="141" y="712" width="78" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="78" id="zQ7-uU-OsT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-jd-b3N">
+                                    <rect key="frame" x="170" y="745" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="M5Q-gO-b5o"/>
+                                        <constraint firstAttribute="height" constant="22" id="YBb-81-3jO"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnLasikNoAction:" destination="-1" eventType="touchUpInside" id="FQP-OB-Tnb"/>
+                                    </connections>
+                                </button>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="時期や症状・手術内容をご記入下さい。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DfW-dX-uNH" customClass="FloatLabelTextField" customModule="JTSBoard" customModuleProvider="target">
+                                    <rect key="frame" x="243" y="711" width="490" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="N4X-ZJ-uLW"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="csG-2D-x77"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M1c-Bf-lGA">
+                                    <rect key="frame" x="25" y="779" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="WGY-yR-NUY"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="まつ毛パーマをしていますか？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-yj-BXt">
+                                    <rect key="frame" x="25" y="790" width="238" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="fXE-Fk-ddh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6G-ci-rWZ">
+                                    <rect key="frame" x="28" y="829" width="66" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19.5" id="b7p-fm-MD2"/>
+                                        <constraint firstAttribute="width" constant="66" id="td6-xS-hvb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-tC-QVx">
+                                    <rect key="frame" x="54" y="857" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Ggo-cu-2h2"/>
+                                        <constraint firstAttribute="height" constant="22" id="wPj-dM-o4H"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnEyelushPermsYesAction:" destination="-1" eventType="touchUpInside" id="5Ip-Ns-qhe"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNm-gY-65k">
+                                    <rect key="frame" x="142" y="829" width="78" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="GAn-kK-V1m"/>
+                                        <constraint firstAttribute="width" constant="78" id="S8r-jx-8tf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-i6-g2n">
+                                    <rect key="frame" x="171" y="858" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="0Gm-l7-87t"/>
+                                        <constraint firstAttribute="height" constant="22" id="XjC-ND-ifS"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnEyelushPermsNoAction:" destination="-1" eventType="touchUpInside" id="Eq1-HE-cyu"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-pp-Ymi">
+                                    <rect key="frame" x="25" y="896" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Lfg-4b-Mn6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在、妊娠中、授乳中、整理中、いずれかに該当しますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwc-Af-9ZI">
+                                    <rect key="frame" x="25" y="905" width="708" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19.5" id="xux-ZZ-M7x"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-Ia-C94">
+                                    <rect key="frame" x="28" y="944" width="52" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="52" id="8vM-bf-M42"/>
+                                        <constraint firstAttribute="height" constant="21" id="boo-CK-FqK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-wf-smg">
+                                    <rect key="frame" x="42" y="973" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="k3Q-7K-eqI"/>
+                                        <constraint firstAttribute="width" constant="20" id="oe5-8Z-7Gf"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnPregnancyYesAction:" destination="-1" eventType="touchUpInside" id="SjO-FG-TQi"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-pT-RLG">
+                                    <rect key="frame" x="151" y="944" width="51" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19.5" id="kRL-rw-n3y"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78Q-FR-pG8">
+                                    <rect key="frame" x="167" y="972" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="5a8-lj-qaD"/>
+                                        <constraint firstAttribute="width" constant="20" id="cr3-6k-Czv"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnPregnancyNoAction:" destination="-1" eventType="touchUpInside" id="gO8-Nl-TUh"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nAy-f7-E5X">
+                                    <rect key="frame" x="25" y="1011.5" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="OlQ-i3-ryG"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これまでにアレルギー症状が出たことはありますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-Jd-82s">
+                                    <rect key="frame" x="25" y="1023.5" width="713" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="ryq-pF-h0M"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アトピー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-ZO-ovc">
+                                    <rect key="frame" x="24" y="1062.5" width="70" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="HTV-zY-fcT"/>
+                                        <constraint firstAttribute="width" constant="70" id="kjw-LE-teV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaq-Vm-lLf">
+                                    <rect key="frame" x="43" y="1091" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="8sz-uS-yOa"/>
+                                        <constraint firstAttribute="height" constant="30" id="XD1-8w-cG3"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyAtopyAction:" destination="-1" eventType="touchUpInside" id="k0L-fl-947"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花粉症" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raD-uj-Ls1">
+                                    <rect key="frame" x="131" y="1062.5" width="92" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="sCr-Vo-BcO"/>
+                                        <constraint firstAttribute="width" constant="92" id="w6O-XJ-nBZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8de-6k-DIf">
+                                    <rect key="frame" x="162" y="1091.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="MGh-3J-mk6"/>
+                                        <constraint firstAttribute="height" constant="30" id="ZDu-mM-Rha"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyHayFeverAction:" destination="-1" eventType="touchUpInside" id="59f-vl-Bbn"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鼻炎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0H-Fh-iYv">
+                                    <rect key="frame" x="262" y="1062.5" width="58" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="58" id="1Oh-1e-cv7"/>
+                                        <constraint firstAttribute="height" constant="21" id="mim-rg-kTI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3F-xD-fxd">
+                                    <rect key="frame" x="282" y="1091.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="NGV-kk-gOK"/>
+                                        <constraint firstAttribute="height" constant="30" id="s1X-3f-2eZ"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyRhinitisAction:" destination="-1" eventType="touchUpInside" id="2HH-dY-trr"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喘息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzi-od-dpm">
+                                    <rect key="frame" x="370" y="1062.5" width="92" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="92" id="MTG-0n-3V7"/>
+                                        <constraint firstAttribute="height" constant="21" id="l2E-zN-I4u"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sat-Gp-6Gj">
+                                    <rect key="frame" x="401" y="1091.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="XpV-oQ-Nph"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyAsthmaAction:" destination="-1" eventType="touchUpInside" id="pnq-Z3-l2G"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金属" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhY-Kw-Tsk">
+                                    <rect key="frame" x="472" y="1062.5" width="115" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="115" id="3tB-II-tNl"/>
+                                        <constraint firstAttribute="height" constant="21" id="ZcD-e1-70i"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-gL-ncr">
+                                    <rect key="frame" x="520" y="1091.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Eqw-bK-Luj"/>
+                                        <constraint firstAttribute="height" constant="30" id="dPY-sV-YXz"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyMetalAction:" destination="-1" eventType="touchUpInside" id="HGx-1r-ftK"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQX-Nt-sXb">
+                                    <rect key="frame" x="608" y="1062.5" width="92" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="92" id="OYm-IJ-7ca"/>
+                                        <constraint firstAttribute="height" constant="21" id="opS-ze-LbG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSA-Yc-JAu">
+                                    <rect key="frame" x="639" y="1091.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="YDw-fm-b1H"/>
+                                        <constraint firstAttribute="height" constant="30" id="wcO-Sv-SfF"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyFoodAction:" destination="-1" eventType="touchUpInside" id="mTM-dl-nUh"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医学" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jj-h6-eyx">
+                                    <rect key="frame" x="26" y="1145" width="72" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="SG4-A2-wPx"/>
+                                        <constraint firstAttribute="width" constant="72" id="ka0-CC-hOw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRs-X4-qvy">
+                                    <rect key="frame" x="43" y="1174" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="37a-aJ-hWp"/>
+                                        <constraint firstAttribute="height" constant="30" id="vn4-uu-hNh"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyMedicineAction:" destination="-1" eventType="touchUpInside" id="AKk-IT-TyQ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="化粧品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-lM-pPh">
+                                    <rect key="frame" x="139" y="1146" width="81" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="81" id="AE3-xL-XMN"/>
+                                        <constraint firstAttribute="height" constant="21" id="W4q-mu-JoA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqc-P9-Eqz">
+                                    <rect key="frame" x="166" y="1175" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="0DA-oz-Za1"/>
+                                        <constraint firstAttribute="width" constant="30" id="tsT-LO-EeM"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyCosmeticAction:" destination="-1" eventType="touchUpInside" id="Ev7-wT-C37"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接着剤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PU-u9-AyX">
+                                    <rect key="frame" x="262" y="1146" width="70" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="F6e-Q8-D3R"/>
+                                        <constraint firstAttribute="height" constant="21" id="m8K-0U-flS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-TG-zLF">
+                                    <rect key="frame" x="282" y="1175" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="7Qv-Nz-fkb"/>
+                                        <constraint firstAttribute="width" constant="30" id="soq-sh-W7C"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyAdhesiveAction:" destination="-1" eventType="touchUpInside" id="iCJ-iN-pqb"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テープ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqI-B8-ZDY">
+                                    <rect key="frame" x="383" y="1146" width="67" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="nH7-g9-hnn"/>
+                                        <constraint firstAttribute="width" constant="67" id="tQZ-1A-IUA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrr-L3-MzT">
+                                    <rect key="frame" x="401" y="1175" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="kZN-oy-sFL"/>
+                                        <constraint firstAttribute="height" constant="30" id="vgj-Zu-bI4"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyTapeAction:" destination="-1" eventType="touchUpInside" id="PgR-Av-AQy"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アルコール" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-vz-ncf">
+                                    <rect key="frame" x="505" y="1146" width="96" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="96" id="3cm-Ll-pk7"/>
+                                        <constraint firstAttribute="height" constant="21" id="Txb-54-dPC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-6Z-HgK">
+                                    <rect key="frame" x="520" y="1175" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="77a-IK-Zks"/>
+                                        <constraint firstAttribute="width" constant="30" id="7xZ-da-K90"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyAlcohalAction:" destination="-1" eventType="touchUpInside" id="fDZ-AK-rPL"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="その他" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Fj-6JN">
+                                    <rect key="frame" x="626" y="1144" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="ZDX-Cx-e7M"/>
+                                        <constraint firstAttribute="height" constant="21" id="bp5-lA-BMx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqg-R5-l2A">
+                                    <rect key="frame" x="644" y="1173" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Yfl-RL-Ue4"/>
+                                        <constraint firstAttribute="height" constant="30" id="fZX-Yc-e3l"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAlegyOtherAction:" destination="-1" eventType="touchUpInside" id="Tkl-Rd-Ikq"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-2z-oJX">
+                                    <rect key="frame" x="25" y="1222" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="1fA-Sf-kYP"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クレンジングはどのタイプを使用していますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1D-Yy-Cvw">
+                                    <rect key="frame" x="31" y="1236" width="669" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="0Ef-Nl-QfD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジェル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syk-or-CDM">
+                                    <rect key="frame" x="30" y="1275" width="56" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="8pB-tc-bmG"/>
+                                        <constraint firstAttribute="height" constant="21" id="GUz-40-2zb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-wy-GtL">
+                                    <rect key="frame" x="45" y="1304" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="JX4-Z1-0Ht"/>
+                                        <constraint firstAttribute="height" constant="30" id="ZBe-Or-jQy"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCleansingGelAction:" destination="-1" eventType="touchUpInside" id="uRN-zE-BVS"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オイル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-f9-Yb8">
+                                    <rect key="frame" x="137" y="1275" width="92" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="ulU-xb-3Ey"/>
+                                        <constraint firstAttribute="width" constant="92" id="wNe-PN-Wd2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-61-hPY">
+                                    <rect key="frame" x="164" y="1304" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="oHD-jt-3DJ"/>
+                                        <constraint firstAttribute="height" constant="30" id="pI4-Yh-sPS"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCleansingOilAction:" destination="-1" eventType="touchUpInside" id="ClB-8o-MuE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クリーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuY-YP-9WY">
+                                    <rect key="frame" x="268" y="1275" width="76" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="76" id="MRD-Fn-0gv"/>
+                                        <constraint firstAttribute="height" constant="21" id="jYI-nx-ieW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb3-fH-J11">
+                                    <rect key="frame" x="284" y="1304" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="2Pu-ab-JPY"/>
+                                        <constraint firstAttribute="width" constant="30" id="iwU-LT-AdA"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCleansingCreamAction:" destination="-1" eventType="touchUpInside" id="3v1-pY-Hs8"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ローション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E31-2A-uR0">
+                                    <rect key="frame" x="376" y="1275" width="92" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="TiV-PW-pfQ"/>
+                                        <constraint firstAttribute="width" constant="92" id="fjf-Ee-Hl6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-X5-8hp">
+                                    <rect key="frame" x="403" y="1304" width="30" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="bE3-EX-Nq4"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnCleansingLotionAction:" destination="-1" eventType="touchUpInside" id="g8V-HF-AP2"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 拭き取り" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-Qc-Kzu" userLabel="拭き取り">
+                                    <rect key="frame" x="478" y="1275" width="115" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="115" id="1VZ-Tl-KMc"/>
+                                        <constraint firstAttribute="height" constant="21" id="EQK-Ns-ypv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-ln-Ax4">
+                                    <rect key="frame" x="522" y="1304" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="cKJ-d8-co5"/>
+                                        <constraint firstAttribute="height" constant="30" id="wR5-XV-jbC"/>
+                                    </constraints>
+                                    <state key="normal" image="radio_unselected"/>
+                                    <state key="selected" image="radio_selected"/>
+                                    <connections>
+                                        <action selector="btnTCleansingWipeAction:" destination="-1" eventType="touchUpInside" id="55k-BL-ILG"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wco-MW-MPW">
+                                    <rect key="frame" x="29" y="1355" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="kd9-Pr-KDs"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同意する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy4-dt-55C">
+                                    <rect key="frame" x="33" y="1367" width="705" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="P75-Ww-vAL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOp-DX-p79">
+                                    <rect key="frame" x="47" y="1405" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ZQ1-YE-9dz"/>
+                                        <constraint firstAttribute="width" constant="30" id="dsp-BF-VZN"/>
+                                    </constraints>
+                                    <state key="normal" image="unchecked-checkbox"/>
+                                    <state key="selected" image="checked-checkbox"/>
+                                    <connections>
+                                        <action selector="btnAgreeTermsAction:" destination="-1" eventType="touchUpInside" id="x0j-He-YmN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-Hm-7Sv">
+                                    <rect key="frame" x="85" y="1405" width="156" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="EjL-ui-pBm"/>
+                                        <constraint firstAttribute="width" constant="156" id="JoN-6T-59x"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <state key="normal" title="利用規約"/>
+                                    <connections>
+                                        <action selector="btnTermsConditionAction:" destination="-1" eventType="touchUpInside" id="Eeb-ke-bKT"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FqS-D6-rcF">
+                                    <rect key="frame" x="32" y="1462" width="716" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.6705882352941176" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="bF8-RH-QpE"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06v-qn-cD2">
+                                    <rect key="frame" x="29" y="1500" width="250" height="50"/>
+                                    <color key="backgroundColor" red="0.67843137249999996" green="0.49019607840000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0iy-fs-anv"/>
+                                        <constraint firstAttribute="width" constant="250" id="lvG-oi-t32"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                    <state key="normal" title="提出">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSubmitAction:" destination="-1" eventType="touchUpInside" id="wxX-d0-6JV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="6jE-aN-JzM" secondAttribute="trailing" constant="27" id="081-1m-qUo"/>
+                                <constraint firstItem="0KP-ZO-ovc" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="158-aQ-pCY"/>
+                                <constraint firstAttribute="trailing" secondItem="M1c-Bf-lGA" secondAttribute="trailing" constant="27" id="1Jq-BZ-gys"/>
+                                <constraint firstItem="bqZ-pp-Ymi" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="1aP-Kv-kna"/>
+                                <constraint firstItem="WeG-9Q-RKO" firstAttribute="leading" secondItem="8C0-fU-jXU" secondAttribute="trailing" constant="97" id="1qj-ip-gwn"/>
+                                <constraint firstItem="2fU-5w-Lhj" firstAttribute="top" secondItem="wY1-eu-F77" secondAttribute="bottom" constant="16" id="1ua-Vg-30l"/>
+                                <constraint firstItem="w3F-xD-fxd" firstAttribute="top" secondItem="w0H-Fh-iYv" secondAttribute="bottom" constant="8" id="22d-kR-gSI"/>
+                                <constraint firstItem="78Q-FR-pG8" firstAttribute="leading" secondItem="9J8-wf-smg" secondAttribute="trailing" constant="105" id="22x-rA-1k1"/>
+                                <constraint firstAttribute="trailing" secondItem="e1D-Yy-Cvw" secondAttribute="trailing" constant="68" id="2Qe-2S-Wir"/>
+                                <constraint firstItem="cRs-X4-qvy" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="43" id="2Xw-Nh-OgG"/>
+                                <constraint firstItem="4hv-Hm-7Sv" firstAttribute="leading" secondItem="IOp-DX-p79" secondAttribute="trailing" constant="8" id="2uF-zr-Ptj"/>
+                                <constraint firstAttribute="trailing" secondItem="d9z-2z-oJX" secondAttribute="trailing" constant="27" id="37m-wd-9C9"/>
+                                <constraint firstItem="fzi-od-dpm" firstAttribute="leading" secondItem="w0H-Fh-iYv" secondAttribute="trailing" constant="50" id="3Cg-19-VbB"/>
+                                <constraint firstItem="a0X-X8-aFh" firstAttribute="leading" secondItem="WpU-m6-ryI" secondAttribute="trailing" constant="53" id="3Ok-he-Sdq"/>
+                                <constraint firstItem="0Jj-h6-eyx" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="26" id="3Pu-kO-9qA"/>
+                                <constraint firstItem="qfh-nu-xRi" firstAttribute="top" secondItem="jZc-61-Dpe" secondAttribute="bottom" constant="16" id="3fj-iS-Wwl"/>
+                                <constraint firstItem="UDJ-58-SzJ" firstAttribute="top" secondItem="0xe-wG-4OE" secondAttribute="bottom" constant="18" id="431-J0-GMV"/>
+                                <constraint firstAttribute="trailing" secondItem="n4p-aG-mJz" secondAttribute="trailing" constant="27" id="4zh-Qa-Gy8"/>
+                                <constraint firstItem="LRd-6Z-HgK" firstAttribute="top" secondItem="ACF-vz-ncf" secondAttribute="bottom" constant="8" id="55v-1O-rsQ"/>
+                                <constraint firstItem="9Ev-3c-hqP" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="30" id="5Sj-5E-8y5"/>
+                                <constraint firstItem="V6k-BL-Yeg" firstAttribute="top" secondItem="dRU-VK-ff9" secondAttribute="bottom" constant="20" id="5hN-cQ-bEi"/>
+                                <constraint firstItem="9J8-wf-smg" firstAttribute="top" secondItem="vkf-Ia-C94" secondAttribute="bottom" constant="8" id="61E-Du-WM3"/>
+                                <constraint firstItem="WpU-m6-ryI" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="28" id="633-Pt-hO4"/>
+                                <constraint firstAttribute="trailing" secondItem="qfh-nu-xRi" secondAttribute="trailing" constant="27" id="6lT-Va-PsD"/>
+                                <constraint firstItem="DfW-dX-uNH" firstAttribute="leading" secondItem="oQE-jd-b3N" secondAttribute="trailing" constant="53" id="6n1-Lx-eCM"/>
+                                <constraint firstItem="Nax-i6-g2n" firstAttribute="top" secondItem="cNm-gY-65k" secondAttribute="bottom" constant="8" id="72d-8a-gr0"/>
+                                <constraint firstItem="5TX-ln-Ax4" firstAttribute="leading" secondItem="ExM-X5-8hp" secondAttribute="trailing" constant="89" id="75X-aH-iR7"/>
+                                <constraint firstItem="hgB-cf-XyM" firstAttribute="top" secondItem="oiC-LK-QF9" secondAttribute="bottom" constant="18" id="7Ub-Ga-v2G"/>
+                                <constraint firstItem="EhB-yj-BXt" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="7zE-Tp-CfK"/>
+                                <constraint firstAttribute="trailing" secondItem="FqS-D6-rcF" secondAttribute="trailing" constant="20" id="8l2-cm-PF2"/>
+                                <constraint firstItem="wqc-P9-Eqz" firstAttribute="leading" secondItem="cRs-X4-qvy" secondAttribute="trailing" constant="93" id="8rd-UA-zuB"/>
+                                <constraint firstItem="Syk-or-CDM" firstAttribute="top" secondItem="e1D-Yy-Cvw" secondAttribute="bottom" constant="18" id="8tU-fR-XGZ"/>
+                                <constraint firstItem="WpU-m6-ryI" firstAttribute="top" secondItem="dRU-VK-ff9" secondAttribute="bottom" constant="19.5" id="9F6-lO-kxy"/>
+                                <constraint firstAttribute="trailing" secondItem="oiC-LK-QF9" secondAttribute="trailing" constant="30" id="9Mh-GS-zsA"/>
+                                <constraint firstItem="Owv-DT-eQr" firstAttribute="leading" secondItem="9pW-5h-Knw" secondAttribute="trailing" constant="53" id="9R7-Ie-rhd"/>
+                                <constraint firstAttribute="trailing" secondItem="Kwc-Af-9ZI" secondAttribute="trailing" constant="35" id="9aX-yO-qJb"/>
+                                <constraint firstItem="5pN-wb-cuP" firstAttribute="top" secondItem="fIw-oy-fP0" secondAttribute="bottom" constant="18" id="9ax-u3-OTR"/>
+                                <constraint firstItem="9hz-Y4-Lmr" firstAttribute="top" secondItem="0xe-wG-4OE" secondAttribute="bottom" constant="18" id="9qy-yJ-8nI"/>
+                                <constraint firstItem="9PU-u9-AyX" firstAttribute="leading" secondItem="yoS-lM-pPh" secondAttribute="trailing" constant="42" id="AYj-8U-XID"/>
+                                <constraint firstItem="5pN-wb-cuP" firstAttribute="leading" secondItem="kQb-sQ-gi4" secondAttribute="trailing" constant="53" id="Ajp-rZ-AnY"/>
+                                <constraint firstItem="HuY-YP-9WY" firstAttribute="top" secondItem="e1D-Yy-Cvw" secondAttribute="bottom" constant="18" id="BWH-AR-Mc1"/>
+                                <constraint firstItem="vqI-B8-ZDY" firstAttribute="top" secondItem="sat-Gp-6Gj" secondAttribute="bottom" constant="24" id="Bsi-K6-Ml8"/>
+                                <constraint firstItem="wco-MW-MPW" firstAttribute="top" secondItem="Pqg-R5-l2A" secondAttribute="bottom" constant="152" id="C2m-WT-eFU"/>
+                                <constraint firstItem="fIw-oy-fP0" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="CEh-AC-DDG"/>
+                                <constraint firstItem="vkf-Ia-C94" firstAttribute="top" secondItem="Kwc-Af-9ZI" secondAttribute="bottom" constant="19" id="CFD-G6-o6c"/>
+                                <constraint firstItem="yR3-gL-ncr" firstAttribute="leading" secondItem="sat-Gp-6Gj" secondAttribute="trailing" constant="89" id="De8-xE-dfZ"/>
+                                <constraint firstItem="weB-MP-oOH" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="DeV-51-B9D"/>
+                                <constraint firstAttribute="trailing" secondItem="ZKI-rz-TWv" secondAttribute="trailing" constant="27" id="DyA-D4-Nmr"/>
+                                <constraint firstItem="M1c-Bf-lGA" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="EA0-Zw-PGU"/>
+                                <constraint firstItem="Lrr-L3-MzT" firstAttribute="top" secondItem="vqI-B8-ZDY" secondAttribute="bottom" constant="8" id="EGY-jK-NOA"/>
+                                <constraint firstItem="M1c-Bf-lGA" firstAttribute="top" secondItem="DfW-dX-uNH" secondAttribute="bottom" constant="18" id="EZM-cs-OuH"/>
+                                <constraint firstItem="iaq-Vm-lLf" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="43" id="Enz-gi-8ZZ"/>
+                                <constraint firstAttribute="trailing" secondItem="mQ6-bn-CgI" secondAttribute="trailing" constant="33" id="EpU-q4-mbA"/>
+                                <constraint firstItem="NSZ-36-ytP" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="42" id="F5F-8V-kn5"/>
+                                <constraint firstItem="w3F-xD-fxd" firstAttribute="leading" secondItem="8de-6k-DIf" secondAttribute="trailing" constant="90" id="FFI-JP-Ge7"/>
+                                <constraint firstItem="ExM-X5-8hp" firstAttribute="leading" secondItem="rb3-fH-J11" secondAttribute="trailing" constant="89" id="FLi-mO-ouC"/>
+                                <constraint firstItem="9J8-wf-smg" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="42" id="FVe-Di-0LX"/>
+                                <constraint firstItem="lXp-tD-OHG" firstAttribute="top" secondItem="oiC-LK-QF9" secondAttribute="bottom" constant="18" id="GHP-7j-tZr"/>
+                                <constraint firstItem="a2Z-l0-SRc" firstAttribute="top" secondItem="WpU-m6-ryI" secondAttribute="bottom" constant="7" id="Gah-tZ-rlk"/>
+                                <constraint firstItem="kQb-sQ-gi4" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="32" id="HPe-3K-Y5D"/>
+                                <constraint firstItem="Lhi-rW-4tD" firstAttribute="top" secondItem="oiC-LK-QF9" secondAttribute="bottom" constant="47" id="HaB-bE-bJ2"/>
+                                <constraint firstItem="nAy-f7-E5X" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="IR5-15-AjW"/>
+                                <constraint firstItem="E31-2A-uR0" firstAttribute="top" secondItem="e1D-Yy-Cvw" secondAttribute="bottom" constant="18" id="IWH-Xg-gxo"/>
+                                <constraint firstItem="06v-qn-cD2" firstAttribute="top" secondItem="FqS-D6-rcF" secondAttribute="bottom" constant="37" id="J72-xx-j5j"/>
+                                <constraint firstAttribute="trailing" secondItem="bqZ-pp-Ymi" secondAttribute="trailing" constant="27" id="Jwt-g1-aXY"/>
+                                <constraint firstItem="a2Z-l0-SRc" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="49" id="KRN-10-KaR"/>
+                                <constraint firstItem="UDJ-58-SzJ" firstAttribute="leading" secondItem="9hz-Y4-Lmr" secondAttribute="trailing" constant="53" id="KW6-Ud-8Wx"/>
+                                <constraint firstAttribute="bottom" secondItem="06v-qn-cD2" secondAttribute="bottom" constant="60" id="KtU-cD-E6g"/>
+                                <constraint firstItem="Lrr-L3-MzT" firstAttribute="leading" secondItem="jTb-TG-zLF" secondAttribute="trailing" constant="89" id="LDc-uL-sS5"/>
+                                <constraint firstItem="KQX-Nt-sXb" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="LE9-sF-KxP"/>
+                                <constraint firstItem="wco-MW-MPW" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="29" id="LSI-S7-9fu"/>
+                                <constraint firstItem="SSA-Yc-JAu" firstAttribute="top" secondItem="KQX-Nt-sXb" secondAttribute="bottom" constant="8" id="M6m-Ec-645"/>
+                                <constraint firstItem="HuY-YP-9WY" firstAttribute="leading" secondItem="jrg-f9-Yb8" secondAttribute="trailing" constant="39" id="MDK-A0-gxE"/>
+                                <constraint firstItem="06v-qn-cD2" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="29" id="MQ6-Hp-Ai4"/>
+                                <constraint firstAttribute="trailing" secondItem="dRU-VK-ff9" secondAttribute="trailing" constant="30" id="MZm-a4-9o3"/>
+                                <constraint firstItem="9Ev-3c-hqP" firstAttribute="top" secondItem="weB-MP-oOH" secondAttribute="bottom" constant="18" id="Mcd-Eh-Wc4"/>
+                                <constraint firstAttribute="trailing" secondItem="7Y5-Jd-82s" secondAttribute="trailing" constant="30" id="MdQ-L7-7Lk"/>
+                                <constraint firstItem="2fU-5w-Lhj" firstAttribute="leading" secondItem="Owv-DT-eQr" secondAttribute="trailing" constant="28" id="MiV-XW-EXm"/>
+                                <constraint firstItem="UGG-W5-RKg" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="238" id="Nbd-lH-Gz7"/>
+                                <constraint firstItem="7VA-l2-Bx3" firstAttribute="top" secondItem="mQ6-bn-CgI" secondAttribute="bottom" constant="16" id="O8o-p8-BhI"/>
+                                <constraint firstItem="lhY-Kw-Tsk" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="ODf-Fu-mYY"/>
+                                <constraint firstItem="yNr-Fj-6JN" firstAttribute="top" secondItem="SSA-Yc-JAu" secondAttribute="bottom" constant="22.5" id="OTp-ZA-bAi"/>
+                                <constraint firstItem="Cy4-dt-55C" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="33" id="Otg-w9-aLq"/>
+                                <constraint firstItem="qfh-tC-QVx" firstAttribute="top" secondItem="B6G-ci-rWZ" secondAttribute="bottom" constant="8.5" id="POT-F7-y5b"/>
+                                <constraint firstItem="Tq5-6F-Qvu" firstAttribute="top" secondItem="9pW-5h-Knw" secondAttribute="bottom" constant="7" id="PV3-oF-im0"/>
+                                <constraint firstItem="Syk-or-CDM" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="30" id="PWK-tQ-hXU"/>
+                                <constraint firstAttribute="trailing" secondItem="weB-MP-oOH" secondAttribute="trailing" constant="33" id="PYo-9f-sTD"/>
+                                <constraint firstItem="nAy-f7-E5X" firstAttribute="top" secondItem="78Q-FR-pG8" secondAttribute="bottom" constant="17.5" id="Paq-n6-bzd"/>
+                                <constraint firstItem="e1D-Yy-Cvw" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="31" id="Pxl-Dl-1aS"/>
+                                <constraint firstItem="4hv-Hm-7Sv" firstAttribute="top" secondItem="Cy4-dt-55C" secondAttribute="bottom" constant="17" id="QbK-eR-gaL"/>
+                                <constraint firstItem="raD-uj-Ls1" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="Qdv-xw-SP4"/>
+                                <constraint firstItem="ZKI-rz-TWv" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="Ql4-cU-fc4"/>
+                                <constraint firstItem="7VA-l2-Bx3" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="Qx2-bb-h01"/>
+                                <constraint firstItem="IOp-DX-p79" firstAttribute="top" secondItem="Cy4-dt-55C" secondAttribute="bottom" constant="17" id="R0T-Ll-f8h"/>
+                                <constraint firstItem="vqI-B8-ZDY" firstAttribute="leading" secondItem="9PU-u9-AyX" secondAttribute="trailing" constant="51" id="R6R-uk-cr3"/>
+                                <constraint firstItem="Nax-i6-g2n" firstAttribute="leading" secondItem="qfh-tC-QVx" secondAttribute="trailing" constant="97" id="RO8-SP-fLY"/>
+                                <constraint firstItem="RQ0-LM-zZk" firstAttribute="leading" secondItem="Tq5-6F-Qvu" secondAttribute="trailing" constant="97" id="RVR-rd-Yoi"/>
+                                <constraint firstItem="wqc-P9-Eqz" firstAttribute="top" secondItem="yoS-lM-pPh" secondAttribute="bottom" constant="8" id="Rx0-Uw-cAc"/>
+                                <constraint firstItem="0xe-wG-4OE" firstAttribute="top" secondItem="Ref-4W-FS7" secondAttribute="top" constant="72" id="S0v-c1-4xN"/>
+                                <constraint firstItem="rb3-fH-J11" firstAttribute="leading" secondItem="7uT-61-hPY" secondAttribute="trailing" constant="90" id="SSu-37-jPF"/>
+                                <constraint firstItem="w91-SX-Eex" firstAttribute="leading" secondItem="NGs-QJ-CwM" secondAttribute="trailing" constant="96" id="TaE-4m-dCD"/>
+                                <constraint firstItem="mQ6-bn-CgI" firstAttribute="leading" secondItem="WeG-9Q-RKO" secondAttribute="trailing" constant="56" id="Tk2-J4-X3F"/>
+                                <constraint firstItem="oQE-jd-b3N" firstAttribute="leading" secondItem="WjT-8D-PAm" secondAttribute="trailing" constant="97" id="TkD-Ym-CVn"/>
+                                <constraint firstItem="Qzn-ej-Ds1" firstAttribute="top" secondItem="0xe-wG-4OE" secondAttribute="bottom" constant="18" id="TrQ-HM-LR1"/>
+                                <constraint firstItem="EhB-yj-BXt" firstAttribute="top" secondItem="M1c-Bf-lGA" secondAttribute="bottom" constant="10" id="UCf-Sc-4sq"/>
+                                <constraint firstItem="tAS-pT-RLG" firstAttribute="top" secondItem="Kwc-Af-9ZI" secondAttribute="bottom" constant="19" id="UGE-02-KIr"/>
+                                <constraint firstItem="mQ6-bn-CgI" firstAttribute="top" secondItem="weB-MP-oOH" secondAttribute="bottom" constant="19" id="Uhp-9m-89I"/>
+                                <constraint firstItem="rb3-fH-J11" firstAttribute="top" secondItem="HuY-YP-9WY" secondAttribute="bottom" constant="8" id="Uph-Eu-eod"/>
+                                <constraint firstItem="ExM-X5-8hp" firstAttribute="top" secondItem="E31-2A-uR0" secondAttribute="bottom" constant="8" id="V6c-Xs-OrE"/>
+                                <constraint firstItem="yoS-lM-pPh" firstAttribute="top" secondItem="8de-6k-DIf" secondAttribute="bottom" constant="24" id="VV1-DA-xeG"/>
+                                <constraint firstItem="KQX-Nt-sXb" firstAttribute="leading" secondItem="lhY-Kw-Tsk" secondAttribute="trailing" constant="21" id="Wot-Tm-wrW"/>
+                                <constraint firstItem="jrg-f9-Yb8" firstAttribute="top" secondItem="e1D-Yy-Cvw" secondAttribute="bottom" constant="18" id="WvR-v2-pj6"/>
+                                <constraint firstItem="WjT-8D-PAm" firstAttribute="top" secondItem="kQb-sQ-gi4" secondAttribute="bottom" constant="7" id="X5d-xs-4zQ"/>
+                                <constraint firstItem="7uT-61-hPY" firstAttribute="top" secondItem="jrg-f9-Yb8" secondAttribute="bottom" constant="8" id="Xdk-zE-ZdX"/>
+                                <constraint firstItem="9pW-5h-Knw" firstAttribute="top" secondItem="wY1-eu-F77" secondAttribute="bottom" constant="18" id="XiW-Fe-iUj"/>
+                                <constraint firstItem="d9z-2z-oJX" firstAttribute="top" secondItem="Pqg-R5-l2A" secondAttribute="bottom" constant="19.5" id="XrC-qa-VO9"/>
+                                <constraint firstItem="NGs-QJ-CwM" firstAttribute="leading" secondItem="GRb-2R-xb0" secondAttribute="trailing" constant="112" id="Y1U-Pj-sn5"/>
+                                <constraint firstItem="2cE-Qc-Kzu" firstAttribute="leading" secondItem="E31-2A-uR0" secondAttribute="trailing" constant="10" id="Y2b-dt-l0q"/>
+                                <constraint firstAttribute="trailing" secondItem="DfW-dX-uNH" secondAttribute="trailing" constant="35" id="Y58-ER-W2F"/>
+                                <constraint firstItem="tAS-pT-RLG" firstAttribute="leading" secondItem="vkf-Ia-C94" secondAttribute="trailing" constant="71" id="Y8t-Xb-9f9"/>
+                                <constraint firstItem="nQw-wy-GtL" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="45" id="Y9j-IN-KR4"/>
+                                <constraint firstItem="Owv-DT-eQr" firstAttribute="top" secondItem="wY1-eu-F77" secondAttribute="bottom" constant="18" id="YWZ-XG-F00"/>
+                                <constraint firstAttribute="trailing" secondItem="wY1-eu-F77" secondAttribute="trailing" constant="27" id="Zjv-TS-oWJ"/>
+                                <constraint firstItem="Pqg-R5-l2A" firstAttribute="top" secondItem="yNr-Fj-6JN" secondAttribute="bottom" constant="8" id="ZkE-aX-J2q"/>
+                                <constraint firstItem="8C0-fU-jXU" firstAttribute="top" secondItem="9Ev-3c-hqP" secondAttribute="bottom" constant="7" id="ZwK-9N-ndy"/>
+                                <constraint firstItem="jTb-TG-zLF" firstAttribute="leading" secondItem="wqc-P9-Eqz" secondAttribute="trailing" constant="86" id="a0v-tk-O7v"/>
+                                <constraint firstItem="cRs-X4-qvy" firstAttribute="top" secondItem="0Jj-h6-eyx" secondAttribute="bottom" constant="8" id="aDg-S5-IJT"/>
+                                <constraint firstItem="fzi-od-dpm" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="aM3-12-aNy"/>
+                                <constraint firstItem="B6G-ci-rWZ" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="28" id="aOq-Vt-anf"/>
+                                <constraint firstItem="LRd-6Z-HgK" firstAttribute="leading" secondItem="Lrr-L3-MzT" secondAttribute="trailing" constant="89" id="aPh-Iz-zFB"/>
+                                <constraint firstItem="8de-6k-DIf" firstAttribute="top" secondItem="raD-uj-Ls1" secondAttribute="bottom" constant="8" id="aje-TZ-xYc"/>
+                                <constraint firstItem="dmI-6d-nR4" firstAttribute="leading" secondItem="UDJ-58-SzJ" secondAttribute="trailing" constant="25" id="akw-cc-JRW"/>
+                                <constraint firstItem="FqS-D6-rcF" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="32" id="auw-ub-e83"/>
+                                <constraint firstItem="Tq5-6F-Qvu" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="49" id="bFN-sW-rkn"/>
+                                <constraint firstItem="6jE-aN-JzM" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="bNG-ar-zDK"/>
+                                <constraint firstItem="ACF-vz-ncf" firstAttribute="leading" secondItem="vqI-B8-ZDY" secondAttribute="trailing" constant="55" id="bWo-9F-BdR"/>
+                                <constraint firstItem="WeG-9Q-RKO" firstAttribute="top" secondItem="5CM-ly-d8f" secondAttribute="bottom" constant="8" id="cEc-sa-Egm"/>
+                                <constraint firstItem="0Jj-h6-eyx" firstAttribute="top" secondItem="iaq-Vm-lLf" secondAttribute="bottom" constant="24" id="cSU-IL-w3Q"/>
+                                <constraint firstItem="sat-Gp-6Gj" firstAttribute="top" secondItem="fzi-od-dpm" secondAttribute="bottom" constant="8" id="d4T-PY-GMQ"/>
+                                <constraint firstItem="7Y5-Jd-82s" firstAttribute="top" secondItem="nAy-f7-E5X" secondAttribute="bottom" constant="11" id="dIj-YM-T3B"/>
+                                <constraint firstItem="jZc-61-Dpe" firstAttribute="top" secondItem="a0X-X8-aFh" secondAttribute="bottom" constant="8" id="dZi-ll-c93"/>
+                                <constraint firstItem="UGG-W5-RKg" firstAttribute="top" secondItem="oiC-LK-QF9" secondAttribute="bottom" constant="19" id="doQ-3u-0tK"/>
+                                <constraint firstItem="yR3-gL-ncr" firstAttribute="top" secondItem="lhY-Kw-Tsk" secondAttribute="bottom" constant="8" id="e7I-Eh-Q1j"/>
+                                <constraint firstItem="wY1-eu-F77" firstAttribute="top" secondItem="ZKI-rz-TWv" secondAttribute="bottom" constant="13" id="ejS-Aa-oAS"/>
+                                <constraint firstItem="d9z-2z-oJX" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="f9M-q4-TUh"/>
+                                <constraint firstItem="0KP-ZO-ovc" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="24" id="fLN-na-xH7"/>
+                                <constraint firstAttribute="trailing" secondItem="V6k-BL-Yeg" secondAttribute="trailing" constant="30" id="fh0-Jb-dN5"/>
+                                <constraint firstItem="Kwc-Af-9ZI" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="fmF-Aa-L0V"/>
+                                <constraint firstItem="kQb-sQ-gi4" firstAttribute="top" secondItem="fIw-oy-fP0" secondAttribute="bottom" constant="18" id="fsD-Ow-I6R"/>
+                                <constraint firstAttribute="trailing" secondItem="2fU-5w-Lhj" secondAttribute="trailing" constant="36" id="g6q-0R-ZKa"/>
+                                <constraint firstItem="bqZ-pp-Ymi" firstAttribute="top" secondItem="Nax-i6-g2n" secondAttribute="bottom" constant="16" id="gH2-3W-H6A"/>
+                                <constraint firstItem="qfh-nu-xRi" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="geJ-ck-xeO"/>
+                                <constraint firstItem="yNr-Fj-6JN" firstAttribute="leading" secondItem="ACF-vz-ncf" secondAttribute="trailing" constant="25" id="ggo-RZ-Gly"/>
+                                <constraint firstItem="hgB-cf-XyM" firstAttribute="leading" secondItem="lXp-tD-OHG" secondAttribute="trailing" constant="53" id="ghL-BD-fW4"/>
+                                <constraint firstItem="w91-SX-Eex" firstAttribute="top" secondItem="Qzn-ej-Ds1" secondAttribute="bottom" constant="8" id="h5D-7B-nDS"/>
+                                <constraint firstAttribute="trailing" secondItem="nAy-f7-E5X" secondAttribute="trailing" constant="27" id="hpG-Lk-woT"/>
+                                <constraint firstItem="jrg-f9-Yb8" firstAttribute="leading" secondItem="Syk-or-CDM" secondAttribute="trailing" constant="51" id="hr9-0z-xlw"/>
+                                <constraint firstItem="ACF-vz-ncf" firstAttribute="top" secondItem="yR3-gL-ncr" secondAttribute="bottom" constant="24" id="hwh-uh-DDb"/>
+                                <constraint firstItem="Cy4-dt-55C" firstAttribute="top" secondItem="wco-MW-MPW" secondAttribute="bottom" constant="11" id="i6B-3P-yhD"/>
+                                <constraint firstItem="E31-2A-uR0" firstAttribute="leading" secondItem="HuY-YP-9WY" secondAttribute="trailing" constant="32" id="iIX-uc-LXe"/>
+                                <constraint firstItem="e1D-Yy-Cvw" firstAttribute="top" secondItem="d9z-2z-oJX" secondAttribute="bottom" constant="13" id="iNA-sy-xTL"/>
+                                <constraint firstItem="GRb-2R-xb0" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="163" id="iNV-hL-4t8"/>
+                                <constraint firstItem="FqS-D6-rcF" firstAttribute="top" secondItem="4hv-Hm-7Sv" secondAttribute="bottom" constant="27" id="ic7-KS-JcT"/>
+                                <constraint firstItem="Pqg-R5-l2A" firstAttribute="leading" secondItem="LRd-6Z-HgK" secondAttribute="trailing" constant="94" id="iha-Ck-68T"/>
+                                <constraint firstItem="iaq-Vm-lLf" firstAttribute="top" secondItem="0KP-ZO-ovc" secondAttribute="bottom" constant="8" id="ikf-SU-Kbt"/>
+                                <constraint firstItem="sat-Gp-6Gj" firstAttribute="leading" secondItem="w3F-xD-fxd" secondAttribute="trailing" constant="89" id="jG8-mO-mT9"/>
+                                <constraint firstItem="nQw-wy-GtL" firstAttribute="top" secondItem="Syk-or-CDM" secondAttribute="bottom" constant="8" id="jS9-mO-GD3"/>
+                                <constraint firstItem="V6k-BL-Yeg" firstAttribute="leading" secondItem="a0X-X8-aFh" secondAttribute="trailing" constant="26" id="jeC-T8-yAb"/>
+                                <constraint firstItem="78Q-FR-pG8" firstAttribute="top" secondItem="tAS-pT-RLG" secondAttribute="bottom" constant="8" id="jjw-lc-QYB"/>
+                                <constraint firstItem="dRU-VK-ff9" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="joT-10-BXy"/>
+                                <constraint firstItem="Kwc-Af-9ZI" firstAttribute="top" secondItem="bqZ-pp-Ymi" secondAttribute="bottom" constant="8" id="kLu-3f-fq7"/>
+                                <constraint firstItem="2cE-Qc-Kzu" firstAttribute="top" secondItem="e1D-Yy-Cvw" secondAttribute="bottom" constant="18" id="kTP-N2-Yxx"/>
+                                <constraint firstItem="raD-uj-Ls1" firstAttribute="leading" secondItem="0KP-ZO-ovc" secondAttribute="trailing" constant="37" id="l3k-Uf-uwk"/>
+                                <constraint firstAttribute="trailing" secondItem="UGG-W5-RKg" secondAttribute="trailing" constant="27" id="lGQ-aM-OCs"/>
+                                <constraint firstItem="lhY-Kw-Tsk" firstAttribute="leading" secondItem="fzi-od-dpm" secondAttribute="trailing" constant="10" id="lig-1A-s6n"/>
+                                <constraint firstItem="cNm-gY-65k" firstAttribute="top" secondItem="EhB-yj-BXt" secondAttribute="bottom" constant="18" id="mJN-3y-tpa"/>
+                                <constraint firstItem="Qzn-ej-Ds1" firstAttribute="leading" secondItem="dmI-6d-nR4" secondAttribute="trailing" constant="38" id="mM0-Hz-w9c"/>
+                                <constraint firstItem="DfW-dX-uNH" firstAttribute="top" secondItem="fIw-oy-fP0" secondAttribute="bottom" constant="17" id="mbK-jJ-zmh"/>
+                                <constraint firstItem="5TX-ln-Ax4" firstAttribute="top" secondItem="2cE-Qc-Kzu" secondAttribute="bottom" constant="8" id="mn5-pT-dNm"/>
+                                <constraint firstItem="5CM-ly-d8f" firstAttribute="leading" secondItem="9Ev-3c-hqP" secondAttribute="trailing" constant="53" id="mnk-TC-Vqu"/>
+                                <constraint firstItem="wY1-eu-F77" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="mtH-KW-rMZ"/>
+                                <constraint firstItem="NGs-QJ-CwM" firstAttribute="top" secondItem="dmI-6d-nR4" secondAttribute="bottom" constant="8" id="nWY-XP-R1H"/>
+                                <constraint firstItem="9pW-5h-Knw" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="28" id="nvC-ip-5ta"/>
+                                <constraint firstAttribute="trailing" secondItem="0xe-wG-4OE" secondAttribute="trailing" constant="30" id="o8o-oC-MUQ"/>
+                                <constraint firstAttribute="trailing" secondItem="7VA-l2-Bx3" secondAttribute="trailing" constant="27" id="oDO-Mu-GO3"/>
+                                <constraint firstItem="GRb-2R-xb0" firstAttribute="top" secondItem="UDJ-58-SzJ" secondAttribute="bottom" constant="8" id="oUh-vQ-lec"/>
+                                <constraint firstItem="w0H-Fh-iYv" firstAttribute="leading" secondItem="raD-uj-Ls1" secondAttribute="trailing" constant="39" id="oVF-7y-h49"/>
+                                <constraint firstItem="jTb-TG-zLF" firstAttribute="top" secondItem="9PU-u9-AyX" secondAttribute="bottom" constant="8" id="oWB-2j-ozc"/>
+                                <constraint firstItem="fIw-oy-fP0" firstAttribute="top" secondItem="7VA-l2-Bx3" secondAttribute="bottom" constant="12" id="obL-tL-Iq2"/>
+                                <constraint firstItem="B6G-ci-rWZ" firstAttribute="top" secondItem="EhB-yj-BXt" secondAttribute="bottom" constant="18" id="pCX-BU-gQT"/>
+                                <constraint firstItem="oiC-LK-QF9" firstAttribute="top" secondItem="n4p-aG-mJz" secondAttribute="bottom" constant="16" id="pPl-MJ-n29"/>
+                                <constraint firstItem="7Y5-Jd-82s" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="pfD-Ol-lwK"/>
+                                <constraint firstItem="Lhi-rW-4tD" firstAttribute="leading" secondItem="NSZ-36-ytP" secondAttribute="trailing" constant="100" id="qK2-hz-odl"/>
+                                <constraint firstItem="cNm-gY-65k" firstAttribute="leading" secondItem="B6G-ci-rWZ" secondAttribute="trailing" constant="48" id="qik-vf-tzc"/>
+                                <constraint firstAttribute="trailing" secondItem="Cy4-dt-55C" secondAttribute="trailing" constant="30" id="qjX-yO-Fnm"/>
+                                <constraint firstItem="7uT-61-hPY" firstAttribute="leading" secondItem="nQw-wy-GtL" secondAttribute="trailing" constant="89" id="qu8-e9-hYq"/>
+                                <constraint firstItem="8de-6k-DIf" firstAttribute="leading" secondItem="iaq-Vm-lLf" secondAttribute="trailing" constant="89" id="r9E-Vf-oDk"/>
+                                <constraint firstItem="oQE-jd-b3N" firstAttribute="top" secondItem="5pN-wb-cuP" secondAttribute="bottom" constant="9.5" id="rmn-W7-49Q"/>
+                                <constraint firstItem="7EN-cI-zC3" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="43" id="rzD-7b-5ur"/>
+                                <constraint firstItem="dRU-VK-ff9" firstAttribute="top" secondItem="6jE-aN-JzM" secondAttribute="bottom" constant="13" id="s2H-vS-73D"/>
+                                <constraint firstItem="weB-MP-oOH" firstAttribute="top" secondItem="qfh-nu-xRi" secondAttribute="bottom" constant="12" id="sEG-Y7-Pbw"/>
+                                <constraint firstItem="0xe-wG-4OE" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="sES-Pz-4LL"/>
+                                <constraint firstItem="dmI-6d-nR4" firstAttribute="top" secondItem="0xe-wG-4OE" secondAttribute="bottom" constant="17" id="spR-cB-4uG"/>
+                                <constraint firstItem="IOp-DX-p79" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="47" id="tG2-Pj-0Xa"/>
+                                <constraint firstItem="WjT-8D-PAm" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="53" id="tad-3t-Qi6"/>
+                                <constraint firstAttribute="trailing" secondItem="wco-MW-MPW" secondAttribute="trailing" constant="23" id="tc0-iL-1Lw"/>
+                                <constraint firstItem="9PU-u9-AyX" firstAttribute="top" secondItem="w3F-xD-fxd" secondAttribute="bottom" constant="24" id="tzZ-hf-s9o"/>
+                                <constraint firstItem="n4p-aG-mJz" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="uI8-rm-Ch5"/>
+                                <constraint firstItem="qfh-tC-QVx" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="54" id="vE3-uC-cRd"/>
+                                <constraint firstItem="5CM-ly-d8f" firstAttribute="top" secondItem="weB-MP-oOH" secondAttribute="bottom" constant="18" id="vEv-bL-PY9"/>
+                                <constraint firstItem="yoS-lM-pPh" firstAttribute="leading" secondItem="0Jj-h6-eyx" secondAttribute="trailing" constant="41" id="vVH-ej-XKL"/>
+                                <constraint firstItem="a0X-X8-aFh" firstAttribute="top" secondItem="dRU-VK-ff9" secondAttribute="bottom" constant="19.5" id="w9h-RX-w3x"/>
+                                <constraint firstItem="9hz-Y4-Lmr" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="wQe-lO-U0p"/>
+                                <constraint firstItem="oiC-LK-QF9" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="25" id="wQh-fx-Ssv"/>
+                                <constraint firstItem="lXp-tD-OHG" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="24" id="wcH-5u-Nlo"/>
+                                <constraint firstItem="jZc-61-Dpe" firstAttribute="leading" secondItem="a2Z-l0-SRc" secondAttribute="trailing" constant="97" id="wfW-uf-RlA"/>
+                                <constraint firstItem="6jE-aN-JzM" firstAttribute="top" secondItem="RQ0-LM-zZk" secondAttribute="bottom" constant="16" id="wfx-3v-zZt"/>
+                                <constraint firstItem="NSZ-36-ytP" firstAttribute="top" secondItem="lXp-tD-OHG" secondAttribute="bottom" constant="8" id="xTM-UG-9Ut"/>
+                                <constraint firstItem="ZKI-rz-TWv" firstAttribute="top" secondItem="UGG-W5-RKg" secondAttribute="bottom" constant="16" id="xav-N3-Q0Q"/>
+                                <constraint firstAttribute="trailing" secondItem="fIw-oy-fP0" secondAttribute="trailing" constant="36" id="xeF-Mx-Tcj"/>
+                                <constraint firstItem="7EN-cI-zC3" firstAttribute="top" secondItem="9hz-Y4-Lmr" secondAttribute="bottom" constant="8" id="y0M-KP-OKo"/>
+                                <constraint firstItem="w0H-Fh-iYv" firstAttribute="top" secondItem="7Y5-Jd-82s" secondAttribute="bottom" constant="18" id="y4J-bD-5Ae"/>
+                                <constraint firstItem="SSA-Yc-JAu" firstAttribute="leading" secondItem="yR3-gL-ncr" secondAttribute="trailing" constant="89" id="yZf-jR-cmu"/>
+                                <constraint firstItem="8C0-fU-jXU" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="51" id="ykm-Zh-XOr"/>
+                                <constraint firstItem="vkf-Ia-C94" firstAttribute="leading" secondItem="Ref-4W-FS7" secondAttribute="leading" constant="28" id="ymH-03-KD9"/>
+                                <constraint firstItem="RQ0-LM-zZk" firstAttribute="top" secondItem="Owv-DT-eQr" secondAttribute="bottom" constant="8" id="ynG-7L-Uwo"/>
+                                <constraint firstItem="n4p-aG-mJz" firstAttribute="top" secondItem="w91-SX-Eex" secondAttribute="bottom" constant="16" id="zOK-s4-6lK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ref-4W-FS7" firstAttribute="centerX" secondItem="v7O-Cn-Gbp" secondAttribute="centerX" id="M0g-hV-FSh"/>
+                        <constraint firstItem="Ref-4W-FS7" firstAttribute="top" secondItem="v7O-Cn-Gbp" secondAttribute="top" id="MLl-L2-ooQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ref-4W-FS7" secondAttribute="trailing" id="XXJ-mM-T9v"/>
+                        <constraint firstAttribute="bottom" secondItem="Ref-4W-FS7" secondAttribute="bottom" id="k04-DT-3uQ"/>
+                        <constraint firstItem="Ref-4W-FS7" firstAttribute="leading" secondItem="v7O-Cn-Gbp" secondAttribute="leading" id="lH3-EL-kNm"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s8d-vp-1ch" firstAttribute="bottom" secondItem="v7O-Cn-Gbp" secondAttribute="bottom" id="8Zn-eg-RdY"/>
+                <constraint firstItem="s8d-vp-1ch" firstAttribute="trailing" secondItem="v7O-Cn-Gbp" secondAttribute="trailing" id="Bi3-R2-TTW"/>
+                <constraint firstItem="v7O-Cn-Gbp" firstAttribute="leading" secondItem="s8d-vp-1ch" secondAttribute="leading" id="Dax-rk-3V2"/>
+                <constraint firstItem="v7O-Cn-Gbp" firstAttribute="width" secondItem="9H9-lD-EKF" secondAttribute="width" id="gao-mZ-pcI"/>
+                <constraint firstItem="v7O-Cn-Gbp" firstAttribute="height" secondItem="9H9-lD-EKF" secondAttribute="height" id="sRT-75-xkh"/>
+                <constraint firstItem="s8d-vp-1ch" firstAttribute="top" secondItem="v7O-Cn-Gbp" secondAttribute="top" constant="20" id="x8f-w9-mUh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="s8d-vp-1ch"/>
+            <point key="canvasLocation" x="4997" y="-1885"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked-checkbox" width="30" height="30"/>
+        <image name="radio_selected" width="20" height="20"/>
+        <image name="radio_unselected" width="20" height="20"/>
+        <image name="unchecked-checkbox" width="30" height="30"/>
+    </resources>
+</document>

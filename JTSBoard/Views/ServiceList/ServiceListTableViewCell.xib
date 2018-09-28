@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="servicelistcell" rowHeight="101" id="RwI-pJ-zkA" customClass="ServiceListTableViewCell" customModule="JTSBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RwI-pJ-zkA" id="4lL-I3-hpe">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zM-N4-UtH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="101"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ9-zX-h8h">
+                                <rect key="frame" x="18" y="17" width="731" height="24"/>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-0b-Y82">
+                                <rect key="frame" x="0.0" y="98" width="768" height="1"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="FKt-gv-3yy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-NN-zsq">
+                                <rect key="frame" x="18" y="57" width="731" height="21"/>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uby-NN-zsq" firstAttribute="leading" secondItem="2zM-N4-UtH" secondAttribute="leading" constant="18" id="6DT-Oo-hSt"/>
+                            <constraint firstItem="4Ga-0b-Y82" firstAttribute="leading" secondItem="2zM-N4-UtH" secondAttribute="leading" id="DcJ-mw-XOZ"/>
+                            <constraint firstItem="iZ9-zX-h8h" firstAttribute="leading" secondItem="2zM-N4-UtH" secondAttribute="leading" constant="18" id="IbT-Ks-WBV"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ga-0b-Y82" secondAttribute="trailing" id="OuP-s5-B6D"/>
+                            <constraint firstItem="iZ9-zX-h8h" firstAttribute="top" secondItem="2zM-N4-UtH" secondAttribute="top" constant="17" id="d0J-8O-8Ye"/>
+                            <constraint firstItem="4Ga-0b-Y82" firstAttribute="top" secondItem="Uby-NN-zsq" secondAttribute="bottom" constant="20" id="hUe-I0-brU"/>
+                            <constraint firstAttribute="trailing" secondItem="iZ9-zX-h8h" secondAttribute="trailing" constant="19" id="iH2-qm-0LJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Uby-NN-zsq" secondAttribute="trailing" constant="19" id="jwh-gx-Qyp"/>
+                            <constraint firstItem="Uby-NN-zsq" firstAttribute="top" secondItem="iZ9-zX-h8h" secondAttribute="bottom" constant="16" id="kqt-bg-Rab"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ga-0b-Y82" secondAttribute="bottom" constant="2" id="vPt-7o-lUv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2zM-N4-UtH" secondAttribute="trailing" id="5MU-2j-PU5"/>
+                    <constraint firstItem="2zM-N4-UtH" firstAttribute="top" secondItem="4lL-I3-hpe" secondAttribute="top" id="JQd-m5-XIx"/>
+                    <constraint firstItem="2zM-N4-UtH" firstAttribute="leading" secondItem="4lL-I3-hpe" secondAttribute="leading" id="QL2-rx-TwZ"/>
+                    <constraint firstAttribute="bottom" secondItem="2zM-N4-UtH" secondAttribute="bottom" constant="-0.5" id="kfA-SR-y3Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SyD-ni-Mdb"/>
+            <connections>
+                <outlet property="lblServiceDate" destination="Uby-NN-zsq" id="FxU-r1-ZpD"/>
+                <outlet property="lblServiceName" destination="iZ9-zX-h8h" id="Mhq-Ut-Tcf"/>
+            </connections>
+            <point key="canvasLocation" x="561" y="-204.5"/>
+        </tableViewCell>
+    </objects>
+</document>

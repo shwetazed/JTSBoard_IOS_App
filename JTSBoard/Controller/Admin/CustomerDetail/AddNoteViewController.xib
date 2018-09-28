@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNoteViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="tblDate" destination="qmh-zo-yDQ" id="ZKn-pd-L4M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2O-Jd-3ay">
+                    <rect key="frame" x="359" y="40" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="3iY-sW-85i"/>
+                        <constraint firstAttribute="height" constant="50" id="NtG-3W-xR4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="55"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAddDateAction:" destination="-1" eventType="touchUpInside" id="zMH-va-2MQ"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qmh-zo-yDQ">
+                    <rect key="frame" x="0.0" y="112" width="768" height="909"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b1k-SA-fvA"/>
+                        <outlet property="delegate" destination="-1" id="40t-Qa-m4J"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qmh-zo-yDQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Hk-a3-C5q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qmh-zo-yDQ" secondAttribute="trailing" id="Du6-Zg-MPa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qmh-zo-yDQ" secondAttribute="bottom" constant="3" id="Fv6-tN-Uic"/>
+                <constraint firstItem="T2O-Jd-3ay" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MUR-Kb-HaO"/>
+                <constraint firstItem="qmh-zo-yDQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="RFn-V7-beB"/>
+                <constraint firstItem="qmh-zo-yDQ" firstAttribute="top" secondItem="T2O-Jd-3ay" secondAttribute="bottom" constant="22" id="mDt-AJ-mAa"/>
+                <constraint firstItem="T2O-Jd-3ay" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="xrA-Ij-Wea"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="149" y="-940"/>
+        </view>
+    </objects>
+</document>

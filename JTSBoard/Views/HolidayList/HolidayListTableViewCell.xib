@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="holidaylistcell" rowHeight="74" id="KGk-i7-Jjw" customClass="HolidayListTableViewCell" customModule="JTSBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pj-M0-7vW">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christmas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs4-Tz-4di">
+                                <rect key="frame" x="50" y="12" width="648" height="24"/>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 December" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpM-HO-MWv">
+                                <rect key="frame" x="50" y="44" width="648" height="24"/>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xs4-Tz-4di" firstAttribute="leading" secondItem="0pj-M0-7vW" secondAttribute="leading" constant="50" id="3Ho-DY-SWS"/>
+                            <constraint firstAttribute="trailing" secondItem="Xs4-Tz-4di" secondAttribute="trailing" constant="70" id="9y8-6K-zut"/>
+                            <constraint firstAttribute="bottom" secondItem="EpM-HO-MWv" secondAttribute="bottom" constant="12" id="g9s-xi-I14"/>
+                            <constraint firstItem="EpM-HO-MWv" firstAttribute="leading" secondItem="0pj-M0-7vW" secondAttribute="leading" constant="50" id="i7b-xG-hmM"/>
+                            <constraint firstAttribute="trailing" secondItem="EpM-HO-MWv" secondAttribute="trailing" constant="70" id="yTZ-Mz-itb"/>
+                            <constraint firstItem="EpM-HO-MWv" firstAttribute="top" secondItem="Xs4-Tz-4di" secondAttribute="bottom" constant="8" id="yoh-h2-Xxd"/>
+                            <constraint firstItem="Xs4-Tz-4di" firstAttribute="top" secondItem="0pj-M0-7vW" secondAttribute="top" constant="12" id="yym-vU-9HR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0pj-M0-7vW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FnV-oe-esJ"/>
+                    <constraint firstAttribute="bottom" secondItem="0pj-M0-7vW" secondAttribute="bottom" constant="-0.5" id="ZMV-zd-Rct"/>
+                    <constraint firstItem="0pj-M0-7vW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cye-6m-New"/>
+                    <constraint firstAttribute="trailing" secondItem="0pj-M0-7vW" secondAttribute="trailing" id="r7u-8R-u9A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="EpM-HO-MWv" id="Lyi-St-eMV"/>
+                <outlet property="lblHolidayTitle" destination="Xs4-Tz-4di" id="DbL-ws-imT"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="-180"/>
+        </tableViewCell>
+    </objects>
+</document>

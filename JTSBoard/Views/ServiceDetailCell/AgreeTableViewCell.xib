@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="agreecell" rowHeight="113" id="KGk-i7-Jjw" customClass="AgreeTableViewCell" customModule="JTSBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-6w-iMR">
+                        <rect key="frame" x="16" y="11" width="291" height="28"/>
+                        <mutableString key="text"> 同意書【POWERLITE】
+
+下記内容をご確認いただき、ご了承の上ご署名をお願いいたします。
+
+	•	体質、肌質、当日の体調や肌状態によりトリートメントをお控えいただく場合がございます。
+	•	以下に該当する方はトリートメントをお控えいただいております。必ず事前にお知らせください。
+お申し出がなかった場合のトラブルにつきましては、当サロンでは責任を負いかねます。
+	日焼けをする予定がある方
+	ホルモン療法中の方
+	光アレルギーまたは他のアレルギーをお持ちの方
+	心疾患、高血圧、糖尿病、癌、感染症、ほか治療中または通院中の方
+てんかんの既往歴がある方
+ペースメーカーを使用されている方
+	皮膚疾患の方
+ケロイド体質の方
+妊娠中、授乳中の方
+美容整形手術をされている方
+	•	服薬中、通院中の方は必ず事前にお知らせください。
+	•	トリートメント効果には個人差があります。</mutableString>
+                        <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heX-m6-HJX">
+                        <rect key="frame" x="16" y="59" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="hzA-hV-ULm"/>
+                            <constraint firstAttribute="height" constant="30" id="yQT-Vp-EiZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" image="checked-checkbox"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同意する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttl-oa-M5E">
+                        <rect key="frame" x="63" y="62" width="241" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Nbr-Wm-aVb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ksi-6w-iMR" secondAttribute="trailing" constant="13" id="3Sm-NP-kWR"/>
+                    <constraint firstItem="heX-m6-HJX" firstAttribute="top" secondItem="Ksi-6w-iMR" secondAttribute="bottom" constant="20" id="BIH-C5-EzY"/>
+                    <constraint firstAttribute="trailing" secondItem="Ttl-oa-M5E" secondAttribute="trailing" constant="16" id="Ejr-wk-v4O"/>
+                    <constraint firstItem="Ksi-6w-iMR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="G5J-Zf-kjG"/>
+                    <constraint firstItem="Ksi-6w-iMR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="KmX-Ns-5Sh"/>
+                    <constraint firstItem="heX-m6-HJX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="L41-BN-kCx"/>
+                    <constraint firstItem="Ttl-oa-M5E" firstAttribute="leading" secondItem="heX-m6-HJX" secondAttribute="trailing" constant="17" id="XJA-g2-M1H"/>
+                    <constraint firstItem="Ttl-oa-M5E" firstAttribute="top" secondItem="Ksi-6w-iMR" secondAttribute="bottom" constant="23" id="dXs-m4-jE8"/>
+                    <constraint firstAttribute="bottom" secondItem="Ttl-oa-M5E" secondAttribute="bottom" constant="24.5" id="zqA-zu-MvK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAgreeDesc" destination="Ksi-6w-iMR" id="RqI-vI-1Tg"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked-checkbox" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalaryCalculateViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="abscentDaysViews" destination="DWb-Q1-1pl" id="qMm-VS-3bD"/>
+                <outlet property="btnEndDate" destination="TJ5-uW-f48" id="m8d-uU-k3Y"/>
+                <outlet property="btnStartDate" destination="ixG-AF-VA9" id="64m-rr-RwF"/>
+                <outlet property="buttonView" destination="hpe-19-lCq" id="PXg-H0-yLf"/>
+                <outlet property="holidaysView" destination="VBp-cA-bzT" id="KKq-sM-DBY"/>
+                <outlet property="lblAbsentDays" destination="ypL-N8-AoC" id="mc3-od-dwd"/>
+                <outlet property="lblDesignation" destination="Rd4-It-z9T" id="wPY-Fl-SYf"/>
+                <outlet property="lblHolidays" destination="yvb-0T-Qes" id="hGw-Lb-OHp"/>
+                <outlet property="lblLuchHour" destination="4c0-Ra-2Va" id="1PJ-EO-w9K"/>
+                <outlet property="lblPresentDays" destination="Ha8-98-x41" id="6Ta-OS-WOn"/>
+                <outlet property="lblTotalHour" destination="nZs-fL-edu" id="XsD-90-QXt"/>
+                <outlet property="lblUserName" destination="7Vp-gG-bw6" id="FQK-KK-NdG"/>
+                <outlet property="lblWorkingDays" destination="27Z-Tb-UUT" id="x2b-T4-K6L"/>
+                <outlet property="lblWorkingHour" destination="XBE-Dp-ZrS" id="lKy-mK-Pta"/>
+                <outlet property="lunchHourView" destination="2mx-5e-UfI" id="KQJ-nR-AAI"/>
+                <outlet property="presentDaysView" destination="Ar6-dA-gLp" id="wtA-ml-APr"/>
+                <outlet property="topInfoView" destination="iCp-cM-fGX" id="5L4-fU-mdA"/>
+                <outlet property="totalHourView" destination="hcf-ly-NDr" id="feR-jz-exL"/>
+                <outlet property="view" destination="e7w-WO-OSy" id="b1O-qK-77c"/>
+                <outlet property="workingHourView" destination="FBk-XI-9ob" id="cgk-lR-cq1"/>
+                <outlet property="workingView" destination="FTp-Ha-7zI" id="g1g-5D-bzI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="e7w-WO-OSy">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqn-90-XD4">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1115"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCp-cM-fGX">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="233"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vp-gG-bw6">
+                                    <rect key="frame" x="50" y="52" width="668" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="7dx-pU-xmT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software Product Deginer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd4-It-z9T">
+                                    <rect key="frame" x="50" y="93" width="668" height="28"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpe-19-lCq">
+                                    <rect key="frame" x="184" y="136" width="400" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-AF-VA9">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                            <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="160" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Start Date" image="dropdown_icon"/>
+                                            <connections>
+                                                <action selector="btnStartDateAction:" destination="-1" eventType="touchUpInside" id="XOw-qx-cc6"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ5-uW-f48">
+                                            <rect key="frame" x="200" y="0.0" width="200" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.73725490199999999" green="0.52941176469999995" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                            <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="160" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="End Date" image="dropdown_icon"/>
+                                            <connections>
+                                                <action selector="btnEndDateAction:" destination="-1" eventType="touchUpInside" id="LiT-hx-8Jk"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="400" id="IwT-2m-uTt"/>
+                                        <constraint firstAttribute="height" constant="50" id="WKx-hR-7VN"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96068006750000001" green="0.96084433790000001" blue="0.96066969629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="hpe-19-lCq" firstAttribute="top" secondItem="Rd4-It-z9T" secondAttribute="bottom" constant="15" id="0qi-Qm-qHe"/>
+                                <constraint firstItem="7Vp-gG-bw6" firstAttribute="leading" secondItem="iCp-cM-fGX" secondAttribute="leading" constant="50" id="1Jl-0D-TW9"/>
+                                <constraint firstAttribute="trailing" secondItem="7Vp-gG-bw6" secondAttribute="trailing" constant="50" id="Bj4-rd-Ce4"/>
+                                <constraint firstItem="Rd4-It-z9T" firstAttribute="leading" secondItem="iCp-cM-fGX" secondAttribute="leading" constant="50" id="DuL-cc-ebE"/>
+                                <constraint firstItem="hpe-19-lCq" firstAttribute="centerX" secondItem="iCp-cM-fGX" secondAttribute="centerX" id="ZCG-JP-DMU"/>
+                                <constraint firstItem="Rd4-It-z9T" firstAttribute="top" secondItem="7Vp-gG-bw6" secondAttribute="bottom" constant="8" id="ZDt-0o-9Vn"/>
+                                <constraint firstItem="7Vp-gG-bw6" firstAttribute="top" secondItem="iCp-cM-fGX" secondAttribute="top" constant="52" id="j92-eV-Se1"/>
+                                <constraint firstAttribute="height" constant="233" id="osC-s8-0Ly"/>
+                                <constraint firstAttribute="trailing" secondItem="Rd4-It-z9T" secondAttribute="trailing" constant="50" id="tWE-pz-6Wb"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-0u-hM4">
+                            <rect key="frame" x="0.0" y="233" width="768" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.6705882353" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="a3G-cH-l6r"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-Ha-7zI">
+                            <rect key="frame" x="50" y="289" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   出勤日数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46N-0D-3uy">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="J8f-OJ-qVJ"/>
+                                        <constraint firstAttribute="height" constant="60" id="SVk-5Y-eYx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27Z-Tb-UUT">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="6gN-Ye-rLh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="27Z-Tb-UUT" firstAttribute="leading" secondItem="46N-0D-3uy" secondAttribute="trailing" constant="40" id="Dxe-ga-QyQ"/>
+                                <constraint firstItem="46N-0D-3uy" firstAttribute="leading" secondItem="FTp-Ha-7zI" secondAttribute="leading" id="FSK-gF-gpr"/>
+                                <constraint firstItem="27Z-Tb-UUT" firstAttribute="top" secondItem="FTp-Ha-7zI" secondAttribute="top" id="JCn-0D-VPC"/>
+                                <constraint firstItem="46N-0D-3uy" firstAttribute="top" secondItem="FTp-Ha-7zI" secondAttribute="top" id="ZQR-gB-I72"/>
+                                <constraint firstAttribute="trailing" secondItem="27Z-Tb-UUT" secondAttribute="trailing" constant="43" id="geS-p0-U0c"/>
+                                <constraint firstAttribute="height" constant="60" id="sIM-zY-qSy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ar6-dA-gLp">
+                            <rect key="frame" x="50" y="389" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    出席日数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-jC-dAu">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="8wC-YH-5Zh"/>
+                                        <constraint firstAttribute="height" constant="60" id="CXT-f0-T5c"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-98-x41">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="3FX-qM-G5c"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="QmE-jC-dAu" firstAttribute="top" secondItem="Ar6-dA-gLp" secondAttribute="top" id="JGM-ra-gdb"/>
+                                <constraint firstItem="QmE-jC-dAu" firstAttribute="leading" secondItem="Ar6-dA-gLp" secondAttribute="leading" id="TMv-ce-tb6"/>
+                                <constraint firstAttribute="height" constant="60" id="afH-5d-9fx"/>
+                                <constraint firstItem="Ha8-98-x41" firstAttribute="top" secondItem="Ar6-dA-gLp" secondAttribute="top" id="fcC-VY-Dt7"/>
+                                <constraint firstItem="Ha8-98-x41" firstAttribute="leading" secondItem="QmE-jC-dAu" secondAttribute="trailing" constant="40" id="tdb-bX-3Yo"/>
+                                <constraint firstAttribute="trailing" secondItem="Ha8-98-x41" secondAttribute="trailing" constant="43" id="u1i-aa-KFS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWb-Q1-1pl">
+                            <rect key="frame" x="50" y="489" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    欠席数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRC-mJ-AZ6">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="IPI-MM-jOA"/>
+                                        <constraint firstAttribute="height" constant="60" id="gxd-sK-eNf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypL-N8-AoC">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="yR9-Lq-uhg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="E7I-ZI-AcJ"/>
+                                <constraint firstAttribute="trailing" secondItem="ypL-N8-AoC" secondAttribute="trailing" constant="43" id="SsC-Hq-nw3"/>
+                                <constraint firstItem="LRC-mJ-AZ6" firstAttribute="top" secondItem="DWb-Q1-1pl" secondAttribute="top" id="a36-cz-L41"/>
+                                <constraint firstItem="ypL-N8-AoC" firstAttribute="leading" secondItem="LRC-mJ-AZ6" secondAttribute="trailing" constant="40" id="ahB-vR-ajv"/>
+                                <constraint firstItem="ypL-N8-AoC" firstAttribute="top" secondItem="DWb-Q1-1pl" secondAttribute="top" id="itC-ZO-D6m"/>
+                                <constraint firstItem="LRC-mJ-AZ6" firstAttribute="leading" secondItem="DWb-Q1-1pl" secondAttribute="leading" id="zKg-Ko-BUH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-cA-bzT">
+                            <rect key="frame" x="50" y="589" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    休日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAF-Q1-VnS">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="KA1-lm-SBA"/>
+                                        <constraint firstAttribute="width" constant="230" id="s5q-au-nPF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvb-0T-Qes">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="8XK-Ys-dIz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="1TD-Za-pbB"/>
+                                <constraint firstItem="dAF-Q1-VnS" firstAttribute="top" secondItem="VBp-cA-bzT" secondAttribute="top" id="2PF-Bc-W3g"/>
+                                <constraint firstAttribute="trailing" secondItem="yvb-0T-Qes" secondAttribute="trailing" constant="43" id="Ce0-Rx-m39"/>
+                                <constraint firstItem="yvb-0T-Qes" firstAttribute="top" secondItem="VBp-cA-bzT" secondAttribute="top" id="FtF-uJ-Bsp"/>
+                                <constraint firstItem="yvb-0T-Qes" firstAttribute="leading" secondItem="dAF-Q1-VnS" secondAttribute="trailing" constant="40" id="Xge-z4-DI6"/>
+                                <constraint firstItem="dAF-Q1-VnS" firstAttribute="leading" secondItem="VBp-cA-bzT" secondAttribute="leading" id="w0Q-XH-MBc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-5e-UfI">
+                            <rect key="frame" x="50" y="682" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    合計 昼食時間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6je-fd-bck">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="7cU-SN-kYx"/>
+                                        <constraint firstAttribute="height" constant="60" id="fot-Lm-mss"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-Ra-2Va">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="qvE-8d-soi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="4c0-Ra-2Va" firstAttribute="top" secondItem="2mx-5e-UfI" secondAttribute="top" id="4UV-zt-bIH"/>
+                                <constraint firstAttribute="height" constant="60" id="PN0-R9-Qua"/>
+                                <constraint firstAttribute="trailing" secondItem="4c0-Ra-2Va" secondAttribute="trailing" constant="43" id="d5H-sj-AeM"/>
+                                <constraint firstItem="4c0-Ra-2Va" firstAttribute="leading" secondItem="6je-fd-bck" secondAttribute="trailing" constant="40" id="jJB-Xe-PYD"/>
+                                <constraint firstItem="6je-fd-bck" firstAttribute="leading" secondItem="2mx-5e-UfI" secondAttribute="leading" id="n0d-6Y-Rru"/>
+                                <constraint firstItem="6je-fd-bck" firstAttribute="top" secondItem="2mx-5e-UfI" secondAttribute="top" id="qU5-zk-pli"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-XI-9ob">
+                            <rect key="frame" x="50" y="780" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    合計 労働時間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMv-2f-Kf4">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="EB0-9q-yPa"/>
+                                        <constraint firstAttribute="width" constant="230" id="kuU-pq-Ikm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-Dp-ZrS">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="8Py-8O-eyo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="XBE-Dp-ZrS" firstAttribute="top" secondItem="FBk-XI-9ob" secondAttribute="top" id="GUl-9T-Dvh"/>
+                                <constraint firstItem="KMv-2f-Kf4" firstAttribute="leading" secondItem="FBk-XI-9ob" secondAttribute="leading" id="QBY-xf-cgw"/>
+                                <constraint firstAttribute="trailing" secondItem="XBE-Dp-ZrS" secondAttribute="trailing" constant="43" id="S22-pn-AqI"/>
+                                <constraint firstItem="XBE-Dp-ZrS" firstAttribute="leading" secondItem="KMv-2f-Kf4" secondAttribute="trailing" constant="40" id="Tqs-f3-A4h"/>
+                                <constraint firstItem="KMv-2f-Kf4" firstAttribute="top" secondItem="FBk-XI-9ob" secondAttribute="top" id="fgB-4a-dSH"/>
+                                <constraint firstAttribute="height" constant="60" id="yrw-yz-k8w"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcf-ly-NDr">
+                            <rect key="frame" x="50" y="882" width="668" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    合計 時間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3b-MU-JC4">
+                                    <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="cwP-AI-UCM"/>
+                                        <constraint firstAttribute="height" constant="60" id="fQM-6j-KEe"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZs-fL-edu">
+                                    <rect key="frame" x="270" y="0.0" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="4Fm-d2-53x"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="nZs-fL-edu" firstAttribute="top" secondItem="hcf-ly-NDr" secondAttribute="top" id="7RE-qJ-NtQ"/>
+                                <constraint firstAttribute="trailing" secondItem="nZs-fL-edu" secondAttribute="trailing" constant="43" id="B21-AX-oot"/>
+                                <constraint firstItem="Z3b-MU-JC4" firstAttribute="top" secondItem="hcf-ly-NDr" secondAttribute="top" id="XTK-fq-s0I"/>
+                                <constraint firstItem="nZs-fL-edu" firstAttribute="leading" secondItem="Z3b-MU-JC4" secondAttribute="trailing" constant="40" id="cIu-zG-P1e"/>
+                                <constraint firstItem="Z3b-MU-JC4" firstAttribute="leading" secondItem="hcf-ly-NDr" secondAttribute="leading" id="hPM-Jo-j4Z"/>
+                                <constraint firstAttribute="height" constant="60" id="s8f-Zc-6Md"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FTp-Ha-7zI" firstAttribute="top" secondItem="zCM-0u-hM4" secondAttribute="bottom" constant="55" id="1FR-Nx-rS4"/>
+                        <constraint firstItem="hcf-ly-NDr" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="1ck-LY-6qu"/>
+                        <constraint firstItem="FBk-XI-9ob" firstAttribute="top" secondItem="2mx-5e-UfI" secondAttribute="bottom" constant="38" id="2bF-7v-e2h"/>
+                        <constraint firstAttribute="trailing" secondItem="zCM-0u-hM4" secondAttribute="trailing" id="47g-Fp-JOr"/>
+                        <constraint firstAttribute="trailing" secondItem="iCp-cM-fGX" secondAttribute="trailing" id="9pm-tZ-ZPZ"/>
+                        <constraint firstAttribute="trailing" secondItem="DWb-Q1-1pl" secondAttribute="trailing" constant="50" id="Atk-Cb-lLR"/>
+                        <constraint firstItem="2mx-5e-UfI" firstAttribute="top" secondItem="VBp-cA-bzT" secondAttribute="bottom" constant="33" id="Cec-3K-beN"/>
+                        <constraint firstItem="DWb-Q1-1pl" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="Ehb-dK-MKZ"/>
+                        <constraint firstItem="iCp-cM-fGX" firstAttribute="width" secondItem="Dqn-90-XD4" secondAttribute="width" id="GJF-33-KdQ"/>
+                        <constraint firstItem="Ar6-dA-gLp" firstAttribute="top" secondItem="FTp-Ha-7zI" secondAttribute="bottom" constant="40" id="Hva-Y2-rxF"/>
+                        <constraint firstItem="hcf-ly-NDr" firstAttribute="top" secondItem="FBk-XI-9ob" secondAttribute="bottom" constant="42" id="IwB-kK-Eqi"/>
+                        <constraint firstAttribute="trailing" secondItem="FTp-Ha-7zI" secondAttribute="trailing" constant="50" id="N6f-Ib-3RP"/>
+                        <constraint firstItem="DWb-Q1-1pl" firstAttribute="top" secondItem="Ar6-dA-gLp" secondAttribute="bottom" constant="40" id="OZ1-cF-A2C"/>
+                        <constraint firstItem="2mx-5e-UfI" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="Pay-vG-q96"/>
+                        <constraint firstItem="FTp-Ha-7zI" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="TQN-b9-DRU"/>
+                        <constraint firstItem="FBk-XI-9ob" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="Trd-zJ-R76"/>
+                        <constraint firstAttribute="bottom" secondItem="VBp-cA-bzT" secondAttribute="bottom" constant="466" id="UMP-RF-suK"/>
+                        <constraint firstAttribute="trailing" secondItem="hcf-ly-NDr" secondAttribute="trailing" constant="50" id="VBo-bb-Ajz"/>
+                        <constraint firstItem="Ar6-dA-gLp" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="d9i-6P-wDV"/>
+                        <constraint firstItem="VBp-cA-bzT" firstAttribute="top" secondItem="DWb-Q1-1pl" secondAttribute="bottom" constant="40" id="e1v-db-bcF"/>
+                        <constraint firstItem="VBp-cA-bzT" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" constant="50" id="ejK-bm-0gd"/>
+                        <constraint firstAttribute="trailing" secondItem="FBk-XI-9ob" secondAttribute="trailing" constant="50" id="h6P-gE-9fn"/>
+                        <constraint firstAttribute="trailing" secondItem="Ar6-dA-gLp" secondAttribute="trailing" constant="50" id="pEf-lj-Bcb"/>
+                        <constraint firstItem="iCp-cM-fGX" firstAttribute="top" secondItem="Dqn-90-XD4" secondAttribute="top" id="ubO-wp-L9Q"/>
+                        <constraint firstAttribute="trailing" secondItem="2mx-5e-UfI" secondAttribute="trailing" constant="50" id="xQ3-K7-kAT"/>
+                        <constraint firstItem="iCp-cM-fGX" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" id="xcR-Uk-Hc5"/>
+                        <constraint firstItem="zCM-0u-hM4" firstAttribute="leading" secondItem="Dqn-90-XD4" secondAttribute="leading" id="yBe-WT-peV"/>
+                        <constraint firstItem="zCM-0u-hM4" firstAttribute="top" secondItem="iCp-cM-fGX" secondAttribute="bottom" id="zmW-Cb-0Xj"/>
+                        <constraint firstAttribute="trailing" secondItem="VBp-cA-bzT" secondAttribute="trailing" constant="50" id="zs2-M6-kI8"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1KE-wy-XeD" firstAttribute="top" secondItem="Dqn-90-XD4" secondAttribute="top" constant="20" id="7pW-RF-Xnp"/>
+                <constraint firstItem="Dqn-90-XD4" firstAttribute="leading" secondItem="1KE-wy-XeD" secondAttribute="leading" id="CRO-rY-Ams"/>
+                <constraint firstItem="1KE-wy-XeD" firstAttribute="bottom" secondItem="Dqn-90-XD4" secondAttribute="bottom" id="azk-UE-RzV"/>
+                <constraint firstItem="1KE-wy-XeD" firstAttribute="trailing" secondItem="Dqn-90-XD4" secondAttribute="trailing" id="uwf-sR-TCf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1KE-wy-XeD"/>
+            <point key="canvasLocation" x="15708" y="449.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropdown_icon" width="16" height="16"/>
+    </resources>
+</document>

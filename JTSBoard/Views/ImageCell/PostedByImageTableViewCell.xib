@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postedbyimagecell" rowHeight="307" id="KGk-i7-Jjw" customClass="PostedByImageTableViewCell" customModule="JTSBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5C-Ow-qau">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="AdX-h1-clN"/>
+                            <constraint firstAttribute="height" constant="50" id="n61-4B-JPO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shweta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abk-A6-9ug">
+                        <rect key="frame" x="66" y="5" width="209" height="23"/>
+                        <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Posted : Thu, Aug 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgP-3L-hGJ">
+                        <rect key="frame" x="66" y="29" width="238" height="19.5"/>
+                        <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VFc-xA-dxj">
+                        <rect key="frame" x="66" y="67" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Gwo-fj-2xe"/>
+                            <constraint firstAttribute="height" constant="200" id="Qno-YC-XrQ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlF-sN-Aaz">
+                        <rect key="frame" x="0.0" y="298" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="T6G-s0-cLo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="abk-A6-9ug" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="21v-Sy-kiQ"/>
+                    <constraint firstItem="l5C-Ow-qau" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Ev4-tL-lkL"/>
+                    <constraint firstAttribute="trailing" secondItem="qgP-3L-hGJ" secondAttribute="trailing" constant="16" id="Ilf-yH-xp4"/>
+                    <constraint firstAttribute="trailing" secondItem="qlF-sN-Aaz" secondAttribute="trailing" id="LtY-NC-1CA"/>
+                    <constraint firstItem="VFc-xA-dxj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="66" id="QZZ-sE-18i"/>
+                    <constraint firstItem="VFc-xA-dxj" firstAttribute="top" secondItem="qgP-3L-hGJ" secondAttribute="bottom" constant="18.5" id="RKW-N5-II2"/>
+                    <constraint firstItem="l5C-Ow-qau" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="RYL-AA-xr9"/>
+                    <constraint firstItem="qlF-sN-Aaz" firstAttribute="top" secondItem="VFc-xA-dxj" secondAttribute="bottom" constant="31" id="SMZ-5c-V6m"/>
+                    <constraint firstItem="qlF-sN-Aaz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aII-lj-AT9"/>
+                    <constraint firstItem="qgP-3L-hGJ" firstAttribute="top" secondItem="abk-A6-9ug" secondAttribute="bottom" constant="1" id="et6-2L-II8"/>
+                    <constraint firstAttribute="trailing" secondItem="abk-A6-9ug" secondAttribute="trailing" constant="45" id="g9H-y4-SGt"/>
+                    <constraint firstAttribute="bottom" secondItem="qlF-sN-Aaz" secondAttribute="bottom" constant="0.5" id="hpb-Yg-btY"/>
+                    <constraint firstItem="abk-A6-9ug" firstAttribute="leading" secondItem="l5C-Ow-qau" secondAttribute="trailing" constant="8" id="jeh-nI-SHj"/>
+                    <constraint firstItem="qgP-3L-hGJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="66" id="pEZ-JS-doy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageNoteHeight" destination="Qno-YC-XrQ" id="Cui-rQ-ZbX"/>
+                <outlet property="imgNoteView" destination="VFc-xA-dxj" id="edF-hi-dMd"/>
+                <outlet property="imgUser" destination="l5C-Ow-qau" id="wqI-Ni-soX"/>
+                <outlet property="lblName" destination="abk-A6-9ug" id="tGe-id-uF6"/>
+                <outlet property="lblPostedBy" destination="qgP-3L-hGJ" id="28g-DI-MZg"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="6"/>
+        </tableViewCell>
+    </objects>
+</document>

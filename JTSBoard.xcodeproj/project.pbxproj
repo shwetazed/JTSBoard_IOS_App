@@ -1,0 +1,1477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068740F07CB5F2DEFFAF85DC /* Pods_JTSBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01D8FECB293ED25BC7D33DE /* Pods_JTSBoard.framework */; };
+		2304FB3E20EE30AF00FA01B0 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2304FB3C20EE30AF00FA01B0 /* TermsViewController.swift */; };
+		2304FB3F20EE30AF00FA01B0 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2304FB3D20EE30AF00FA01B0 /* TermsViewController.xib */; };
+		2304FB4120EE31ED00FA01B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2304FB4020EE31ED00FA01B0 /* WebKit.framework */; };
+		2304FB4320EE338000FA01B0 /* Terms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2304FB4220EE338000FA01B0 /* Terms.pdf */; };
+		2307AC3C215A16D100B42C86 /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307AC3B215A16D100B42C86 /* CustomFlowLayout.swift */; };
+		2307AC44215A2C4900B42C86 /* FLCollectionSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2307AC43215A2C4900B42C86 /* FLCollectionSeparator.m */; };
+		2307AC47215A5C5400B42C86 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2307AC45215A5C5300B42C86 /* UserNotificationsUI.framework */; };
+		2307AC48215A5C5400B42C86 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2307AC46215A5C5400B42C86 /* UserNotifications.framework */; };
+		2315A25021413DBB0024ED57 /* EmployeeCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2315A24E21413DBB0024ED57 /* EmployeeCodeViewController.xib */; };
+		2315A25121413DBB0024ED57 /* EmployeeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315A24F21413DBB0024ED57 /* EmployeeCodeViewController.swift */; };
+		232296E020FDDF5600D607E8 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232296DE20FDDF5600D607E8 /* ServiceDetailViewController.swift */; };
+		232296E120FDDF5600D607E8 /* ServiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232296DF20FDDF5600D607E8 /* ServiceDetailViewController.xib */; };
+		23235BE821429F9300A8B604 /* JTSStaffDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23235BE621429F9300A8B604 /* JTSStaffDashboardViewController.swift */; };
+		23235BE921429F9300A8B604 /* JTSStaffDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23235BE721429F9300A8B604 /* JTSStaffDashboardViewController.xib */; };
+		232D16A62137D906008906D7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D16A42137D906008906D7 /* SideMenuViewController.swift */; };
+		232D16A72137D906008906D7 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232D16A52137D906008906D7 /* SideMenuViewController.xib */; };
+		232D16AB2137DA80008906D7 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D16A92137DA80008906D7 /* SideMenuTableViewCell.swift */; };
+		232D16AC2137DA80008906D7 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232D16AA2137DA80008906D7 /* SideMenuTableViewCell.xib */; };
+		232D16B021380D4D008906D7 /* AddFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D16AE21380D4D008906D7 /* AddFormViewController.swift */; };
+		232D16B121380D4D008906D7 /* AddFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232D16AF21380D4D008906D7 /* AddFormViewController.xib */; };
+		232D16B421380F04008906D7 /* PhotoFacialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D16B221380F04008906D7 /* PhotoFacialViewController.swift */; };
+		232D16B521380F04008906D7 /* PhotoFacialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232D16B321380F04008906D7 /* PhotoFacialViewController.xib */; };
+		233273072158F69800282E45 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272E62158F69800282E45 /* FSCalendarCollectionView.m */; };
+		233273082158F69900282E45 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272EA2158F69800282E45 /* FSCalendarDelegationProxy.m */; };
+		233273092158F69900282E45 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272EC2158F69800282E45 /* FSCalendarDelegationFactory.m */; };
+		2332730A2158F69900282E45 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F22158F69800282E45 /* FSCalendarCell.m */; };
+		2332730B2158F69900282E45 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F32158F69800282E45 /* FSCalendarStickyHeader.m */; };
+		2332730C2158F69900282E45 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F42158F69800282E45 /* FSCalendar.m */; };
+		2332730D2158F69900282E45 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F52158F69800282E45 /* FSCalendarCollectionViewLayout.m */; };
+		2332730E2158F69900282E45 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F62158F69800282E45 /* FSCalendarScopeHandle.m */; };
+		2332730F2158F69900282E45 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272F72158F69800282E45 /* FSCalendarWeekdayView.m */; };
+		233273102158F69900282E45 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272FB2158F69800282E45 /* FSCalendarExtensions.m */; };
+		233273112158F69900282E45 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272FD2158F69800282E45 /* FSCalendar+Deprecated.m */; };
+		233273122158F69900282E45 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272FE2158F69800282E45 /* FSCalendarConstants.m */; };
+		233273132158F69900282E45 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 233272FF2158F69800282E45 /* FSCalendarCalculator.m */; };
+		233273142158F69900282E45 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233273002158F69800282E45 /* FSCalendarHeaderView.m */; };
+		233273152158F69900282E45 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 233273042158F69800282E45 /* FSCalendarTransitionCoordinator.m */; };
+		233273162158F69900282E45 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 233273052158F69800282E45 /* Info.plist */; };
+		233273172158F69900282E45 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 233273062158F69800282E45 /* FSCalendarAppearance.m */; };
+		2332731A2158F8FE00282E45 /* JTSStaffCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233273182158F8FE00282E45 /* JTSStaffCalenderViewController.swift */; };
+		2332731B2158F8FE00282E45 /* JTSStaffCalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233273192158F8FE00282E45 /* JTSStaffCalenderViewController.xib */; };
+		233AB12D214684830002611F /* AgreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AB12B214684820002611F /* AgreeTableViewCell.swift */; };
+		233AB12E214684830002611F /* AgreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233AB12C214684820002611F /* AgreeTableViewCell.xib */; };
+		233BA400211C40170011B614 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA3FE211C40170011B614 /* EmployeeListViewController.swift */; };
+		233BA401211C40170011B614 /* EmployeeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA3FF211C40170011B614 /* EmployeeListViewController.xib */; };
+		233BA404211C405B0011B614 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA402211C405B0011B614 /* AddEmployeeViewController.swift */; };
+		233BA405211C405B0011B614 /* AddEmployeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA403211C405B0011B614 /* AddEmployeeViewController.xib */; };
+		233BA408211C406C0011B614 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA406211C406C0011B614 /* EmployeeDetailViewController.swift */; };
+		233BA409211C406C0011B614 /* EmployeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA407211C406C0011B614 /* EmployeeDetailViewController.xib */; };
+		233BA40C211C407A0011B614 /* AttendanceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA40A211C407A0011B614 /* AttendanceInfoViewController.swift */; };
+		233BA40D211C407A0011B614 /* AttendanceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA40B211C407A0011B614 /* AttendanceInfoViewController.xib */; };
+		233BA410211C40890011B614 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA40E211C40890011B614 /* AttendanceViewController.swift */; };
+		233BA411211C40890011B614 /* AttendanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA40F211C40890011B614 /* AttendanceViewController.xib */; };
+		233BA415211C45810011B614 /* EmployeeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BA413211C45810011B614 /* EmployeeListTableViewCell.swift */; };
+		233BA416211C45810011B614 /* EmployeeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BA414211C45810011B614 /* EmployeeListTableViewCell.xib */; };
+		233BD9F6214A760500A9BCC3 /* CalenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BD9F4214A760500A9BCC3 /* CalenderTableViewCell.swift */; };
+		233BD9F7214A760500A9BCC3 /* CalenderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BD9F5214A760500A9BCC3 /* CalenderTableViewCell.xib */; };
+		233BD9F9214A7DEF00A9BCC3 /* CalenderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BD9F8214A7DEF00A9BCC3 /* CalenderHeaderView.swift */; };
+		233BD9FB214A7E0000A9BCC3 /* CalenderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233BD9FA214A7E0000A9BCC3 /* CalenderHeaderView.xib */; };
+		234294C02150E7C700D46465 /* ServiceListTableViewCell_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234294BF2150E7C700D46465 /* ServiceListTableViewCell_ipad.xib */; };
+		234294C22150FBA300D46465 /* EmployeeListTableViewCell_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234294C12150FBA300D46465 /* EmployeeListTableViewCell_ipad.xib */; };
+		234304C120EB411B00E0D50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304C020EB411B00E0D50F /* AppDelegate.swift */; };
+		234304C820EB411E00E0D50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234304C720EB411E00E0D50F /* Assets.xcassets */; };
+		234304DE20EB424100E0D50F /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304D420EB424000E0D50F /* WebServiceController.swift */; };
+		234304DF20EB424100E0D50F /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304D620EB424000E0D50F /* FloatLabelTextView.swift */; };
+		234304E020EB424100E0D50F /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304D720EB424000E0D50F /* FloatLabelTextField.swift */; };
+		234304E120EB424100E0D50F /* TopNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234304D920EB424000E0D50F /* TopNavigationView.xib */; };
+		234304E220EB424100E0D50F /* TopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304DA20EB424000E0D50F /* TopNavigationView.swift */; };
+		234304E320EB424100E0D50F /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304DC20EB424100E0D50F /* ConfigManager.swift */; };
+		234304E420EB424100E0D50F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304DD20EB424100E0D50F /* String+Extensions.swift */; };
+		234304EA20EB448B00E0D50F /* MainFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304E820EB448B00E0D50F /* MainFromViewController.swift */; };
+		234304EB20EB448B00E0D50F /* MainFromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234304E920EB448B00E0D50F /* MainFromViewController.xib */; };
+		234304EE20EB96F400E0D50F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304ED20EB96F400E0D50F /* DatePickerViewController.swift */; };
+		234304F020EB9DB900E0D50F /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234304EF20EB9DB900E0D50F /* UIAlertController+Extensions.swift */; };
+		2345D16A20FF170700B4CCAE /* ServiceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345D16820FF170700B4CCAE /* ServiceDetailTableViewCell.swift */; };
+		2345D16B20FF170700B4CCAE /* ServiceDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2345D16920FF170700B4CCAE /* ServiceDetailTableViewCell.xib */; };
+		236AF3302122E56300947692 /* AttandanceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236AF32E2122E56300947692 /* AttandanceInfoTableViewCell.swift */; };
+		236AF3312122E56300947692 /* AttandanceInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AF32F2122E56300947692 /* AttandanceInfoTableViewCell.xib */; };
+		236F9A21213E966E00F0ECDD /* SideMenuLogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F9A1F213E966E00F0ECDD /* SideMenuLogoTableViewCell.swift */; };
+		236F9A22213E966E00F0ECDD /* SideMenuLogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236F9A20213E966E00F0ECDD /* SideMenuLogoTableViewCell.xib */; };
+		2372A0132133CC5900543FA3 /* SalaryCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372A0112133CC5800543FA3 /* SalaryCalculateViewController.swift */; };
+		2372A0142133CC5900543FA3 /* SalaryCalculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372A0122133CC5900543FA3 /* SalaryCalculateViewController.xib */; };
+		2372A0182133D4A700543FA3 /* AddHolidaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372A0162133D4A700543FA3 /* AddHolidaysViewController.swift */; };
+		2372A0192133D4A700543FA3 /* AddHolidaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372A0172133D4A700543FA3 /* AddHolidaysViewController.xib */; };
+		2372A01C2133D4C900543FA3 /* HolidaysListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372A01A2133D4C900543FA3 /* HolidaysListViewController.swift */; };
+		2372A01D2133D4C900543FA3 /* HolidaysListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372A01B2133D4C900543FA3 /* HolidaysListViewController.xib */; };
+		2372A0212133EA6100543FA3 /* HolidayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372A01F2133EA6100543FA3 /* HolidayListTableViewCell.swift */; };
+		2372A0222133EA6100543FA3 /* HolidayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372A0202133EA6100543FA3 /* HolidayListTableViewCell.xib */; };
+		23736D2A21392C24003FBDBB /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23736D2821392C24003FBDBB /* ServiceListViewController.swift */; };
+		23736D2B21392C24003FBDBB /* ServiceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23736D2921392C24003FBDBB /* ServiceListViewController.xib */; };
+		23736D3321392EFE003FBDBB /* ServiceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23736D3121392EFE003FBDBB /* ServiceListTableViewCell.swift */; };
+		23736D3421392EFE003FBDBB /* ServiceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23736D3221392EFE003FBDBB /* ServiceListTableViewCell.xib */; };
+		23736D37213943DC003FBDBB /* TermPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23736D36213943DC003FBDBB /* TermPolicyView.swift */; };
+		23736D39213943F7003FBDBB /* TermPolicyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23736D38213943F7003FBDBB /* TermPolicyView.xib */; };
+		237A1254212D3B1600A0689C /* CustomerAnalyticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1252212D3B1600A0689C /* CustomerAnalyticViewController.swift */; };
+		237A1255212D3B1600A0689C /* CustomerAnalyticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237A1253212D3B1600A0689C /* CustomerAnalyticViewController.xib */; };
+		237D91E1214FC4E10027EC8C /* EmployeeDetailViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D91E0214FC4E10027EC8C /* EmployeeDetailViewController_ipad.xib */; };
+		237D91E3214FCBFC0027EC8C /* AddEmployeeViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D91E2214FCBFC0027EC8C /* AddEmployeeViewController_ipad.xib */; };
+		237D91E5214FD3360027EC8C /* AttandanceInfoTableViewCell_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D91E4214FD3360027EC8C /* AttandanceInfoTableViewCell_ipad.xib */; };
+		237D91E7214FD5830027EC8C /* SalaryCalculateViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D91E6214FD5830027EC8C /* SalaryCalculateViewController_ipad.xib */; };
+		238217B120F72DFD00405D99 /* SuccessRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238217AF20F72DFD00405D99 /* SuccessRegisterViewController.swift */; };
+		238217B220F72DFD00405D99 /* SuccessRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 238217B020F72DFD00405D99 /* SuccessRegisterViewController.xib */; };
+		238D7001211AB6A60092B577 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D7000211AB6A60092B577 /* CurrencyTextField.swift */; };
+		239C9247214B8B3D00315025 /* CalenderProgressPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C9246214B8B3D00315025 /* CalenderProgressPopupView.swift */; };
+		239C9249214B8B6F00315025 /* CalenderProgressPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239C9248214B8B6F00315025 /* CalenderProgressPopupView.xib */; };
+		23B7CB1620F4D89700698613 /* SalonProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB1420F4D89700698613 /* SalonProfileViewController.swift */; };
+		23B7CB1720F4D89700698613 /* SalonProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB1520F4D89700698613 /* SalonProfileViewController.xib */; };
+		23B7CB1E20F4DBF400698613 /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB1C20F4DBF400698613 /* CustomerDetailViewController.swift */; };
+		23B7CB1F20F4DBF400698613 /* CustomerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB1D20F4DBF400698613 /* CustomerDetailViewController.xib */; };
+		23B7CB2220F4DC0300698613 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB2020F4DC0300698613 /* CustomerListViewController.swift */; };
+		23B7CB2320F4DC0300698613 /* CustomerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB2120F4DC0300698613 /* CustomerListViewController.xib */; };
+		23B7CB2D20F4DCC400698613 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB2B20F4DCC400698613 /* CalenderViewController.swift */; };
+		23B7CB2E20F4DCC400698613 /* CalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB2C20F4DCC400698613 /* CalenderViewController.xib */; };
+		23B7CB3120F4DCCF00698613 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB2F20F4DCCF00698613 /* SalesViewController.swift */; };
+		23B7CB3220F4DCCF00698613 /* SalesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB3020F4DCCF00698613 /* SalesViewController.xib */; };
+		23B7CB4020F4E4CF00698613 /* CustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B7CB3E20F4E4CF00698613 /* CustomerListTableViewCell.swift */; };
+		23B7CB4120F4E4CF00698613 /* CustomerListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B7CB3F20F4E4CF00698613 /* CustomerListTableViewCell.xib */; };
+		23C043C520EF31E5008A7C22 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C043C020EF31E5008A7C22 /* LoginViewController.xib */; };
+		23C043C620EF31E5008A7C22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C043C120EF31E5008A7C22 /* LoginViewController.swift */; };
+		23C043C720EF31E5008A7C22 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C043C320EF31E5008A7C22 /* RegistrationViewController.xib */; };
+		23C043C820EF31E5008A7C22 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C043C420EF31E5008A7C22 /* RegistrationViewController.swift */; };
+		23C043D920EF9CF5008A7C22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C043D820EF9CF5008A7C22 /* CoreLocation.framework */; };
+		23CB349220F3694E00548F14 /* SawarabiMincho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23CB349120F3694E00548F14 /* SawarabiMincho-Regular.ttf */; };
+		23CEFA66212E88DB0013226A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CEFA64212E88DB0013226A /* EditProfileViewController.swift */; };
+		23CEFA67212E88DB0013226A /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CEFA65212E88DB0013226A /* EditProfileViewController.xib */; };
+		23D7791520EBE2B7008BE734 /* EstheServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7791320EBE2B7008BE734 /* EstheServiceViewController.swift */; };
+		23D7791620EBE2B7008BE734 /* EstheServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7791420EBE2B7008BE734 /* EstheServiceViewController.xib */; };
+		23D7791920EBE3AE008BE734 /* EyeLastServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7791720EBE3AE008BE734 /* EyeLastServiceViewController.swift */; };
+		23D7791A20EBE3AE008BE734 /* EyeLastServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7791820EBE3AE008BE734 /* EyeLastServiceViewController.xib */; };
+		23D7791D20EBE3C2008BE734 /* BodyServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7791B20EBE3C2008BE734 /* BodyServiceViewController.swift */; };
+		23D7791E20EBE3C2008BE734 /* BodyServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7791C20EBE3C2008BE734 /* BodyServiceViewController.xib */; };
+		23D7792120EBE3E6008BE734 /* HairRemovalServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7791F20EBE3E6008BE734 /* HairRemovalServiceViewController.swift */; };
+		23D7792220EBE3E6008BE734 /* HairRemovalServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7792020EBE3E6008BE734 /* HairRemovalServiceViewController.xib */; };
+		23D9EDD2215DF48300B61E95 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9EDD0215DF48300B61E95 /* NotificationViewController.swift */; };
+		23D9EDD3215DF48300B61E95 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D9EDD1215DF48300B61E95 /* NotificationViewController.xib */; };
+		23D9EDD7215DF4FB00B61E95 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9EDD5215DF4FB00B61E95 /* NotificationTableViewCell.swift */; };
+		23D9EDD8215DF4FB00B61E95 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D9EDD6215DF4FB00B61E95 /* NotificationTableViewCell.xib */; };
+		23E0AD9E2112DAEC00A66BAB /* AddServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0AD9C2112DAEC00A66BAB /* AddServiceTableViewCell.swift */; };
+		23E0AD9F2112DAEC00A66BAB /* AddServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E0AD9D2112DAEC00A66BAB /* AddServiceTableViewCell.xib */; };
+		23E0ADA121130D0500A66BAB /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0ADA021130D0500A66BAB /* DatePickerDialog.swift */; };
+		23E0ADA42113309B00A66BAB /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0ADA22113309B00A66BAB /* NoteDetailViewController.swift */; };
+		23E0ADA52113309B00A66BAB /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E0ADA32113309B00A66BAB /* NoteDetailViewController.xib */; };
+		23E510F920F62A560059155B /* ThankYouPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E510F720F62A560059155B /* ThankYouPageViewController.swift */; };
+		23E510FA20F62A560059155B /* ThankYouPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E510F820F62A560059155B /* ThankYouPageViewController.xib */; };
+		23E7646D20F4CE41003D6775 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7646B20F4CE41003D6775 /* DashboardViewController.swift */; };
+		23E7646E20F4CE41003D6775 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E7646C20F4CE41003D6775 /* DashboardViewController.xib */; };
+		23E7647020F4D562003D6775 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E7646F20F4D562003D6775 /* CoreFoundation.framework */; };
+		23E7647220F4D567003D6775 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E7647120F4D567003D6775 /* QuartzCore.framework */; };
+		23F1076F211183CA0056CD2C /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F1076D211183CA0056CD2C /* AddNoteViewController.swift */; };
+		23F10770211183CA0056CD2C /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F1076E211183CA0056CD2C /* AddNoteViewController.xib */; };
+		23F11114214789E300F2D3CB /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11112214789E300F2D3CB /* ImageCollectionViewCell.swift */; };
+		23F11115214789E300F2D3CB /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F11113214789E300F2D3CB /* ImageCollectionViewCell.xib */; };
+		23F153E02148E4EC000DE888 /* PostedByImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F153DE2148E4EC000DE888 /* PostedByImageTableViewCell.swift */; };
+		23F153E12148E4EC000DE888 /* PostedByImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F153DF2148E4EC000DE888 /* PostedByImageTableViewCell.xib */; };
+		23F153E421492E04000DE888 /* DeletedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F153E221492E04000DE888 /* DeletedImageViewController.swift */; };
+		23F153E521492E04000DE888 /* DeletedImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F153E321492E04000DE888 /* DeletedImageViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2304FB3C20EE30AF00FA01B0 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		2304FB3D20EE30AF00FA01B0 /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
+		2304FB4020EE31ED00FA01B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2304FB4220EE338000FA01B0 /* Terms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Terms.pdf; sourceTree = "<group>"; };
+		2307AC3B215A16D100B42C86 /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
+		2307AC42215A2C4900B42C86 /* FLCollectionSeparator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLCollectionSeparator.h; sourceTree = "<group>"; };
+		2307AC43215A2C4900B42C86 /* FLCollectionSeparator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLCollectionSeparator.m; sourceTree = "<group>"; };
+		2307AC45215A5C5300B42C86 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2307AC46215A5C5400B42C86 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2315A24E21413DBB0024ED57 /* EmployeeCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeCodeViewController.xib; sourceTree = "<group>"; };
+		2315A24F21413DBB0024ED57 /* EmployeeCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCodeViewController.swift; sourceTree = "<group>"; };
+		232296DE20FDDF5600D607E8 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		232296DF20FDDF5600D607E8 /* ServiceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailViewController.xib; sourceTree = "<group>"; };
+		23235BE621429F9300A8B604 /* JTSStaffDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTSStaffDashboardViewController.swift; sourceTree = "<group>"; };
+		23235BE721429F9300A8B604 /* JTSStaffDashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTSStaffDashboardViewController.xib; sourceTree = "<group>"; };
+		232D16A42137D906008906D7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		232D16A52137D906008906D7 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		232D16A92137DA80008906D7 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		232D16AA2137DA80008906D7 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		232D16AE21380D4D008906D7 /* AddFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormViewController.swift; sourceTree = "<group>"; };
+		232D16AF21380D4D008906D7 /* AddFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFormViewController.xib; sourceTree = "<group>"; };
+		232D16B221380F04008906D7 /* PhotoFacialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFacialViewController.swift; sourceTree = "<group>"; };
+		232D16B321380F04008906D7 /* PhotoFacialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFacialViewController.xib; sourceTree = "<group>"; };
+		233272E42158E62E00282E45 /* JTSBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JTSBoard.entitlements; sourceTree = "<group>"; };
+		233272E62158F69800282E45 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		233272E72158F69800282E45 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		233272E82158F69800282E45 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		233272E92158F69800282E45 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		233272EA2158F69800282E45 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		233272EB2158F69800282E45 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		233272EC2158F69800282E45 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		233272ED2158F69800282E45 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		233272EE2158F69800282E45 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		233272EF2158F69800282E45 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		233272F02158F69800282E45 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		233272F12158F69800282E45 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		233272F22158F69800282E45 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		233272F32158F69800282E45 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		233272F42158F69800282E45 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		233272F52158F69800282E45 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		233272F62158F69800282E45 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		233272F72158F69800282E45 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		233272F82158F69800282E45 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		233272F92158F69800282E45 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		233272FA2158F69800282E45 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		233272FB2158F69800282E45 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		233272FC2158F69800282E45 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		233272FD2158F69800282E45 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		233272FE2158F69800282E45 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		233272FF2158F69800282E45 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		233273002158F69800282E45 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		233273012158F69800282E45 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		233273022158F69800282E45 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		233273032158F69800282E45 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		233273042158F69800282E45 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		233273052158F69800282E45 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233273062158F69800282E45 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		233273182158F8FE00282E45 /* JTSStaffCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTSStaffCalenderViewController.swift; sourceTree = "<group>"; };
+		233273192158F8FE00282E45 /* JTSStaffCalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTSStaffCalenderViewController.xib; sourceTree = "<group>"; };
+		2332731C2158FC1600282E45 /* JTSBoard-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JTSBoard-Bridge-Header.h"; sourceTree = "<group>"; };
+		233AB12B214684820002611F /* AgreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTableViewCell.swift; sourceTree = "<group>"; };
+		233AB12C214684820002611F /* AgreeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeTableViewCell.xib; sourceTree = "<group>"; };
+		233BA3FE211C40170011B614 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		233BA3FF211C40170011B614 /* EmployeeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListViewController.xib; sourceTree = "<group>"; };
+		233BA402211C405B0011B614 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		233BA403211C405B0011B614 /* AddEmployeeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEmployeeViewController.xib; sourceTree = "<group>"; };
+		233BA406211C406C0011B614 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		233BA407211C406C0011B614 /* EmployeeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeDetailViewController.xib; sourceTree = "<group>"; };
+		233BA40A211C407A0011B614 /* AttendanceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceInfoViewController.swift; sourceTree = "<group>"; };
+		233BA40B211C407A0011B614 /* AttendanceInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendanceInfoViewController.xib; sourceTree = "<group>"; };
+		233BA40E211C40890011B614 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		233BA40F211C40890011B614 /* AttendanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendanceViewController.xib; sourceTree = "<group>"; };
+		233BA413211C45810011B614 /* EmployeeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewCell.swift; sourceTree = "<group>"; };
+		233BA414211C45810011B614 /* EmployeeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListTableViewCell.xib; sourceTree = "<group>"; };
+		233BD9F4214A760500A9BCC3 /* CalenderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderTableViewCell.swift; sourceTree = "<group>"; };
+		233BD9F5214A760500A9BCC3 /* CalenderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderTableViewCell.xib; sourceTree = "<group>"; };
+		233BD9F8214A7DEF00A9BCC3 /* CalenderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderHeaderView.swift; sourceTree = "<group>"; };
+		233BD9FA214A7E0000A9BCC3 /* CalenderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderHeaderView.xib; sourceTree = "<group>"; };
+		234294BF2150E7C700D46465 /* ServiceListTableViewCell_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceListTableViewCell_ipad.xib; sourceTree = "<group>"; };
+		234294C12150FBA300D46465 /* EmployeeListTableViewCell_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListTableViewCell_ipad.xib; sourceTree = "<group>"; };
+		234304BD20EB411B00E0D50F /* JTSBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTSBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		234304C020EB411B00E0D50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		234304C720EB411E00E0D50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		234304CC20EB411E00E0D50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234304D420EB424000E0D50F /* WebServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
+		234304D620EB424000E0D50F /* FloatLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextView.swift; sourceTree = "<group>"; };
+		234304D720EB424000E0D50F /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		234304D920EB424000E0D50F /* TopNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopNavigationView.xib; sourceTree = "<group>"; };
+		234304DA20EB424000E0D50F /* TopNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationView.swift; sourceTree = "<group>"; };
+		234304DC20EB424100E0D50F /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		234304DD20EB424100E0D50F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		234304E820EB448B00E0D50F /* MainFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFromViewController.swift; sourceTree = "<group>"; };
+		234304E920EB448B00E0D50F /* MainFromViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFromViewController.xib; sourceTree = "<group>"; };
+		234304ED20EB96F400E0D50F /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		234304EF20EB9DB900E0D50F /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		2345D16820FF170700B4CCAE /* ServiceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewCell.swift; sourceTree = "<group>"; };
+		2345D16920FF170700B4CCAE /* ServiceDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailTableViewCell.xib; sourceTree = "<group>"; };
+		236AF32E2122E56300947692 /* AttandanceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttandanceInfoTableViewCell.swift; sourceTree = "<group>"; };
+		236AF32F2122E56300947692 /* AttandanceInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttandanceInfoTableViewCell.xib; sourceTree = "<group>"; };
+		236F9A1F213E966E00F0ECDD /* SideMenuLogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuLogoTableViewCell.swift; sourceTree = "<group>"; };
+		236F9A20213E966E00F0ECDD /* SideMenuLogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuLogoTableViewCell.xib; sourceTree = "<group>"; };
+		2372A0112133CC5800543FA3 /* SalaryCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryCalculateViewController.swift; sourceTree = "<group>"; };
+		2372A0122133CC5900543FA3 /* SalaryCalculateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalaryCalculateViewController.xib; sourceTree = "<group>"; };
+		2372A0162133D4A700543FA3 /* AddHolidaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHolidaysViewController.swift; sourceTree = "<group>"; };
+		2372A0172133D4A700543FA3 /* AddHolidaysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHolidaysViewController.xib; sourceTree = "<group>"; };
+		2372A01A2133D4C900543FA3 /* HolidaysListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysListViewController.swift; sourceTree = "<group>"; };
+		2372A01B2133D4C900543FA3 /* HolidaysListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidaysListViewController.xib; sourceTree = "<group>"; };
+		2372A01F2133EA6100543FA3 /* HolidayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayListTableViewCell.swift; sourceTree = "<group>"; };
+		2372A0202133EA6100543FA3 /* HolidayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayListTableViewCell.xib; sourceTree = "<group>"; };
+		23736D2821392C24003FBDBB /* ServiceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
+		23736D2921392C24003FBDBB /* ServiceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceListViewController.xib; sourceTree = "<group>"; };
+		23736D3121392EFE003FBDBB /* ServiceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewCell.swift; sourceTree = "<group>"; };
+		23736D3221392EFE003FBDBB /* ServiceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceListTableViewCell.xib; sourceTree = "<group>"; };
+		23736D36213943DC003FBDBB /* TermPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermPolicyView.swift; sourceTree = "<group>"; };
+		23736D38213943F7003FBDBB /* TermPolicyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermPolicyView.xib; sourceTree = "<group>"; };
+		237A1252212D3B1600A0689C /* CustomerAnalyticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAnalyticViewController.swift; sourceTree = "<group>"; };
+		237A1253212D3B1600A0689C /* CustomerAnalyticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerAnalyticViewController.xib; sourceTree = "<group>"; };
+		237A1260212D8C1C00A0689C /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		237D91E0214FC4E10027EC8C /* EmployeeDetailViewController_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeDetailViewController_ipad.xib; sourceTree = "<group>"; };
+		237D91E2214FCBFC0027EC8C /* AddEmployeeViewController_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEmployeeViewController_ipad.xib; sourceTree = "<group>"; };
+		237D91E4214FD3360027EC8C /* AttandanceInfoTableViewCell_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttandanceInfoTableViewCell_ipad.xib; sourceTree = "<group>"; };
+		237D91E6214FD5830027EC8C /* SalaryCalculateViewController_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalaryCalculateViewController_ipad.xib; sourceTree = "<group>"; };
+		238217AF20F72DFD00405D99 /* SuccessRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessRegisterViewController.swift; sourceTree = "<group>"; };
+		238217B020F72DFD00405D99 /* SuccessRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessRegisterViewController.xib; sourceTree = "<group>"; };
+		238D7000211AB6A60092B577 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		239C9246214B8B3D00315025 /* CalenderProgressPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderProgressPopupView.swift; sourceTree = "<group>"; };
+		239C9248214B8B6F00315025 /* CalenderProgressPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderProgressPopupView.xib; sourceTree = "<group>"; };
+		23B7CB1420F4D89700698613 /* SalonProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonProfileViewController.swift; sourceTree = "<group>"; };
+		23B7CB1520F4D89700698613 /* SalonProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalonProfileViewController.xib; sourceTree = "<group>"; };
+		23B7CB1C20F4DBF400698613 /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailViewController.swift; sourceTree = "<group>"; };
+		23B7CB1D20F4DBF400698613 /* CustomerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerDetailViewController.xib; sourceTree = "<group>"; };
+		23B7CB2020F4DC0300698613 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		23B7CB2120F4DC0300698613 /* CustomerListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerListViewController.xib; sourceTree = "<group>"; };
+		23B7CB2B20F4DCC400698613 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		23B7CB2C20F4DCC400698613 /* CalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderViewController.xib; sourceTree = "<group>"; };
+		23B7CB2F20F4DCCF00698613 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
+		23B7CB3020F4DCCF00698613 /* SalesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesViewController.xib; sourceTree = "<group>"; };
+		23B7CB3E20F4E4CF00698613 /* CustomerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewCell.swift; sourceTree = "<group>"; };
+		23B7CB3F20F4E4CF00698613 /* CustomerListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerListTableViewCell.xib; sourceTree = "<group>"; };
+		23C043C020EF31E5008A7C22 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		23C043C120EF31E5008A7C22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23C043C320EF31E5008A7C22 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		23C043C420EF31E5008A7C22 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		23C043D820EF9CF5008A7C22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		23CB349120F3694E00548F14 /* SawarabiMincho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SawarabiMincho-Regular.ttf"; sourceTree = "<group>"; };
+		23CEFA64212E88DB0013226A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		23CEFA65212E88DB0013226A /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		23D7791320EBE2B7008BE734 /* EstheServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstheServiceViewController.swift; sourceTree = "<group>"; };
+		23D7791420EBE2B7008BE734 /* EstheServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EstheServiceViewController.xib; sourceTree = "<group>"; };
+		23D7791720EBE3AE008BE734 /* EyeLastServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeLastServiceViewController.swift; sourceTree = "<group>"; };
+		23D7791820EBE3AE008BE734 /* EyeLastServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EyeLastServiceViewController.xib; sourceTree = "<group>"; };
+		23D7791B20EBE3C2008BE734 /* BodyServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyServiceViewController.swift; sourceTree = "<group>"; };
+		23D7791C20EBE3C2008BE734 /* BodyServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyServiceViewController.xib; sourceTree = "<group>"; };
+		23D7791F20EBE3E6008BE734 /* HairRemovalServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairRemovalServiceViewController.swift; sourceTree = "<group>"; };
+		23D7792020EBE3E6008BE734 /* HairRemovalServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HairRemovalServiceViewController.xib; sourceTree = "<group>"; };
+		23D9EDD0215DF48300B61E95 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		23D9EDD1215DF48300B61E95 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		23D9EDD5215DF4FB00B61E95 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		23D9EDD6215DF4FB00B61E95 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		23E0AD9C2112DAEC00A66BAB /* AddServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServiceTableViewCell.swift; sourceTree = "<group>"; };
+		23E0AD9D2112DAEC00A66BAB /* AddServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddServiceTableViewCell.xib; sourceTree = "<group>"; };
+		23E0ADA021130D0500A66BAB /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		23E0ADA22113309B00A66BAB /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		23E0ADA32113309B00A66BAB /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
+		23E510F720F62A560059155B /* ThankYouPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouPageViewController.swift; sourceTree = "<group>"; };
+		23E510F820F62A560059155B /* ThankYouPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThankYouPageViewController.xib; sourceTree = "<group>"; };
+		23E7646B20F4CE41003D6775 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		23E7646C20F4CE41003D6775 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		23E7646F20F4D562003D6775 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		23E7647120F4D567003D6775 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		23F1076D211183CA0056CD2C /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		23F1076E211183CA0056CD2C /* AddNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNoteViewController.xib; sourceTree = "<group>"; };
+		23F11112214789E300F2D3CB /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		23F11113214789E300F2D3CB /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		23F153DE2148E4EC000DE888 /* PostedByImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedByImageTableViewCell.swift; sourceTree = "<group>"; };
+		23F153DF2148E4EC000DE888 /* PostedByImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostedByImageTableViewCell.xib; sourceTree = "<group>"; };
+		23F153E221492E04000DE888 /* DeletedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedImageViewController.swift; sourceTree = "<group>"; };
+		23F153E321492E04000DE888 /* DeletedImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeletedImageViewController.xib; sourceTree = "<group>"; };
+		80533B36BA251E3758A4BF30 /* Pods-JTSBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTSBoard/Pods-JTSBoard.release.xcconfig"; sourceTree = "<group>"; };
+		E01D8FECB293ED25BC7D33DE /* Pods_JTSBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTSBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E153B20CFA399EDC4E04010B /* Pods-JTSBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTSBoard/Pods-JTSBoard.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		234304BA20EB411B00E0D50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2307AC47215A5C5400B42C86 /* UserNotificationsUI.framework in Frameworks */,
+				2307AC48215A5C5400B42C86 /* UserNotifications.framework in Frameworks */,
+				23E7647220F4D567003D6775 /* QuartzCore.framework in Frameworks */,
+				23E7647020F4D562003D6775 /* CoreFoundation.framework in Frameworks */,
+				23C043D920EF9CF5008A7C22 /* CoreLocation.framework in Frameworks */,
+				2304FB4120EE31ED00FA01B0 /* WebKit.framework in Frameworks */,
+				068740F07CB5F2DEFFAF85DC /* Pods_JTSBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2304FB3B20EE309B00FA01B0 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				2304FB3C20EE30AF00FA01B0 /* TermsViewController.swift */,
+				2304FB3D20EE30AF00FA01B0 /* TermsViewController.xib */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		2315A24D21413DBB0024ED57 /* EmployeeCode */ = {
+			isa = PBXGroup;
+			children = (
+				2315A24F21413DBB0024ED57 /* EmployeeCodeViewController.swift */,
+				2315A24E21413DBB0024ED57 /* EmployeeCodeViewController.xib */,
+			);
+			path = EmployeeCode;
+			sourceTree = "<group>";
+		};
+		23235BE421429F6300A8B604 /* JTSStaff */ = {
+			isa = PBXGroup;
+			children = (
+				23235BE521429F6F00A8B604 /* Dashboard */,
+			);
+			path = JTSStaff;
+			sourceTree = "<group>";
+		};
+		23235BE521429F6F00A8B604 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				23235BE621429F9300A8B604 /* JTSStaffDashboardViewController.swift */,
+				23235BE721429F9300A8B604 /* JTSStaffDashboardViewController.xib */,
+				233273182158F8FE00282E45 /* JTSStaffCalenderViewController.swift */,
+				233273192158F8FE00282E45 /* JTSStaffCalenderViewController.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		232D16A32137D7EE008906D7 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				232D16A42137D906008906D7 /* SideMenuViewController.swift */,
+				232D16A52137D906008906D7 /* SideMenuViewController.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		232D16A82137DA69008906D7 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				232D16A92137DA80008906D7 /* SideMenuTableViewCell.swift */,
+				232D16AA2137DA80008906D7 /* SideMenuTableViewCell.xib */,
+				236F9A1F213E966E00F0ECDD /* SideMenuLogoTableViewCell.swift */,
+				236F9A20213E966E00F0ECDD /* SideMenuLogoTableViewCell.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		232D16AD21380D08008906D7 /* AddForm */ = {
+			isa = PBXGroup;
+			children = (
+				232D16AE21380D4D008906D7 /* AddFormViewController.swift */,
+				232D16AF21380D4D008906D7 /* AddFormViewController.xib */,
+			);
+			path = AddForm;
+			sourceTree = "<group>";
+		};
+		233272E52158F69800282E45 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				2307AC3B215A16D100B42C86 /* CustomFlowLayout.swift */,
+				233273022158F69800282E45 /* FSCalendar.h */,
+				233272F42158F69800282E45 /* FSCalendar.m */,
+				2307AC42215A2C4900B42C86 /* FLCollectionSeparator.h */,
+				2307AC43215A2C4900B42C86 /* FLCollectionSeparator.m */,
+				233273032158F69800282E45 /* FSCalendarCell.h */,
+				233272F22158F69800282E45 /* FSCalendarCell.m */,
+				233272F82158F69800282E45 /* FSCalendarCollectionView.h */,
+				233272E62158F69800282E45 /* FSCalendarCollectionView.m */,
+				233272F72158F69800282E45 /* FSCalendarWeekdayView.m */,
+				233272E72158F69800282E45 /* FSCalendarWeekdayView.h */,
+				233272E82158F69800282E45 /* FSCalendarCollectionViewLayout.h */,
+				233272F52158F69800282E45 /* FSCalendarCollectionViewLayout.m */,
+				233272EE2158F69800282E45 /* FSCalendarHeaderView.h */,
+				233273002158F69800282E45 /* FSCalendarHeaderView.m */,
+				233272E92158F69800282E45 /* FSCalendarScopeHandle.h */,
+				233272F62158F69800282E45 /* FSCalendarScopeHandle.m */,
+				233272FC2158F69800282E45 /* FSCalendarDelegationProxy.h */,
+				233272EA2158F69800282E45 /* FSCalendarDelegationProxy.m */,
+				233272FB2158F69800282E45 /* FSCalendarExtensions.m */,
+				233272EB2158F69800282E45 /* FSCalendarExtensions.h */,
+				233272FA2158F69800282E45 /* FSCalendarDelegationFactory.h */,
+				233272EC2158F69800282E45 /* FSCalendarDelegationFactory.m */,
+				233272ED2158F69800282E45 /* FSCalendarCalculator.h */,
+				233272FF2158F69800282E45 /* FSCalendarCalculator.m */,
+				233272EF2158F69800282E45 /* FSCalendarConstants.h */,
+				233272FE2158F69800282E45 /* FSCalendarConstants.m */,
+				233272F02158F69800282E45 /* FSCalendarAppearance.h */,
+				233273062158F69800282E45 /* FSCalendarAppearance.m */,
+				233272F12158F69800282E45 /* FSCalendarTransitionCoordinator.h */,
+				233273042158F69800282E45 /* FSCalendarTransitionCoordinator.m */,
+				233273012158F69800282E45 /* FSCalendarStickyHeader.h */,
+				233272F32158F69800282E45 /* FSCalendarStickyHeader.m */,
+				233272F92158F69800282E45 /* FSCalendarDynamicHeader.h */,
+				233272FD2158F69800282E45 /* FSCalendar+Deprecated.m */,
+				233273052158F69800282E45 /* Info.plist */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		233BA3F7211C3F190011B614 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				2372A0152133D49600543FA3 /* Holidays */,
+				233BA3FB211C3F190011B614 /* EmployeeList */,
+				233BA3FD211C3FD60011B614 /* Attendance */,
+				233BA3FC211C3FD60011B614 /* AttendanceInfo */,
+				233BA3F9211C3F190011B614 /* EmployeeDetail */,
+				233BA3FA211C3F190011B614 /* AddEmployee */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		233BA3F9211C3F190011B614 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				233BA406211C406C0011B614 /* EmployeeDetailViewController.swift */,
+				233BA407211C406C0011B614 /* EmployeeDetailViewController.xib */,
+				237D91E0214FC4E10027EC8C /* EmployeeDetailViewController_ipad.xib */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
+		233BA3FA211C3F190011B614 /* AddEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				233BA402211C405B0011B614 /* AddEmployeeViewController.swift */,
+				233BA403211C405B0011B614 /* AddEmployeeViewController.xib */,
+				237D91E2214FCBFC0027EC8C /* AddEmployeeViewController_ipad.xib */,
+			);
+			path = AddEmployee;
+			sourceTree = "<group>";
+		};
+		233BA3FB211C3F190011B614 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				233BA3FE211C40170011B614 /* EmployeeListViewController.swift */,
+				233BA3FF211C40170011B614 /* EmployeeListViewController.xib */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		233BA3FC211C3FD60011B614 /* AttendanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				233BA40A211C407A0011B614 /* AttendanceInfoViewController.swift */,
+				233BA40B211C407A0011B614 /* AttendanceInfoViewController.xib */,
+				2372A0112133CC5800543FA3 /* SalaryCalculateViewController.swift */,
+				2372A0122133CC5900543FA3 /* SalaryCalculateViewController.xib */,
+				237D91E6214FD5830027EC8C /* SalaryCalculateViewController_ipad.xib */,
+			);
+			path = AttendanceInfo;
+			sourceTree = "<group>";
+		};
+		233BA3FD211C3FD60011B614 /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				233BA40E211C40890011B614 /* AttendanceViewController.swift */,
+				233BA40F211C40890011B614 /* AttendanceViewController.xib */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		233BA412211C45610011B614 /* EmployeeListCell */ = {
+			isa = PBXGroup;
+			children = (
+				233BA413211C45810011B614 /* EmployeeListTableViewCell.swift */,
+				233BA414211C45810011B614 /* EmployeeListTableViewCell.xib */,
+				234294C12150FBA300D46465 /* EmployeeListTableViewCell_ipad.xib */,
+			);
+			path = EmployeeListCell;
+			sourceTree = "<group>";
+		};
+		233BD9F3214A75C800A9BCC3 /* CalenderCell */ = {
+			isa = PBXGroup;
+			children = (
+				233BD9F4214A760500A9BCC3 /* CalenderTableViewCell.swift */,
+				233BD9F5214A760500A9BCC3 /* CalenderTableViewCell.xib */,
+				233BD9F8214A7DEF00A9BCC3 /* CalenderHeaderView.swift */,
+				233BD9FA214A7E0000A9BCC3 /* CalenderHeaderView.xib */,
+			);
+			path = CalenderCell;
+			sourceTree = "<group>";
+		};
+		234304B420EB411B00E0D50F = {
+			isa = PBXGroup;
+			children = (
+				2332731C2158FC1600282E45 /* JTSBoard-Bridge-Header.h */,
+				234304BF20EB411B00E0D50F /* JTSBoard */,
+				234304BE20EB411B00E0D50F /* Products */,
+				EC350A1AE93D24711CDF6C2F /* Pods */,
+				EFE8D137B15574153D138E43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		234304BE20EB411B00E0D50F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				234304BD20EB411B00E0D50F /* JTSBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		234304BF20EB411B00E0D50F /* JTSBoard */ = {
+			isa = PBXGroup;
+			children = (
+				233272E42158E62E00282E45 /* JTSBoard.entitlements */,
+				234304D220EB424000E0D50F /* CommanClasses */,
+				23B7CB3C20F4E49900698613 /* Views */,
+				234304DB20EB424100E0D50F /* ObjectClasses */,
+				234304C020EB411B00E0D50F /* AppDelegate.swift */,
+				234304E520EB443F00E0D50F /* Controller */,
+				234304C720EB411E00E0D50F /* Assets.xcassets */,
+				2304FB4220EE338000FA01B0 /* Terms.pdf */,
+				23CB349120F3694E00548F14 /* SawarabiMincho-Regular.ttf */,
+				234304CC20EB411E00E0D50F /* Info.plist */,
+			);
+			path = JTSBoard;
+			sourceTree = "<group>";
+		};
+		234304D220EB424000E0D50F /* CommanClasses */ = {
+			isa = PBXGroup;
+			children = (
+				233272E52158F69800282E45 /* FSCalendar */,
+				238D6FFF211AB6810092B577 /* CurrencyTextField */,
+				234304EC20EB96F400E0D50F /* DatePicker */,
+				234304D320EB424000E0D50F /* Webservices */,
+				234304D520EB424000E0D50F /* FloatLabelFields */,
+				234304D820EB424000E0D50F /* CustomNavigation */,
+			);
+			path = CommanClasses;
+			sourceTree = "<group>";
+		};
+		234304D320EB424000E0D50F /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				234304D420EB424000E0D50F /* WebServiceController.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		234304D520EB424000E0D50F /* FloatLabelFields */ = {
+			isa = PBXGroup;
+			children = (
+				234304D620EB424000E0D50F /* FloatLabelTextView.swift */,
+				234304D720EB424000E0D50F /* FloatLabelTextField.swift */,
+			);
+			path = FloatLabelFields;
+			sourceTree = "<group>";
+		};
+		234304D820EB424000E0D50F /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				234304DA20EB424000E0D50F /* TopNavigationView.swift */,
+				234304D920EB424000E0D50F /* TopNavigationView.xib */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
+		234304DB20EB424100E0D50F /* ObjectClasses */ = {
+			isa = PBXGroup;
+			children = (
+				234304DC20EB424100E0D50F /* ConfigManager.swift */,
+				234304DD20EB424100E0D50F /* String+Extensions.swift */,
+			);
+			path = ObjectClasses;
+			sourceTree = "<group>";
+		};
+		234304E520EB443F00E0D50F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23D9EDCF215DF42D00B61E95 /* Notification */,
+				23235BE421429F6300A8B604 /* JTSStaff */,
+				2315A24D21413DBB0024ED57 /* EmployeeCode */,
+				232D16A32137D7EE008906D7 /* SideMenu */,
+				23E510F620F62A370059155B /* ThankYou */,
+				23B7CB2920F4DCB800698613 /* Calender */,
+				23B7CB2A20F4DCB800698613 /* Sales */,
+				23B7CB1820F4DBC400698613 /* Admin */,
+				23E7646A20F4CE33003D6775 /* Dashboard */,
+				23C043D120EF5F82008A7C22 /* ProfilePage */,
+				23C043BF20EF31E5008A7C22 /* SignIn */,
+				23C043C220EF31E5008A7C22 /* Signup */,
+				234304E720EB447A00E0D50F /* MainForm */,
+				2304FB3B20EE309B00FA01B0 /* Terms */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		234304E720EB447A00E0D50F /* MainForm */ = {
+			isa = PBXGroup;
+			children = (
+				234304E820EB448B00E0D50F /* MainFromViewController.swift */,
+				234304E920EB448B00E0D50F /* MainFromViewController.xib */,
+				23D7791320EBE2B7008BE734 /* EstheServiceViewController.swift */,
+				23D7791420EBE2B7008BE734 /* EstheServiceViewController.xib */,
+				23D7791720EBE3AE008BE734 /* EyeLastServiceViewController.swift */,
+				23D7791820EBE3AE008BE734 /* EyeLastServiceViewController.xib */,
+				23D7791B20EBE3C2008BE734 /* BodyServiceViewController.swift */,
+				23D7791C20EBE3C2008BE734 /* BodyServiceViewController.xib */,
+				23D7791F20EBE3E6008BE734 /* HairRemovalServiceViewController.swift */,
+				23D7792020EBE3E6008BE734 /* HairRemovalServiceViewController.xib */,
+				232D16B221380F04008906D7 /* PhotoFacialViewController.swift */,
+				232D16B321380F04008906D7 /* PhotoFacialViewController.xib */,
+			);
+			path = MainForm;
+			sourceTree = "<group>";
+		};
+		234304EC20EB96F400E0D50F /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				234304ED20EB96F400E0D50F /* DatePickerViewController.swift */,
+				234304EF20EB9DB900E0D50F /* UIAlertController+Extensions.swift */,
+				23E0ADA021130D0500A66BAB /* DatePickerDialog.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		2345D16720FF16ED00B4CCAE /* ServiceDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				2345D16820FF170700B4CCAE /* ServiceDetailTableViewCell.swift */,
+				2345D16920FF170700B4CCAE /* ServiceDetailTableViewCell.xib */,
+				233AB12B214684820002611F /* AgreeTableViewCell.swift */,
+				233AB12C214684820002611F /* AgreeTableViewCell.xib */,
+			);
+			path = ServiceDetailCell;
+			sourceTree = "<group>";
+		};
+		236AF32D2122E55000947692 /* AttandanceInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				236AF32E2122E56300947692 /* AttandanceInfoTableViewCell.swift */,
+				236AF32F2122E56300947692 /* AttandanceInfoTableViewCell.xib */,
+				237D91E4214FD3360027EC8C /* AttandanceInfoTableViewCell_ipad.xib */,
+			);
+			path = AttandanceInfoCell;
+			sourceTree = "<group>";
+		};
+		2372A0152133D49600543FA3 /* Holidays */ = {
+			isa = PBXGroup;
+			children = (
+				2372A0162133D4A700543FA3 /* AddHolidaysViewController.swift */,
+				2372A0172133D4A700543FA3 /* AddHolidaysViewController.xib */,
+				2372A01A2133D4C900543FA3 /* HolidaysListViewController.swift */,
+				2372A01B2133D4C900543FA3 /* HolidaysListViewController.xib */,
+			);
+			path = Holidays;
+			sourceTree = "<group>";
+		};
+		2372A01E2133EA2B00543FA3 /* HolidayList */ = {
+			isa = PBXGroup;
+			children = (
+				2372A01F2133EA6100543FA3 /* HolidayListTableViewCell.swift */,
+				2372A0202133EA6100543FA3 /* HolidayListTableViewCell.xib */,
+			);
+			path = HolidayList;
+			sourceTree = "<group>";
+		};
+		23736D2C21392ECE003FBDBB /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				23736D3121392EFE003FBDBB /* ServiceListTableViewCell.swift */,
+				23736D3221392EFE003FBDBB /* ServiceListTableViewCell.xib */,
+				234294BF2150E7C700D46465 /* ServiceListTableViewCell_ipad.xib */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		23736D35213943B9003FBDBB /* PolicyVIew */ = {
+			isa = PBXGroup;
+			children = (
+				23736D36213943DC003FBDBB /* TermPolicyView.swift */,
+				23736D38213943F7003FBDBB /* TermPolicyView.xib */,
+			);
+			path = PolicyVIew;
+			sourceTree = "<group>";
+		};
+		237A1251212D3AFE00A0689C /* CustomerAnalytic */ = {
+			isa = PBXGroup;
+			children = (
+				237A1252212D3B1600A0689C /* CustomerAnalyticViewController.swift */,
+				237A1253212D3B1600A0689C /* CustomerAnalyticViewController.xib */,
+			);
+			path = CustomerAnalytic;
+			sourceTree = "<group>";
+		};
+		238D6FFF211AB6810092B577 /* CurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				238D7000211AB6A60092B577 /* CurrencyTextField.swift */,
+			);
+			path = CurrencyTextField;
+			sourceTree = "<group>";
+		};
+		239C9245214B8B0A00315025 /* CalederProgressPopup */ = {
+			isa = PBXGroup;
+			children = (
+				239C9246214B8B3D00315025 /* CalenderProgressPopupView.swift */,
+				239C9248214B8B6F00315025 /* CalenderProgressPopupView.xib */,
+			);
+			path = CalederProgressPopup;
+			sourceTree = "<group>";
+		};
+		23B7CB1820F4DBC400698613 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				232D16AD21380D08008906D7 /* AddForm */,
+				233BA3F7211C3F190011B614 /* Employee */,
+				237A1251212D3AFE00A0689C /* CustomerAnalytic */,
+				23B7CB1B20F4DBE500698613 /* CustomerDetail */,
+				23B7CB1920F4DBE500698613 /* CustomerList */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		23B7CB1920F4DBE500698613 /* CustomerList */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB2020F4DC0300698613 /* CustomerListViewController.swift */,
+				23B7CB2120F4DC0300698613 /* CustomerListViewController.xib */,
+			);
+			path = CustomerList;
+			sourceTree = "<group>";
+		};
+		23B7CB1B20F4DBE500698613 /* CustomerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB1C20F4DBF400698613 /* CustomerDetailViewController.swift */,
+				23B7CB1D20F4DBF400698613 /* CustomerDetailViewController.xib */,
+				23736D2821392C24003FBDBB /* ServiceListViewController.swift */,
+				23736D2921392C24003FBDBB /* ServiceListViewController.xib */,
+				232296DE20FDDF5600D607E8 /* ServiceDetailViewController.swift */,
+				232296DF20FDDF5600D607E8 /* ServiceDetailViewController.xib */,
+				23F1076D211183CA0056CD2C /* AddNoteViewController.swift */,
+				23F1076E211183CA0056CD2C /* AddNoteViewController.xib */,
+				23E0ADA22113309B00A66BAB /* NoteDetailViewController.swift */,
+				23E0ADA32113309B00A66BAB /* NoteDetailViewController.xib */,
+				23F153E221492E04000DE888 /* DeletedImageViewController.swift */,
+				23F153E321492E04000DE888 /* DeletedImageViewController.xib */,
+			);
+			path = CustomerDetail;
+			sourceTree = "<group>";
+		};
+		23B7CB2920F4DCB800698613 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB2B20F4DCC400698613 /* CalenderViewController.swift */,
+				23B7CB2C20F4DCC400698613 /* CalenderViewController.xib */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		23B7CB2A20F4DCB800698613 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB2F20F4DCCF00698613 /* SalesViewController.swift */,
+				23B7CB3020F4DCCF00698613 /* SalesViewController.xib */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		23B7CB3C20F4E49900698613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23D9EDD4215DF4D100B61E95 /* Notification */,
+				239C9245214B8B0A00315025 /* CalederProgressPopup */,
+				233BD9F3214A75C800A9BCC3 /* CalenderCell */,
+				23F153DD2148E3AA000DE888 /* ImageCell */,
+				23F11111214789C500F2D3CB /* ImageCollection */,
+				23736D35213943B9003FBDBB /* PolicyVIew */,
+				23736D2C21392ECE003FBDBB /* ServiceList */,
+				232D16A82137DA69008906D7 /* SideMenu */,
+				2372A01E2133EA2B00543FA3 /* HolidayList */,
+				236AF32D2122E55000947692 /* AttandanceInfoCell */,
+				233BA412211C45610011B614 /* EmployeeListCell */,
+				23E0AD9B2112DAD200A66BAB /* AddServiceCell */,
+				2345D16720FF16ED00B4CCAE /* ServiceDetailCell */,
+				23B7CB3D20F4E4BD00698613 /* CustomerListCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23B7CB3D20F4E4BD00698613 /* CustomerListCell */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB3E20F4E4CF00698613 /* CustomerListTableViewCell.swift */,
+				23B7CB3F20F4E4CF00698613 /* CustomerListTableViewCell.xib */,
+			);
+			path = CustomerListCell;
+			sourceTree = "<group>";
+		};
+		23C043BF20EF31E5008A7C22 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				23C043C120EF31E5008A7C22 /* LoginViewController.swift */,
+				23C043C020EF31E5008A7C22 /* LoginViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		23C043C220EF31E5008A7C22 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				23C043C420EF31E5008A7C22 /* RegistrationViewController.swift */,
+				23C043C320EF31E5008A7C22 /* RegistrationViewController.xib */,
+				238217AF20F72DFD00405D99 /* SuccessRegisterViewController.swift */,
+				238217B020F72DFD00405D99 /* SuccessRegisterViewController.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		23C043D120EF5F82008A7C22 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				23B7CB1420F4D89700698613 /* SalonProfileViewController.swift */,
+				23B7CB1520F4D89700698613 /* SalonProfileViewController.xib */,
+				23CEFA64212E88DB0013226A /* EditProfileViewController.swift */,
+				23CEFA65212E88DB0013226A /* EditProfileViewController.xib */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		23D9EDCF215DF42D00B61E95 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				23D9EDD0215DF48300B61E95 /* NotificationViewController.swift */,
+				23D9EDD1215DF48300B61E95 /* NotificationViewController.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		23D9EDD4215DF4D100B61E95 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				23D9EDD5215DF4FB00B61E95 /* NotificationTableViewCell.swift */,
+				23D9EDD6215DF4FB00B61E95 /* NotificationTableViewCell.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		23E0AD9B2112DAD200A66BAB /* AddServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				23E0AD9C2112DAEC00A66BAB /* AddServiceTableViewCell.swift */,
+				23E0AD9D2112DAEC00A66BAB /* AddServiceTableViewCell.xib */,
+			);
+			path = AddServiceCell;
+			sourceTree = "<group>";
+		};
+		23E510F620F62A370059155B /* ThankYou */ = {
+			isa = PBXGroup;
+			children = (
+				23E510F720F62A560059155B /* ThankYouPageViewController.swift */,
+				23E510F820F62A560059155B /* ThankYouPageViewController.xib */,
+			);
+			path = ThankYou;
+			sourceTree = "<group>";
+		};
+		23E7646A20F4CE33003D6775 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E7646B20F4CE41003D6775 /* DashboardViewController.swift */,
+				23E7646C20F4CE41003D6775 /* DashboardViewController.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		23F11111214789C500F2D3CB /* ImageCollection */ = {
+			isa = PBXGroup;
+			children = (
+				23F11112214789E300F2D3CB /* ImageCollectionViewCell.swift */,
+				23F11113214789E300F2D3CB /* ImageCollectionViewCell.xib */,
+			);
+			path = ImageCollection;
+			sourceTree = "<group>";
+		};
+		23F153DD2148E3AA000DE888 /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				23F153DE2148E4EC000DE888 /* PostedByImageTableViewCell.swift */,
+				23F153DF2148E4EC000DE888 /* PostedByImageTableViewCell.xib */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+		EC350A1AE93D24711CDF6C2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E153B20CFA399EDC4E04010B /* Pods-JTSBoard.debug.xcconfig */,
+				80533B36BA251E3758A4BF30 /* Pods-JTSBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFE8D137B15574153D138E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2307AC46215A5C5400B42C86 /* UserNotifications.framework */,
+				2307AC45215A5C5300B42C86 /* UserNotificationsUI.framework */,
+				237A1260212D8C1C00A0689C /* Charts.framework */,
+				23E7647120F4D567003D6775 /* QuartzCore.framework */,
+				23E7646F20F4D562003D6775 /* CoreFoundation.framework */,
+				23C043D820EF9CF5008A7C22 /* CoreLocation.framework */,
+				2304FB4020EE31ED00FA01B0 /* WebKit.framework */,
+				E01D8FECB293ED25BC7D33DE /* Pods_JTSBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		234304BC20EB411B00E0D50F /* JTSBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234304CF20EB411E00E0D50F /* Build configuration list for PBXNativeTarget "JTSBoard" */;
+			buildPhases = (
+				BA27C1085C21C773BAAD8051 /* [CP] Check Pods Manifest.lock */,
+				234304B920EB411B00E0D50F /* Sources */,
+				234304BA20EB411B00E0D50F /* Frameworks */,
+				234304BB20EB411B00E0D50F /* Resources */,
+				A006E5B5A0D0E7DFCAD898D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTSBoard;
+			productName = JTSBoard;
+			productReference = 234304BD20EB411B00E0D50F /* JTSBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		234304B520EB411B00E0D50F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = jts;
+				TargetAttributes = {
+					234304BC20EB411B00E0D50F = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 234304B820EB411B00E0D50F /* Build configuration list for PBXProject "JTSBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 234304B420EB411B00E0D50F;
+			productRefGroup = 234304BE20EB411B00E0D50F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				234304BC20EB411B00E0D50F /* JTSBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		234304BB20EB411B00E0D50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B7CB2320F4DC0300698613 /* CustomerListViewController.xib in Resources */,
+				23B7CB1F20F4DBF400698613 /* CustomerDetailViewController.xib in Resources */,
+				23736D2B21392C24003FBDBB /* ServiceListViewController.xib in Resources */,
+				237A1255212D3B1600A0689C /* CustomerAnalyticViewController.xib in Resources */,
+				236AF3312122E56300947692 /* AttandanceInfoTableViewCell.xib in Resources */,
+				23E7646E20F4CE41003D6775 /* DashboardViewController.xib in Resources */,
+				23B7CB3220F4DCCF00698613 /* SalesViewController.xib in Resources */,
+				23F153E521492E04000DE888 /* DeletedImageViewController.xib in Resources */,
+				233BA405211C405B0011B614 /* AddEmployeeViewController.xib in Resources */,
+				23CEFA67212E88DB0013226A /* EditProfileViewController.xib in Resources */,
+				233BA416211C45810011B614 /* EmployeeListTableViewCell.xib in Resources */,
+				23736D39213943F7003FBDBB /* TermPolicyView.xib in Resources */,
+				236F9A22213E966E00F0ECDD /* SideMenuLogoTableViewCell.xib in Resources */,
+				237D91E7214FD5830027EC8C /* SalaryCalculateViewController_ipad.xib in Resources */,
+				23D9EDD8215DF4FB00B61E95 /* NotificationTableViewCell.xib in Resources */,
+				2372A0142133CC5900543FA3 /* SalaryCalculateViewController.xib in Resources */,
+				237D91E3214FCBFC0027EC8C /* AddEmployeeViewController_ipad.xib in Resources */,
+				234294C02150E7C700D46465 /* ServiceListTableViewCell_ipad.xib in Resources */,
+				2304FB4320EE338000FA01B0 /* Terms.pdf in Resources */,
+				238217B220F72DFD00405D99 /* SuccessRegisterViewController.xib in Resources */,
+				234294C22150FBA300D46465 /* EmployeeListTableViewCell_ipad.xib in Resources */,
+				233273162158F69900282E45 /* Info.plist in Resources */,
+				23F10770211183CA0056CD2C /* AddNoteViewController.xib in Resources */,
+				233BA411211C40890011B614 /* AttendanceViewController.xib in Resources */,
+				2372A0192133D4A700543FA3 /* AddHolidaysViewController.xib in Resources */,
+				23D7791E20EBE3C2008BE734 /* BodyServiceViewController.xib in Resources */,
+				23D9EDD3215DF48300B61E95 /* NotificationViewController.xib in Resources */,
+				23F11115214789E300F2D3CB /* ImageCollectionViewCell.xib in Resources */,
+				233BD9FB214A7E0000A9BCC3 /* CalenderHeaderView.xib in Resources */,
+				232D16B121380D4D008906D7 /* AddFormViewController.xib in Resources */,
+				23C043C520EF31E5008A7C22 /* LoginViewController.xib in Resources */,
+				239C9249214B8B6F00315025 /* CalenderProgressPopupView.xib in Resources */,
+				23736D3421392EFE003FBDBB /* ServiceListTableViewCell.xib in Resources */,
+				23B7CB2E20F4DCC400698613 /* CalenderViewController.xib in Resources */,
+				23235BE921429F9300A8B604 /* JTSStaffDashboardViewController.xib in Resources */,
+				233AB12E214684830002611F /* AgreeTableViewCell.xib in Resources */,
+				233BA40D211C407A0011B614 /* AttendanceInfoViewController.xib in Resources */,
+				23F153E12148E4EC000DE888 /* PostedByImageTableViewCell.xib in Resources */,
+				2304FB3F20EE30AF00FA01B0 /* TermsViewController.xib in Resources */,
+				2315A25021413DBB0024ED57 /* EmployeeCodeViewController.xib in Resources */,
+				232D16A72137D906008906D7 /* SideMenuViewController.xib in Resources */,
+				23B7CB1720F4D89700698613 /* SalonProfileViewController.xib in Resources */,
+				237D91E1214FC4E10027EC8C /* EmployeeDetailViewController_ipad.xib in Resources */,
+				2332731B2158F8FE00282E45 /* JTSStaffCalenderViewController.xib in Resources */,
+				234304E120EB424100E0D50F /* TopNavigationView.xib in Resources */,
+				232D16B521380F04008906D7 /* PhotoFacialViewController.xib in Resources */,
+				2345D16B20FF170700B4CCAE /* ServiceDetailTableViewCell.xib in Resources */,
+				23E510FA20F62A560059155B /* ThankYouPageViewController.xib in Resources */,
+				237D91E5214FD3360027EC8C /* AttandanceInfoTableViewCell_ipad.xib in Resources */,
+				234304C820EB411E00E0D50F /* Assets.xcassets in Resources */,
+				23D7791620EBE2B7008BE734 /* EstheServiceViewController.xib in Resources */,
+				23D7791A20EBE3AE008BE734 /* EyeLastServiceViewController.xib in Resources */,
+				2372A01D2133D4C900543FA3 /* HolidaysListViewController.xib in Resources */,
+				23E0ADA52113309B00A66BAB /* NoteDetailViewController.xib in Resources */,
+				23E0AD9F2112DAEC00A66BAB /* AddServiceTableViewCell.xib in Resources */,
+				23C043C720EF31E5008A7C22 /* RegistrationViewController.xib in Resources */,
+				23B7CB4120F4E4CF00698613 /* CustomerListTableViewCell.xib in Resources */,
+				23CB349220F3694E00548F14 /* SawarabiMincho-Regular.ttf in Resources */,
+				233BA409211C406C0011B614 /* EmployeeDetailViewController.xib in Resources */,
+				233BD9F7214A760500A9BCC3 /* CalenderTableViewCell.xib in Resources */,
+				2372A0222133EA6100543FA3 /* HolidayListTableViewCell.xib in Resources */,
+				234304EB20EB448B00E0D50F /* MainFromViewController.xib in Resources */,
+				232D16AC2137DA80008906D7 /* SideMenuTableViewCell.xib in Resources */,
+				23D7792220EBE3E6008BE734 /* HairRemovalServiceViewController.xib in Resources */,
+				233BA401211C40170011B614 /* EmployeeListViewController.xib in Resources */,
+				232296E120FDDF5600D607E8 /* ServiceDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A006E5B5A0D0E7DFCAD898D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JTSBoard/Pods-JTSBoard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSBoard/Pods-JTSBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA27C1085C21C773BAAD8051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JTSBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		234304B920EB411B00E0D50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D9EDD7215DF4FB00B61E95 /* NotificationTableViewCell.swift in Sources */,
+				232D16B021380D4D008906D7 /* AddFormViewController.swift in Sources */,
+				2332731A2158F8FE00282E45 /* JTSStaffCalenderViewController.swift in Sources */,
+				233273122158F69900282E45 /* FSCalendarConstants.m in Sources */,
+				23D7791920EBE3AE008BE734 /* EyeLastServiceViewController.swift in Sources */,
+				2372A01C2133D4C900543FA3 /* HolidaysListViewController.swift in Sources */,
+				232D16A62137D906008906D7 /* SideMenuViewController.swift in Sources */,
+				23F153E421492E04000DE888 /* DeletedImageViewController.swift in Sources */,
+				232D16AB2137DA80008906D7 /* SideMenuTableViewCell.swift in Sources */,
+				233273142158F69900282E45 /* FSCalendarHeaderView.m in Sources */,
+				23E7646D20F4CE41003D6775 /* DashboardViewController.swift in Sources */,
+				23B7CB2D20F4DCC400698613 /* CalenderViewController.swift in Sources */,
+				2307AC44215A2C4900B42C86 /* FLCollectionSeparator.m in Sources */,
+				233BD9F6214A760500A9BCC3 /* CalenderTableViewCell.swift in Sources */,
+				2372A0182133D4A700543FA3 /* AddHolidaysViewController.swift in Sources */,
+				2332730F2158F69900282E45 /* FSCalendarWeekdayView.m in Sources */,
+				23736D37213943DC003FBDBB /* TermPolicyView.swift in Sources */,
+				23D7791520EBE2B7008BE734 /* EstheServiceViewController.swift in Sources */,
+				2345D16A20FF170700B4CCAE /* ServiceDetailTableViewCell.swift in Sources */,
+				233273092158F69900282E45 /* FSCalendarDelegationFactory.m in Sources */,
+				233273112158F69900282E45 /* FSCalendar+Deprecated.m in Sources */,
+				234304F020EB9DB900E0D50F /* UIAlertController+Extensions.swift in Sources */,
+				234304DE20EB424100E0D50F /* WebServiceController.swift in Sources */,
+				2332730E2158F69900282E45 /* FSCalendarScopeHandle.m in Sources */,
+				233273072158F69800282E45 /* FSCalendarCollectionView.m in Sources */,
+				2332730C2158F69900282E45 /* FSCalendar.m in Sources */,
+				23F153E02148E4EC000DE888 /* PostedByImageTableViewCell.swift in Sources */,
+				233BA408211C406C0011B614 /* EmployeeDetailViewController.swift in Sources */,
+				23E0AD9E2112DAEC00A66BAB /* AddServiceTableViewCell.swift in Sources */,
+				23B7CB1620F4D89700698613 /* SalonProfileViewController.swift in Sources */,
+				2304FB3E20EE30AF00FA01B0 /* TermsViewController.swift in Sources */,
+				233273082158F69900282E45 /* FSCalendarDelegationProxy.m in Sources */,
+				23F1076F211183CA0056CD2C /* AddNoteViewController.swift in Sources */,
+				233BA410211C40890011B614 /* AttendanceViewController.swift in Sources */,
+				23B7CB1E20F4DBF400698613 /* CustomerDetailViewController.swift in Sources */,
+				236F9A21213E966E00F0ECDD /* SideMenuLogoTableViewCell.swift in Sources */,
+				232D16B421380F04008906D7 /* PhotoFacialViewController.swift in Sources */,
+				233273172158F69900282E45 /* FSCalendarAppearance.m in Sources */,
+				234304DF20EB424100E0D50F /* FloatLabelTextView.swift in Sources */,
+				234304EE20EB96F400E0D50F /* DatePickerViewController.swift in Sources */,
+				234304E220EB424100E0D50F /* TopNavigationView.swift in Sources */,
+				23C043C820EF31E5008A7C22 /* RegistrationViewController.swift in Sources */,
+				234304E420EB424100E0D50F /* String+Extensions.swift in Sources */,
+				23B7CB2220F4DC0300698613 /* CustomerListViewController.swift in Sources */,
+				233273102158F69900282E45 /* FSCalendarExtensions.m in Sources */,
+				2307AC3C215A16D100B42C86 /* CustomFlowLayout.swift in Sources */,
+				23235BE821429F9300A8B604 /* JTSStaffDashboardViewController.swift in Sources */,
+				23B7CB3120F4DCCF00698613 /* SalesViewController.swift in Sources */,
+				233AB12D214684830002611F /* AgreeTableViewCell.swift in Sources */,
+				23B7CB4020F4E4CF00698613 /* CustomerListTableViewCell.swift in Sources */,
+				2372A0212133EA6100543FA3 /* HolidayListTableViewCell.swift in Sources */,
+				234304E020EB424100E0D50F /* FloatLabelTextField.swift in Sources */,
+				238217B120F72DFD00405D99 /* SuccessRegisterViewController.swift in Sources */,
+				234304E320EB424100E0D50F /* ConfigManager.swift in Sources */,
+				23F11114214789E300F2D3CB /* ImageCollectionViewCell.swift in Sources */,
+				234304C120EB411B00E0D50F /* AppDelegate.swift in Sources */,
+				23CEFA66212E88DB0013226A /* EditProfileViewController.swift in Sources */,
+				2315A25121413DBB0024ED57 /* EmployeeCodeViewController.swift in Sources */,
+				233BA40C211C407A0011B614 /* AttendanceInfoViewController.swift in Sources */,
+				23C043C620EF31E5008A7C22 /* LoginViewController.swift in Sources */,
+				23E0ADA121130D0500A66BAB /* DatePickerDialog.swift in Sources */,
+				23736D2A21392C24003FBDBB /* ServiceListViewController.swift in Sources */,
+				233BA415211C45810011B614 /* EmployeeListTableViewCell.swift in Sources */,
+				233273152158F69900282E45 /* FSCalendarTransitionCoordinator.m in Sources */,
+				237A1254212D3B1600A0689C /* CustomerAnalyticViewController.swift in Sources */,
+				23D7791D20EBE3C2008BE734 /* BodyServiceViewController.swift in Sources */,
+				23736D3321392EFE003FBDBB /* ServiceListTableViewCell.swift in Sources */,
+				234304EA20EB448B00E0D50F /* MainFromViewController.swift in Sources */,
+				2332730A2158F69900282E45 /* FSCalendarCell.m in Sources */,
+				239C9247214B8B3D00315025 /* CalenderProgressPopupView.swift in Sources */,
+				2332730D2158F69900282E45 /* FSCalendarCollectionViewLayout.m in Sources */,
+				23E0ADA42113309B00A66BAB /* NoteDetailViewController.swift in Sources */,
+				2332730B2158F69900282E45 /* FSCalendarStickyHeader.m in Sources */,
+				2372A0132133CC5900543FA3 /* SalaryCalculateViewController.swift in Sources */,
+				233BA404211C405B0011B614 /* AddEmployeeViewController.swift in Sources */,
+				23D9EDD2215DF48300B61E95 /* NotificationViewController.swift in Sources */,
+				236AF3302122E56300947692 /* AttandanceInfoTableViewCell.swift in Sources */,
+				232296E020FDDF5600D607E8 /* ServiceDetailViewController.swift in Sources */,
+				233273132158F69900282E45 /* FSCalendarCalculator.m in Sources */,
+				233BD9F9214A7DEF00A9BCC3 /* CalenderHeaderView.swift in Sources */,
+				233BA400211C40170011B614 /* EmployeeListViewController.swift in Sources */,
+				23E510F920F62A560059155B /* ThankYouPageViewController.swift in Sources */,
+				238D7001211AB6A60092B577 /* CurrencyTextField.swift in Sources */,
+				23D7792120EBE3E6008BE734 /* HairRemovalServiceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		234304CD20EB411E00E0D50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		234304CE20EB411E00E0D50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		234304D020EB411E00E0D50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E153B20CFA399EDC4E04010B /* Pods-JTSBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = JTSBoard/JTSBoard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2AV3B2BH2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JTSBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jts.jtsboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e5d1ae5a-f2f0-4157-aaef-459ea5dcf388";
+				PROVISIONING_PROFILE_SPECIFIER = Appstore_JTSBoard;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jts/Desktop/Shweta/JTS/JTSBoard/JTSBoard-Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		234304D120EB411E00E0D50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80533B36BA251E3758A4BF30 /* Pods-JTSBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = JTSBoard/JTSBoard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2AV3B2BH2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JTSBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jts.jtsboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e5d1ae5a-f2f0-4157-aaef-459ea5dcf388";
+				PROVISIONING_PROFILE_SPECIFIER = Appstore_JTSBoard;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jts/Desktop/Shweta/JTS/JTSBoard/JTSBoard-Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		234304B820EB411B00E0D50F /* Build configuration list for PBXProject "JTSBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234304CD20EB411E00E0D50F /* Debug */,
+				234304CE20EB411E00E0D50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234304CF20EB411E00E0D50F /* Build configuration list for PBXNativeTarget "JTSBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234304D020EB411E00E0D50F /* Debug */,
+				234304D120EB411E00E0D50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 234304B520EB411B00E0D50F /* Project object */;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHolidaysViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSubmit" destination="0Ib-ur-CzO" id="cIc-Ic-sB8"/>
+                <outlet property="scrollView" destination="Y2N-XS-vCe" id="ftk-uI-vKc"/>
+                <outlet property="txtHolidayDate" destination="cyH-Br-M8Q" id="J6p-RE-WqE"/>
+                <outlet property="txtHolidayName" destination="fhA-qp-A4P" id="UEJ-OU-mkI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2N-XS-vCe">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休暇名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBf-8i-hFv">
+                            <rect key="frame" x="82" y="112" width="51" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="6RN-h3-rjF"/>
+                                <constraint firstAttribute="height" constant="24" id="W7q-7Z-YB6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="休暇名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhA-qp-A4P">
+                            <rect key="frame" x="82" y="147" width="605" height="50"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.93333333330000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="nGu-Ip-MdF"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="riS-fA-ZOt"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="祝日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gq-8I-8e7">
+                            <rect key="frame" x="82" y="221" width="34" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="kBS-ps-Mxr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="祝日" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-Br-M8Q">
+                            <rect key="frame" x="82" y="256" width="605" height="50"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.93333333330000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="15k-qo-q21"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="oPZ-M6-sxz"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ib-ur-CzO">
+                            <rect key="frame" x="82" y="386" width="205" height="50"/>
+                            <color key="backgroundColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="0Ib-ur-CzO" secondAttribute="height" multiplier="119:25" constant="-33" id="gSC-1f-Spd"/>
+                                <constraint firstAttribute="height" constant="50" id="poK-LJ-ZCF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                            <state key="normal" title="送信">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSubmitAction:" destination="-1" eventType="touchUpInside" id="rUC-xZ-aPM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fhA-qp-A4P" secondAttribute="trailing" constant="81" id="2iV-Ti-kfl"/>
+                        <constraint firstItem="4gq-8I-8e7" firstAttribute="leading" secondItem="Y2N-XS-vCe" secondAttribute="leading" constant="82" id="9G8-h7-PGE"/>
+                        <constraint firstItem="cyH-Br-M8Q" firstAttribute="centerX" secondItem="Y2N-XS-vCe" secondAttribute="centerX" id="EfL-8O-DNk"/>
+                        <constraint firstItem="cyH-Br-M8Q" firstAttribute="top" secondItem="4gq-8I-8e7" secondAttribute="bottom" constant="11" id="Ey5-0e-Xik"/>
+                        <constraint firstItem="0Ib-ur-CzO" firstAttribute="leading" secondItem="Y2N-XS-vCe" secondAttribute="leading" constant="82" id="EzZ-Me-dqm"/>
+                        <constraint firstItem="fhA-qp-A4P" firstAttribute="top" secondItem="WBf-8i-hFv" secondAttribute="bottom" constant="11" id="F4h-SM-sd4"/>
+                        <constraint firstAttribute="trailing" secondItem="cyH-Br-M8Q" secondAttribute="trailing" constant="81" id="JM2-NG-YRM"/>
+                        <constraint firstItem="WBf-8i-hFv" firstAttribute="leading" secondItem="Y2N-XS-vCe" secondAttribute="leading" constant="82" id="OKq-yn-aLp"/>
+                        <constraint firstItem="fhA-qp-A4P" firstAttribute="leading" secondItem="Y2N-XS-vCe" secondAttribute="leading" constant="82" id="ZeM-oL-IpL"/>
+                        <constraint firstAttribute="bottom" secondItem="0Ib-ur-CzO" secondAttribute="bottom" constant="588" id="avo-1H-dMf"/>
+                        <constraint firstItem="fhA-qp-A4P" firstAttribute="centerX" secondItem="Y2N-XS-vCe" secondAttribute="centerX" id="fKR-9p-keo"/>
+                        <constraint firstItem="cyH-Br-M8Q" firstAttribute="leading" secondItem="Y2N-XS-vCe" secondAttribute="leading" constant="82" id="kuR-CK-Xfa"/>
+                        <constraint firstItem="0Ib-ur-CzO" firstAttribute="top" secondItem="cyH-Br-M8Q" secondAttribute="bottom" constant="80" id="pRV-Io-zbn"/>
+                        <constraint firstItem="WBf-8i-hFv" firstAttribute="top" secondItem="Y2N-XS-vCe" secondAttribute="top" constant="112" id="sC7-cP-7Mi"/>
+                        <constraint firstItem="4gq-8I-8e7" firstAttribute="top" secondItem="fhA-qp-A4P" secondAttribute="bottom" constant="24" id="vMA-P2-2u8"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Y2N-XS-vCe" secondAttribute="top" constant="20" id="OPU-me-ys1"/>
+                <constraint firstItem="Y2N-XS-vCe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QmF-4v-ePz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Y2N-XS-vCe" secondAttribute="bottom" id="TOE-q2-fAd"/>
+                <constraint firstItem="Y2N-XS-vCe" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="gmj-rG-NHr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y2N-XS-vCe" secondAttribute="trailing" id="pKL-pE-c4n"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-864" y="8"/>
+        </view>
+    </objects>
+</document>

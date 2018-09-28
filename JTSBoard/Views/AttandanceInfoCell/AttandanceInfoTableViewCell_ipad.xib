@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="attendanceinfocell" rowHeight="211" id="Q3G-Wm-SIu" customClass="AttandanceInfoTableViewCell" customModule="JTSBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="954" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q3G-Wm-SIu" id="das-pL-Avi">
+                <rect key="frame" x="0.0" y="0.0" width="954" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyg-X5-VDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="954" height="211"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpX-T5-yPF">
+                                <rect key="frame" x="50" y="22" width="528" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="rME-zX-DM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-In : 2018-08-15 09:50AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJV-GI-fGQ">
+                                <rect key="frame" x="50" y="58" width="525" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ZPz-IR-KPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Hour : 10 hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-4g-cbn">
+                                <rect key="frame" x="455" y="23" width="450" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="K2x-CI-YPu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out : 2018-08-15 09:50AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL0-DC-zkT">
+                                <rect key="frame" x="50" y="94" width="528" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Kzx-6c-dsk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch Hour : 30 Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9N-aR-8bG">
+                                <rect key="frame" x="50" y="130" width="855" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="H6c-wa-2sN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bG8-52-yoB">
+                                <rect key="frame" x="0.0" y="209" width="954" height="1"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yao-Z2-EIp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working Hour : 9 hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlb-0w-u8s">
+                                <rect key="frame" x="50" y="166" width="884" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="hZp-W9-qge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bG8-52-yoB" secondAttribute="trailing" id="22e-zU-kDA"/>
+                            <constraint firstAttribute="bottom" secondItem="bG8-52-yoB" secondAttribute="bottom" constant="1" id="5nw-bd-1M6"/>
+                            <constraint firstAttribute="trailing" secondItem="JpX-T5-yPF" secondAttribute="trailing" constant="376" id="7Bg-kU-jkC"/>
+                            <constraint firstAttribute="trailing" secondItem="Tlb-0w-u8s" secondAttribute="trailing" constant="20" id="7J3-h8-hEW"/>
+                            <constraint firstAttribute="trailing" secondItem="yOP-4g-cbn" secondAttribute="trailing" constant="49" id="886-qU-azu"/>
+                            <constraint firstItem="JpX-T5-yPF" firstAttribute="top" secondItem="Oyg-X5-VDJ" secondAttribute="top" constant="22" id="HgK-cf-oZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="D9N-aR-8bG" secondAttribute="trailing" constant="49" id="Qgc-lK-1aW"/>
+                            <constraint firstItem="QL0-DC-zkT" firstAttribute="top" secondItem="vJV-GI-fGQ" secondAttribute="bottom" constant="8" id="QsW-LQ-1Bf"/>
+                            <constraint firstItem="QL0-DC-zkT" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" constant="50" id="T9I-bd-qDc"/>
+                            <constraint firstItem="Tlb-0w-u8s" firstAttribute="top" secondItem="D9N-aR-8bG" secondAttribute="bottom" constant="8" id="V29-zZ-Lbn"/>
+                            <constraint firstAttribute="trailing" secondItem="vJV-GI-fGQ" secondAttribute="trailing" constant="379" id="V5R-Xz-Ibi"/>
+                            <constraint firstItem="bG8-52-yoB" firstAttribute="top" secondItem="Tlb-0w-u8s" secondAttribute="bottom" constant="15" id="W3k-vD-KAQ"/>
+                            <constraint firstAttribute="trailing" secondItem="QL0-DC-zkT" secondAttribute="trailing" constant="376" id="XF4-xU-8zF"/>
+                            <constraint firstItem="D9N-aR-8bG" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" constant="50" id="YPY-BR-NU7"/>
+                            <constraint firstItem="D9N-aR-8bG" firstAttribute="top" secondItem="QL0-DC-zkT" secondAttribute="bottom" constant="8" id="fNz-gu-XzX"/>
+                            <constraint firstItem="yOP-4g-cbn" firstAttribute="top" secondItem="Oyg-X5-VDJ" secondAttribute="top" constant="23" id="mkj-mH-FpY"/>
+                            <constraint firstItem="Tlb-0w-u8s" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" constant="50" id="nbn-jr-tpT"/>
+                            <constraint firstItem="vJV-GI-fGQ" firstAttribute="top" secondItem="JpX-T5-yPF" secondAttribute="bottom" constant="8" id="u0u-0v-Plh"/>
+                            <constraint firstItem="vJV-GI-fGQ" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" constant="50" id="wTi-Je-4kG"/>
+                            <constraint firstItem="bG8-52-yoB" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" id="xCO-g9-S6H"/>
+                            <constraint firstItem="yOP-4g-cbn" firstAttribute="leading" secondItem="vJV-GI-fGQ" secondAttribute="trailing" constant="-120" id="yXN-kj-K3l"/>
+                            <constraint firstItem="JpX-T5-yPF" firstAttribute="leading" secondItem="Oyg-X5-VDJ" secondAttribute="leading" constant="50" id="ykk-fn-Ddi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oyg-X5-VDJ" firstAttribute="leading" secondItem="das-pL-Avi" secondAttribute="leading" id="18h-Dh-WLK"/>
+                    <constraint firstAttribute="bottom" secondItem="Oyg-X5-VDJ" secondAttribute="bottom" constant="-0.5" id="Pwc-h4-ZsB"/>
+                    <constraint firstItem="Oyg-X5-VDJ" firstAttribute="top" secondItem="das-pL-Avi" secondAttribute="top" id="TB9-UW-7oq"/>
+                    <constraint firstAttribute="trailing" secondItem="Oyg-X5-VDJ" secondAttribute="trailing" id="ZH0-jG-fBx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="D8p-Uz-kEe"/>
+            <connections>
+                <outlet property="lblCheckInTime" destination="vJV-GI-fGQ" id="B6O-Oi-Gj3"/>
+                <outlet property="lblCheckoutTime" destination="QL0-DC-zkT" id="eOd-Y5-IeI"/>
+                <outlet property="lblDate" destination="JpX-T5-yPF" id="hZJ-PC-5m3"/>
+                <outlet property="lblLunchHours" destination="D9N-aR-8bG" id="D0H-0Y-QXS"/>
+                <outlet property="lblTotalHours" destination="yOP-4g-cbn" id="x7S-y9-NZl"/>
+                <outlet property="lblWorkingHours" destination="Tlb-0w-u8s" id="1gv-47-1Fu"/>
+            </connections>
+            <point key="canvasLocation" x="3385" y="-392.5"/>
+        </tableViewCell>
+    </objects>
+</document>

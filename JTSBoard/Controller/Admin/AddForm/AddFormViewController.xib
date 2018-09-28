@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFormViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBodyService" destination="D2F-rJ-v6Y" id="b94-9z-4Md"/>
+                <outlet property="btnEsthe" destination="qLa-hr-VLI" id="uS5-mq-hDO"/>
+                <outlet property="btnEyelush" destination="HIY-me-5QA" id="MJ4-N9-ySb"/>
+                <outlet property="btnHairRemoval" destination="CWZ-fk-bo8" id="tzE-yq-OkX"/>
+                <outlet property="btnPhotoFacial" destination="TvZ-5T-QAP" id="aRw-ih-2sY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-hr-VLI">
+                    <rect key="frame" x="60" y="142" width="648" height="65"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="tIE-Di-WJx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="22"/>
+                    <state key="normal" title="エステ">
+                        <color key="titleColor" red="0.76862745099999996" green="0.52941176469999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnEstheAction:" destination="-1" eventType="touchUpInside" id="FxD-Ta-N3b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIY-me-5QA">
+                    <rect key="frame" x="60" y="243" width="648" height="65"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="dwW-mJ-pEH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="22"/>
+                    <state key="normal" title="アイラッシュ">
+                        <color key="titleColor" red="0.76862745099999996" green="0.52941176469999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnEyelushAction:" destination="-1" eventType="touchUpInside" id="sTn-CZ-7eh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2F-rJ-v6Y">
+                    <rect key="frame" x="60" y="346" width="648" height="65"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="gV9-lz-22E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="22"/>
+                    <state key="normal" title="ボディ">
+                        <color key="titleColor" red="0.76862745099999996" green="0.52941176469999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBodyServiceAction:" destination="-1" eventType="touchUpInside" id="2jh-ea-5JH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWZ-fk-bo8">
+                    <rect key="frame" x="60" y="448" width="648" height="65"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="MPe-ue-YgX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="22"/>
+                    <state key="normal" title="脱毛">
+                        <color key="titleColor" red="0.76862745099999996" green="0.52941176469999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnHairRemovalAction:" destination="-1" eventType="touchUpInside" id="kR0-VU-Tdw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvZ-5T-QAP">
+                    <rect key="frame" x="60" y="547" width="648" height="65"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="o5j-Mk-AUp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="22"/>
+                    <state key="normal" title="フェイシャル">
+                        <color key="titleColor" red="0.76862745099999996" green="0.52941176469999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnPhotoFacialAction:" destination="-1" eventType="touchUpInside" id="rfL-2e-nVR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HIY-me-5QA" firstAttribute="top" secondItem="qLa-hr-VLI" secondAttribute="bottom" constant="36" id="Em9-dM-Ugb"/>
+                <constraint firstItem="D2F-rJ-v6Y" firstAttribute="top" secondItem="HIY-me-5QA" secondAttribute="bottom" constant="38" id="HXG-ph-fQ4"/>
+                <constraint firstItem="HIY-me-5QA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="KFr-pE-raz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CWZ-fk-bo8" secondAttribute="trailing" constant="60" id="Psx-Yx-F7T"/>
+                <constraint firstItem="TvZ-5T-QAP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="RAo-KS-tuJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TvZ-5T-QAP" secondAttribute="trailing" constant="60" id="ggd-OV-oAj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HIY-me-5QA" secondAttribute="trailing" constant="60" id="iR2-VM-CGg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qLa-hr-VLI" secondAttribute="trailing" constant="60" id="jah-zF-7N6"/>
+                <constraint firstItem="CWZ-fk-bo8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="jhj-VS-Rhx"/>
+                <constraint firstItem="qLa-hr-VLI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="ke4-iI-RNR"/>
+                <constraint firstItem="TvZ-5T-QAP" firstAttribute="top" secondItem="CWZ-fk-bo8" secondAttribute="bottom" constant="34" id="lam-WR-jos"/>
+                <constraint firstItem="qLa-hr-VLI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="nUT-N6-OAO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D2F-rJ-v6Y" secondAttribute="trailing" constant="60" id="tZY-JL-2Gh"/>
+                <constraint firstItem="CWZ-fk-bo8" firstAttribute="top" secondItem="D2F-rJ-v6Y" secondAttribute="bottom" constant="37" id="yxi-9J-LD9"/>
+                <constraint firstItem="D2F-rJ-v6Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="z9F-C4-VMl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="1011" y="99"/>
+        </view>
+    </objects>
+</document>

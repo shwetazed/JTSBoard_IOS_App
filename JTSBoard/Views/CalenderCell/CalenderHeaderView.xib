@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalenderHeaderView" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="xMq-6J-MmH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-AQ-ZmK">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7C-UU-zKk">
+                            <rect key="frame" x="3" y="3" width="296" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JOB NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0L-Rl-iuM">
+                                    <rect key="frame" x="8" y="17" width="280" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dropdown_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Hrf-yI-Zsc">
+                                    <rect key="frame" x="270" y="21" width="16" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlC-Lh-xQI">
+                            <rect key="frame" x="303" y="3" width="101" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0Z-x9-7YN">
+                                    <rect key="frame" x="8" y="15" width="85" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xp-FO-d4N">
+                            <rect key="frame" x="408" y="3" width="150" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LAST VISITOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttg-1Z-Cf6">
+                                    <rect key="frame" x="8" y="16" width="134" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-dx-sLr">
+                            <rect key="frame" x="562" y="3" width="150" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt1-Ge-scA">
+                                    <rect key="frame" x="8" y="16" width="142" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-nu-BJe">
+                            <rect key="frame" x="716" y="3" width="150" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STAFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weg-mi-WAO">
+                                    <rect key="frame" x="53" y="16" width="52" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-6P-5nc">
+                            <rect key="frame" x="870" y="3" width="150" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ONGOING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-5p-wl2">
+                                    <rect key="frame" x="8" y="16" width="142" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89233672053846924" green="0.89233672053846924" blue="0.89233672053846924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ts-xm-Fcc">
+                            <rect key="frame" x="0.0" y="54" width="1024" height="6"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.60392156860000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="yB7-SQ-r20"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94648902160000004" green="0.94648902160000004" blue="0.94648902160000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6ts-xm-Fcc" secondAttribute="trailing" id="3MI-1w-pCK"/>
+                        <constraint firstItem="hlC-Lh-xQI" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="303" id="C5b-9s-FLr"/>
+                        <constraint firstAttribute="bottom" secondItem="hlC-Lh-xQI" secondAttribute="bottom" constant="3" id="Coy-Ky-zlr"/>
+                        <constraint firstAttribute="bottom" secondItem="6ts-xm-Fcc" secondAttribute="bottom" id="EOz-ir-hzJ"/>
+                        <constraint firstAttribute="bottom" secondItem="hvw-6P-5nc" secondAttribute="bottom" constant="3" id="F6V-pf-FrL"/>
+                        <constraint firstItem="hlC-Lh-xQI" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="Fvd-qs-3Ii"/>
+                        <constraint firstItem="1Hq-nu-BJe" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="716" id="Gbl-eT-8Wl"/>
+                        <constraint firstItem="1Hq-nu-BJe" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="I9z-EW-5Nf"/>
+                        <constraint firstAttribute="bottom" secondItem="1Hq-nu-BJe" secondAttribute="bottom" constant="3" id="IFu-VE-zcM"/>
+                        <constraint firstItem="hvw-6P-5nc" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="870" id="IxP-KC-DwF"/>
+                        <constraint firstItem="N7C-UU-zKk" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="J8d-dq-qYI"/>
+                        <constraint firstItem="SfB-dx-sLr" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="562" id="JSY-7j-Two"/>
+                        <constraint firstItem="N7C-UU-zKk" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="3" id="KWQ-61-n3M"/>
+                        <constraint firstItem="5Xp-FO-d4N" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" constant="408" id="LQz-yO-Dgi"/>
+                        <constraint firstItem="6ts-xm-Fcc" firstAttribute="leading" secondItem="fvR-AQ-ZmK" secondAttribute="leading" id="ShU-hE-M0F"/>
+                        <constraint firstItem="hlC-Lh-xQI" firstAttribute="leading" secondItem="N7C-UU-zKk" secondAttribute="trailing" constant="4" id="YfO-Xc-eOR"/>
+                        <constraint firstAttribute="bottom" secondItem="5Xp-FO-d4N" secondAttribute="bottom" constant="3" id="ac5-iJ-4Lz"/>
+                        <constraint firstItem="1Hq-nu-BJe" firstAttribute="leading" secondItem="SfB-dx-sLr" secondAttribute="trailing" constant="4" id="bnp-1S-sdM"/>
+                        <constraint firstItem="6ts-xm-Fcc" firstAttribute="top" secondItem="hvw-6P-5nc" secondAttribute="bottom" constant="-3" id="cez-e1-I5m"/>
+                        <constraint firstItem="hvw-6P-5nc" firstAttribute="leading" secondItem="1Hq-nu-BJe" secondAttribute="trailing" constant="4" id="dBa-Cz-wXv"/>
+                        <constraint firstAttribute="bottom" secondItem="N7C-UU-zKk" secondAttribute="bottom" constant="3" id="dFA-7G-yJN"/>
+                        <constraint firstItem="SfB-dx-sLr" firstAttribute="leading" secondItem="5Xp-FO-d4N" secondAttribute="trailing" constant="4" id="gMm-y8-mA0"/>
+                        <constraint firstItem="5Xp-FO-d4N" firstAttribute="leading" secondItem="hlC-Lh-xQI" secondAttribute="trailing" constant="4" id="gOo-PH-SA2"/>
+                        <constraint firstItem="hvw-6P-5nc" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="koZ-HS-DIX"/>
+                        <constraint firstItem="5Xp-FO-d4N" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="nHz-do-65X"/>
+                        <constraint firstItem="SfB-dx-sLr" firstAttribute="top" secondItem="fvR-AQ-ZmK" secondAttribute="top" constant="3" id="svN-5F-hSP"/>
+                        <constraint firstAttribute="bottom" secondItem="SfB-dx-sLr" secondAttribute="bottom" constant="3" id="uE4-Ue-XiD"/>
+                        <constraint firstAttribute="trailing" secondItem="hvw-6P-5nc" secondAttribute="trailing" constant="4" id="xTZ-qN-pMh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fvR-AQ-ZmK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6RI-OO-Pr0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fvR-AQ-ZmK" secondAttribute="bottom" id="coT-iG-v08"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fvR-AQ-ZmK" secondAttribute="trailing" id="fG7-Kj-G6n"/>
+                <constraint firstItem="fvR-AQ-ZmK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yMG-Ad-yh5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="611" y="-505"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropdown_icon" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SawarabiMincho-Regular.ttf">
+            <string>SawarabiMincho-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="JTSBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAttendance" destination="nCw-80-Lqv" id="TUf-Yy-9ZB"/>
+                <outlet property="btnAttendanceIpad" destination="tY3-u1-Dba" id="maa-CX-lSK"/>
+                <outlet property="btnCustomerList" destination="PFI-l5-bth" id="aUL-aM-sDA"/>
+                <outlet property="btnCustomerListIpad" destination="dw6-tt-pq3" id="EGr-eb-9hN"/>
+                <outlet property="btnForm" destination="4mq-jo-uXg" id="Sr0-ir-2tJ"/>
+                <outlet property="btnFormIpad" destination="oSE-ON-TC3" id="ISz-3C-taU"/>
+                <outlet property="scrollLandscape" destination="gd8-Ef-548" id="v4L-9H-WFI"/>
+                <outlet property="scrollPortrait" destination="QDZ-pj-Qid" id="Mhh-Ir-IR1"/>
+                <outlet property="view" destination="WVL-vW-cTO" id="4pd-pW-fRn"/>
+                <outlet property="viewLandscape" destination="dyA-mZ-pSD" id="M3D-gJ-xzR"/>
+                <outlet property="viewPortrait" destination="i5M-Pr-FkT" id="jVw-CR-kSk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view hidden="YES" contentMode="scaleToFill" id="dyA-mZ-pSD">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-Ef-548">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-o1-A1Z">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qfm-tI-Fyp">
+                                    <rect key="frame" x="312" y="87" width="400" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="400" id="UtH-Bj-v7d"/>
+                                        <constraint firstAttribute="height" constant="100" id="njP-PU-nCW"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-06-hUw">
+                                    <rect key="frame" x="21" y="243" width="981" height="501"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-ON-TC3">
+                                            <rect key="frame" x="271" y="63" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="アンケートフォーム">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnFormAction:" destination="-1" eventType="touchUpInside" id="Ttl-xZ-xgs"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-tt-pq3">
+                                            <rect key="frame" x="520" y="66" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="顧客情報">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnCustomerListAction:" destination="-1" eventType="touchUpInside" id="gJ7-zg-bwG"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY3-u1-Dba">
+                                            <rect key="frame" x="21" y="358" width="940" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="出勤 退勤">
+                                                <color key="titleColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnAttendanceAction:" destination="-1" eventType="touchUpInside" id="5zr-cf-NMO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="501" id="33a-dC-op1"/>
+                                        <constraint firstAttribute="width" constant="981" id="vXn-4j-bef"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Qfm-tI-Fyp" firstAttribute="top" secondItem="Raw-o1-A1Z" secondAttribute="top" constant="87" id="FI0-4h-ptd"/>
+                                <constraint firstAttribute="bottom" secondItem="Lim-06-hUw" secondAttribute="bottom" constant="24" id="Tgi-Ux-pp1"/>
+                                <constraint firstItem="Qfm-tI-Fyp" firstAttribute="centerX" secondItem="Raw-o1-A1Z" secondAttribute="centerX" id="rDN-vj-MgG"/>
+                                <constraint firstItem="Lim-06-hUw" firstAttribute="centerX" secondItem="Raw-o1-A1Z" secondAttribute="centerX" id="ubN-JB-XHq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Raw-o1-A1Z" secondAttribute="bottom" id="2lN-L1-uBq"/>
+                        <constraint firstItem="Raw-o1-A1Z" firstAttribute="leading" secondItem="DPW-pW-x6N" secondAttribute="leading" id="3Gm-AI-UCh"/>
+                        <constraint firstItem="DPW-pW-x6N" firstAttribute="bottom" secondItem="Raw-o1-A1Z" secondAttribute="bottom" id="6F1-gW-Gpj"/>
+                        <constraint firstAttribute="trailing" secondItem="Raw-o1-A1Z" secondAttribute="trailing" id="JHA-Y1-fbf"/>
+                        <constraint firstItem="DPW-pW-x6N" firstAttribute="top" secondItem="Raw-o1-A1Z" secondAttribute="top" constant="20" id="cG8-a2-xUf"/>
+                        <constraint firstItem="DPW-pW-x6N" firstAttribute="trailing" secondItem="Raw-o1-A1Z" secondAttribute="trailing" id="qf7-Oo-TP8"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="DPW-pW-x6N"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NOx-5X-tln" firstAttribute="top" secondItem="gd8-Ef-548" secondAttribute="top" constant="20" id="0p4-6f-pv8"/>
+                <constraint firstItem="gd8-Ef-548" firstAttribute="width" secondItem="dyA-mZ-pSD" secondAttribute="width" id="g7b-8a-YMw"/>
+                <constraint firstItem="gd8-Ef-548" firstAttribute="bottom" secondItem="NOx-5X-tln" secondAttribute="bottom" id="jVM-xv-2Ig"/>
+                <constraint firstItem="gd8-Ef-548" firstAttribute="leading" secondItem="NOx-5X-tln" secondAttribute="leading" id="k4w-AW-ubK"/>
+                <constraint firstItem="NOx-5X-tln" firstAttribute="trailing" secondItem="gd8-Ef-548" secondAttribute="trailing" id="rUq-cR-gDp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NOx-5X-tln"/>
+            <point key="canvasLocation" x="-317" y="67"/>
+        </view>
+        <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDZ-pj-Qid">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEg-Bq-dr4">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1023.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-MJ-Ic7">
+                                    <rect key="frame" x="184" y="87" width="400" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="Qwm-xJ-ILl"/>
+                                        <constraint firstAttribute="width" constant="400" id="s9k-N5-RJR"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-b0-GRg">
+                                    <rect key="frame" x="94" y="212" width="579" height="744"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFI-l5-bth">
+                                            <rect key="frame" x="316" y="174" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="顧客情報">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnCustomerListAction:" destination="-1" eventType="touchUpInside" id="MLI-gt-oeQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCw-80-Lqv">
+                                            <rect key="frame" x="48" y="648" width="477" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="出勤 退勤">
+                                                <color key="titleColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnAttendanceAction:" destination="-1" eventType="touchUpInside" id="y13-KD-HQV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mq-jo-uXg">
+                                            <rect key="frame" x="63" y="174" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.72215532309999997" green="0.52358462179999998" blue="0.1193189499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="SawarabiMincho-Regular" family="Sawarabi Mincho" pointSize="17"/>
+                                            <state key="normal" title="アンケートフォーム">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnFormAction:" destination="-1" eventType="touchUpInside" id="60V-GA-qlK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="744" id="1F3-pV-VAs"/>
+                                        <constraint firstAttribute="width" constant="579" id="Xad-Y6-xxb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="cWG-b0-GRg" firstAttribute="centerX" secondItem="UEg-Bq-dr4" secondAttribute="centerX" id="5e9-wH-Kwd"/>
+                                <constraint firstItem="cWG-b0-GRg" firstAttribute="top" secondItem="0TB-MJ-Ic7" secondAttribute="bottom" constant="25" id="RaI-ia-heA"/>
+                                <constraint firstItem="0TB-MJ-Ic7" firstAttribute="top" secondItem="UEg-Bq-dr4" secondAttribute="top" constant="87" id="YNf-jd-khz"/>
+                                <constraint firstItem="0TB-MJ-Ic7" firstAttribute="centerX" secondItem="UEg-Bq-dr4" secondAttribute="centerX" id="Yax-Vh-jXg"/>
+                                <constraint firstAttribute="bottom" secondItem="cWG-b0-GRg" secondAttribute="bottom" constant="67.5" id="nrH-Y8-3GM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UEg-Bq-dr4" firstAttribute="width" secondItem="QDZ-pj-Qid" secondAttribute="width" id="9yu-wa-sRS"/>
+                        <constraint firstAttribute="bottom" secondItem="UEg-Bq-dr4" secondAttribute="bottom" id="G8P-va-EKN"/>
+                        <constraint firstAttribute="trailing" secondItem="UEg-Bq-dr4" secondAttribute="trailing" id="Mgk-sH-eIr"/>
+                        <constraint firstItem="UEg-Bq-dr4" firstAttribute="leading" secondItem="QDZ-pj-Qid" secondAttribute="leading" id="OPL-0q-861"/>
+                        <constraint firstItem="UEg-Bq-dr4" firstAttribute="top" secondItem="QDZ-pj-Qid" secondAttribute="top" id="hZd-BT-knS"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QDZ-pj-Qid" secondAttribute="trailing" id="Fq1-2I-v0f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QDZ-pj-Qid" secondAttribute="bottom" id="Rat-Dq-2Yo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="QDZ-pj-Qid" secondAttribute="top" constant="20" id="rKW-6E-3JE"/>
+                <constraint firstItem="QDZ-pj-Qid" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="u7L-xP-z4h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-414" y="-2126"/>
+        </view>
+        <view contentMode="scaleToFill" id="WVL-vW-cTO">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="eDI-IB-ZND"/>
+            <point key="canvasLocation" x="104" y="1307"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="400" height="100"/>
+    </resources>
+</document>
